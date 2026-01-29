@@ -1,6 +1,6 @@
 # Python A2A Agent (SDK)
 
-A reference A2A agent implemented with the official `a2a-sdk` using Starlette. It includes a sample executor, optional Redis-backed stores, and serves the agent card plus a health endpoint.
+A reference A2A agent implemented with the official `a2a-sdk` using Starlette. It includes a sample executor (`sample_agent_executor.py`), optional Redis-backed stores, and serves the agent card plus a health endpoint.
 
 ## Quick Start
 1. Install dependencies
@@ -14,12 +14,16 @@ pip install -r requirements.txt
 ```bash
 python server.py
 ```
-- Agent card: http://localhost:8000/.well-known/agent.json
+- Agent card: http://localhost:8000/.well-known/agent-card.json (preferred) or /.well-known/agent.json (legacy)
 - Health: http://localhost:8000/health
 
 ## Testing
 ```bash
 pytest
+```
+To probe a running server manually:
+```bash
+python test_agent.py
 ```
 
 ## Configuration
@@ -43,4 +47,4 @@ curl http://localhost:8000/health
 ```
 
 ## Extending
-Replace `SampleAgentExecutor` in [server.py](server.py) with your agent logic. If you need Redis for scaling, set `USE_REDIS=true` and provide the Redis settings above.
+Replace `SampleAgentExecutor` in [sample_agent_executor.py](sample_agent_executor.py) with your agent logic. If you need Redis for scaling, set `USE_REDIS=true` and provide the Redis settings above.
