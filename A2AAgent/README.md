@@ -12,7 +12,7 @@ pip install -r requirements.txt
 ```
 2. Run the A2A SDK server
 ```bash
-python server.py
+python main.py
 ```
 - Agent card: http://localhost:8000/.well-known/agent-card.json (preferred) or /.well-known/agent.json (legacy)
 - Health: http://localhost:8000/health
