@@ -27,6 +27,11 @@ import uuid
 
 import httpx
 
+# Fix Windows cp1252 encoding issues with emoji/unicode in LLM output
+if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[attr-defined]
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[attr-defined]
+
 # ---------------------------------------------------------------------------
 # Defaults
 # ---------------------------------------------------------------------------
