@@ -20,7 +20,8 @@ import pytest
 
 # ---------------------------------------------------------------------------
 # Ensure the project root (parent of tests/) is on sys.path so that
-# ``import tools``, ``import agent``, ``import main`` work from tests/.
+# ``import tools``, ``import agent``, ``import main`` and ``import app``
+# all work from tests/.
 # ---------------------------------------------------------------------------
 _PROJECT_ROOT = str(Path(__file__).resolve().parent.parent)
 if _PROJECT_ROOT not in sys.path:
@@ -54,7 +55,7 @@ def mock_agent_framework(monkeypatch):
         monkeypatch.setitem(sys.modules, mod_name, stub)
 
     # Provide a real-ish ``@tool`` decorator that is a transparent pass-through
-    # so ``tools.py`` functions still behave as plain callables.
+    # so tools functions still behave as plain callables.
     _STUBS["agent_framework"].tool = lambda fn: fn
 
     yield

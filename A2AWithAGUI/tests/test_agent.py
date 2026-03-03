@@ -1,12 +1,12 @@
 # Copyright (c) Microsoft. All rights reserved.
 
-"""Unit tests for agent creation and configuration (agent.py).
+"""Unit tests for agent creation and configuration (app.agent.factory).
 
 Covers:
 - PIZZA_AGENT_INSTRUCTIONS content
 - PIZZA_TOOLS list composition
-- create_pizza_agent()           → local mode factory
-- create_foundry_pizza_agent()   → Foundry mode factory (async)
+- PizzaAgentFactory.create_local()   → local mode factory
+- PizzaAgentFactory.create_foundry() → Foundry mode factory (async)
 """
 
 from __future__ import annotations
@@ -23,11 +23,11 @@ import pytest
 # ---------------------------------------------------------------------------
 
 
-def _import_agent():
-    """Import (or re-import) the ``agent`` module."""
-    import agent as _agent
+def _import_factory():
+    """Import (or re-import) the ``app.agent.factory`` module."""
+    from app.agent import factory as _factory
 
-    return importlib.reload(_agent)
+    return importlib.reload(_factory)
 
 
 # ============================================================================
@@ -39,35 +39,35 @@ class TestAgentConfig:
     """Tests for static configuration: instructions and tool list."""
 
     def test_instructions_contain_agent_name(self):
-        agent_mod = _import_agent()
-        assert "pizza-agent" in agent_mod.PIZZA_AGENT_INSTRUCTIONS
+        factory = _import_factory()
+        assert "pizza-agent" in factory.PIZZA_AGENT_INSTRUCTIONS
 
     def test_instructions_mention_tools(self):
-        agent_mod = _import_agent()
+        factory = _import_factory()
         expected = ["get_menu", "place_order", "track_order", "get_specials", "cancel_order"]
         for name in expected:
-            assert name in agent_mod.PIZZA_AGENT_INSTRUCTIONS
+            assert name in factory.PIZZA_AGENT_INSTRUCTIONS
 
     def test_instructions_context_aware(self):
-        agent_mod = _import_agent()
-        assert "context-aware" in agent_mod.PIZZA_AGENT_INSTRUCTIONS.lower()
+        factory = _import_factory()
+        assert "context-aware" in factory.PIZZA_AGENT_INSTRUCTIONS.lower()
 
     def test_instructions_speed_optimized(self):
-        agent_mod = _import_agent()
-        assert "speed" in agent_mod.PIZZA_AGENT_INSTRUCTIONS.lower()
+        factory = _import_factory()
+        assert "speed" in factory.PIZZA_AGENT_INSTRUCTIONS.lower()
 
     def test_pizza_tools_has_five_items(self):
-        agent_mod = _import_agent()
-        assert len(agent_mod.PIZZA_TOOLS) == 5
+        factory = _import_factory()
+        assert len(factory.PIZZA_TOOLS) == 5
 
     def test_pizza_tools_are_callables(self):
-        agent_mod = _import_agent()
-        for t in agent_mod.PIZZA_TOOLS:
+        factory = _import_factory()
+        for t in factory.PIZZA_TOOLS:
             assert callable(t)
 
 
 # ============================================================================
-# create_pizza_agent() – Local mode
+# PizzaAgentFactory.create_local() – Local mode
 # ============================================================================
 
 
@@ -75,43 +75,43 @@ class TestCreatePizzaAgent:
     """Tests for the local-mode agent factory."""
 
     def test_returns_agent_instance(self):
-        agent_mod = _import_agent()
+        factory = _import_factory()
         # AzureOpenAIChatClient is a stub (MagicMock) via conftest
-        agent = agent_mod.create_pizza_agent()
+        agent = factory.PizzaAgentFactory.create_local()
         assert agent is not None
 
     def test_agent_called_with_correct_name(self):
-        agent_mod = _import_agent()
-        with patch.object(agent_mod, "Agent") as MockAgent:
-            agent_mod.create_pizza_agent()
+        factory = _import_factory()
+        with patch.object(factory, "Agent") as MockAgent:
+            factory.PizzaAgentFactory.create_local()
             MockAgent.assert_called_once()
             kwargs = MockAgent.call_args[1]
             assert kwargs["name"] == "pizza-agent"
 
     def test_agent_receives_instructions(self):
-        agent_mod = _import_agent()
-        with patch.object(agent_mod, "Agent") as MockAgent:
-            agent_mod.create_pizza_agent()
+        factory = _import_factory()
+        with patch.object(factory, "Agent") as MockAgent:
+            factory.PizzaAgentFactory.create_local()
             kwargs = MockAgent.call_args[1]
-            assert kwargs["instructions"] == agent_mod.PIZZA_AGENT_INSTRUCTIONS
+            assert kwargs["instructions"] == factory.PIZZA_AGENT_INSTRUCTIONS
 
     def test_agent_receives_tools(self):
-        agent_mod = _import_agent()
-        with patch.object(agent_mod, "Agent") as MockAgent:
-            agent_mod.create_pizza_agent()
+        factory = _import_factory()
+        with patch.object(factory, "Agent") as MockAgent:
+            factory.PizzaAgentFactory.create_local()
             kwargs = MockAgent.call_args[1]
-            assert kwargs["tools"] == agent_mod.PIZZA_TOOLS
+            assert kwargs["tools"] == factory.PIZZA_TOOLS
 
     def test_agent_receives_client(self):
-        agent_mod = _import_agent()
-        with patch.object(agent_mod, "Agent") as MockAgent:
-            agent_mod.create_pizza_agent()
+        factory = _import_factory()
+        with patch.object(factory, "Agent") as MockAgent:
+            factory.PizzaAgentFactory.create_local()
             kwargs = MockAgent.call_args[1]
             assert kwargs["client"] is not None
 
 
 # ============================================================================
-# create_foundry_pizza_agent() – Foundry mode
+# PizzaAgentFactory.create_foundry() – Foundry mode
 # ============================================================================
 
 
@@ -120,18 +120,18 @@ class TestCreateFoundryPizzaAgent:
 
     @pytest.mark.asyncio
     async def test_missing_endpoint_raises(self):
-        agent_mod = _import_agent()
+        factory = _import_factory()
         with patch.dict(os.environ, {}, clear=False):
             os.environ.pop("AZURE_AI_PROJECT_ENDPOINT", None)
             with pytest.raises(ValueError, match="AZURE_AI_PROJECT_ENDPOINT"):
-                await agent_mod.create_foundry_pizza_agent()
+                await factory.PizzaAgentFactory.create_foundry()
 
     @pytest.mark.asyncio
     async def test_returns_tuple_of_three(self):
         import sys
         import types
 
-        agent_mod = _import_agent()
+        factory = _import_factory()
 
         mock_provider = MagicMock()
         mock_provider.create_agent = AsyncMock(return_value=MagicMock())
@@ -149,7 +149,7 @@ class TestCreateFoundryPizzaAgent:
 
         with patch.dict(os.environ, {"AZURE_AI_PROJECT_ENDPOINT": "https://fake"}):
             with patch.dict(sys.modules, {"azure.identity.aio": azure_identity_aio}):
-                result = await agent_mod.create_foundry_pizza_agent()
+                result = await factory.PizzaAgentFactory.create_foundry()
                 assert isinstance(result, tuple)
                 assert len(result) == 3
 
@@ -158,7 +158,7 @@ class TestCreateFoundryPizzaAgent:
         import sys
         import types
 
-        agent_mod = _import_agent()
+        factory = _import_factory()
 
         mock_provider = MagicMock()
         mock_provider.create_agent = AsyncMock(return_value=MagicMock())
@@ -174,7 +174,7 @@ class TestCreateFoundryPizzaAgent:
 
         with patch.dict(os.environ, {"AZURE_AI_PROJECT_ENDPOINT": "https://fake"}):
             with patch.dict(sys.modules, {"azure.identity.aio": azure_identity_aio}):
-                await agent_mod.create_foundry_pizza_agent()
+                await factory.PizzaAgentFactory.create_foundry()
                 mock_provider.create_agent.assert_awaited_once()
                 call_kwargs = mock_provider.create_agent.call_args[1]
                 assert call_kwargs["name"] == "pizza-agent"
