@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include="Practice01\DependancyInversionPrinciple.csx" />
+  </ItemGroup>
+
 </Project>

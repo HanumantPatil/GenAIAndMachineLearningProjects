@@ -40,3 +40,4 @@ namespace CodeApp
     internal class CompositeDesignPattern
     {
     }
+}

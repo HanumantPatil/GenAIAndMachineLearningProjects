@@ -1,12 +1,10 @@
-# install numpy
-numpy==1.24.3
-# pands install
-pandas==2.0.3
-# install matplotlib
-matplotlib==3.7.1
-# seaboarn 
-seaborn==0.12.2
+# Versions below are compatible with Python 3.13
+numpy==2.2.5
+pandas==2.2.3
+matplotlib==3.10.1
+seaborn==0.13.2
+scipy==1.15.2
+scikit-learn==1.6.1
 
-scipy ==1.10.1
-
-scikit-learn==1.2.2
+ipykernel==6.25.0
+jupyterlab==3.2.1

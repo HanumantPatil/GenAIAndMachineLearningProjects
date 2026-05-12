@@ -1,6 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using CodeApp;
+
+// Test Adapter Design Pattern
+var adapterPattern = new AdapterDesignPattern();
+adapterPattern.Execute();
+
 // test isSubSequence function
- Console.WriteLine(isSubSequence("abc", "ahbgdc"));
+Console.WriteLine(isSubSequence("abc", "ahbgdc"));
 
 Console.WriteLine("Hello, World!");
 
