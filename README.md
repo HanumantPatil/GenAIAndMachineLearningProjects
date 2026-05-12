@@ -1,6 +1,27 @@
-# AI Solutions Using Azure AI
+---
+title: AI Solutions Using Azure AI
+description: Multi-solution repository with Azure AI, agentic, and learning-focused projects across Python and .NET
+author: Hanumant Patil
+ms.date: 2026-05-12
+ms.topic: overview
+keywords:
+  - azure ai
+  - agents
+  - python
+  - dotnet
+  - sample projects
+estimated_reading_time: 4
+---
+
+## AI Solutions Using Azure AI
 
 This repository contains multiple Azure AI, agentic, and learning-focused solutions across Python and .NET.
+
+## Recently Added Solutions
+
+* [A2AWithAGUI](A2AWithAGUI): Pizza assistant with A2A and AG-UI support, including SSE streaming and a modular FastAPI layout.
+* [IT_Helpdesk_MAF_Agents](IT_Helpdesk_MAF_Agents): Multi-agent IT helpdesk with retrieval-augmented context, ticket workflows, and escalation handling.
+* [ContosoHRAgent](ContosoHRAgent): Enterprise-focused HR agent solution with Teams integration.
 
 ## Solution Catalog
 
