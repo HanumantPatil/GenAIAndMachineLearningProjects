@@ -1,6 +1,13 @@
 ﻿using System;
 
+// Call all payment methods 
+IPayment payment = new CardPayment();
+payment.Pay();
 
+IPayment payment1 = new UPIPayment();
+payment1.Pay();
+
+// Run Script comand: dotnet script Practice01\DependancyInversionPrinciple.csx
 
 public interface IPayment
 {
@@ -22,17 +29,5 @@ public class UPIPayment : IPayment
         Console.WriteLine("UPI Payment executed.");
     }
 }
-
-
-// Call all payment methods 
-IPayment payment = new CardPayment();
-payment.Pay();
-
-IPayment payment1 = new UPIPayment();
-
-payment1.Pay();
-
-
-// Run Script comand dotnet script Practice01\DependancyInversionPrinciple.csx 
 
 
