@@ -59,7 +59,246 @@
  */
 
 
+enum SlotType
+{
+    Compact,
+    Regular,
+    Large
+}
+
+enum TicketStatus
+{
+    Active,
+    Paid,
+    Expired
+}
+
+enum PaymentMethod
+{
+    Cash,
+    CreditCard,
+    MobilePayment
+}
+enum VehicleType
+{
+    Car,
+    Motorcycle,
+    Truck
+}
+// Core Entities
+public class Vehicle
+{
+    public string LicensePlate { get; set; }
+    public string OwnerName { get; set; }
+    public VehicleType Type { get; set; }
+
+}
+
+public class ParkingSpace
+{
+    public string Id { get; set; }
+    public SlotType Type { get; set; }
+    public bool IsOccupied { get; set; } = false;
+    public Vehicle ParkedVehicle { get; set; }
+
+    public bool ParkVehicle(Vehicle vehicle)
+    {
+        if (IsOccupied || !IsCompatible(vehicle))
+            return false;
+        ParkedVehicle = vehicle;
+        IsOccupied = true;
+        return true;
+    }
+    public bool UnparkVehicle()
+    {
+        if (!IsOccupied)
+            return false;
+        ParkedVehicle = null;
+        IsOccupied = false;
+        return true;
+    }
+}
+public class Ticket
+{
+    public string Id { get; set; }
+    public Vehicle Vehicle { get; set; }
+    public ParkingSpace ParkingSpace { get; set; }
+    public DateTime EntryTime { get; set; }
+    public TicketStatus Status { get; set; } = TicketStatus.Active;
+    public DateTime ExitTime { get; set; }
+    public double Amount { get; set; }
+    public TicketStatus status { get; set; }
+    public long GetDurationInMinutes()
+    {
+        return (long)(ExitTime - EntryTime).TotalMinutes;
+    }
+}
+
+public interface IPricingStrategy
+{
+    double CalculateFee(Ticket ticket);
+}
+
 interface ISlotSelectionStrategy
 {
     ParkingSpace SelectSlot(Vehicle vehicle, ParkingLot parkingLot);
 }
+public class HourlyPricingStrategy : IPricingStrategy
+{
+    private double hourlyRate;
+    public HourlyPricingStrategy(double hourlyRate)
+    {
+        this.hourlyRate = hourlyRate;
+    }
+    public double CalculateFee(Ticket ticket)
+    {
+        long durationInMinutes = ticket.GetDurationInMinutes();
+        return Math.Ceiling(durationInMinutes / 60.0) * hourlyRate;
+    }
+}
+
+interface IParkingObserver
+{
+    void Update(ParkingLot parkingLot);
+}
+
+public class DisplayBoard : IParkingObserver
+{
+    public void Update(ParkingLot parkingLot)
+    {
+        Console.WriteLine($"Parking Lot: {parkingLot.Name}, Available Spaces: {parkingLot.GetAvailableSpaces()}");
+    }
+}
+
+
+    public bool UnparkVehicle(Ticket ticket, IPricingStrategy pricingStrategy, out double fee)
+    {
+        fee = 0;
+        if (ticket == null || ticket.Status != TicketStatus.Active)
+            return false;
+        ticket.ExitTime = DateTime.Now;
+        fee = pricingStrategy.CalculateFee(ticket);
+        ticket.Amount = fee;
+        ticket.Status = TicketStatus.Paid;
+        ticket.ParkingSpace.UnparkVehicle();
+        NotifyObservers();
+        return true;
+    }
+}
+
+public class EntryGate
+{
+    public string Id { get; set; }
+    public ParkingLot ParkingLot { get; set; }
+    public ISlotSelectionStrategy SlotSelectionStrategy { get; set; }
+    public EntryGate(string id, ParkingLot parkingLot, ISlotSelectionStrategy slotSelectionStrategy)
+    {
+        Id = id;
+        ParkingLot = parkingLot;
+        SlotSelectionStrategy = slotSelectionStrategy;
+    }
+    public bool ParkVehicle(Vehicle vehicle, out Ticket ticket)
+    {
+        return ParkingLot.ParkVehicle(vehicle, SlotSelectionStrategy, out ticket);
+    }
+
+    public bool UnparkVehicle(Ticket ticket, IPricingStrategy pricingStrategy, out double fee)
+    {
+        return ParkingLot.UnparkVehicle(ticket, pricingStrategy, out fee);
+    }
+    public Ticket GenrateTicket(Vehicle vehicle)
+    {
+        if (ParkVehicle(vehicle, out Ticket ticket))
+            return ticket;
+        return null;
+    }
+   
+
+}
+
+public class ExitGate
+{
+    public string Id { get; set; }
+    public ParkingLot ParkingLot { get; set; }
+    public ExitGate(string id, ParkingLot parkingLot)
+    {
+        Id = id;
+        ParkingLot = parkingLot;
+    }
+    public bool UnparkVehicle(Ticket ticket, IPricingStrategy pricingStrategy, out double fee)
+    {
+        return ParkingLot.UnparkVehicle(ticket, pricingStrategy, out fee);
+    }
+}
+
+public class NearestSlotSelectionStrategy : ISlotSelectionStrategy
+{
+    public ParkingSpace SelectSlot(Vehicle vehicle, ParkingLot parkingLot)
+    {
+        return parkingLot.ParkingSpaces
+            .Where(ps => !ps.IsOccupied && IsCompatible(ps, vehicle))
+            .OrderBy(ps => ps.Id) // Assuming Id can be used to determine proximity
+            .FirstOrDefault();
+    }
+    private bool IsCompatible(ParkingSpace space, Vehicle vehicle)
+    {
+        switch (vehicle.Type)
+        {
+            case VehicleType.Car:
+                return space.Type == SlotType.Compact || space.Type == SlotType.Regular;
+            case VehicleType.Motorcycle:
+                return space.Type == SlotType.Compact;
+            case VehicleType.Truck:
+                return space.Type == SlotType.Large;
+            default:
+                return false;
+        }
+    }
+}
+
+public class ParkingLot
+{
+    public string Name { get; set; }
+    public List<ParkingSpace> ParkingSpaces { get; set; }
+    private List<IParkingObserver> observers = new List<IParkingObserver>();
+    public ParkingLot(string name, List<ParkingSpace> parkingSpaces)
+    {
+        Name = name;
+        ParkingSpaces = parkingSpaces;
+    }
+    public void RegisterObserver(IParkingObserver observer)
+    {
+        observers.Add(observer);
+    }
+    public void UnregisterObserver(IParkingObserver observer)
+    {
+        observers.Remove(observer);
+    }
+    private void NotifyObservers()
+    {
+        foreach (var observer in observers)
+        {
+            observer.Update(this);
+        }
+    }
+    public int GetAvailableSpaces()
+    {
+        return ParkingSpaces.Count(ps => !ps.IsOccupied);
+    }
+
+    public bool ParkVehicle(Vehicle vehicle, ISlotSelectionStrategy slotSelectionStrategy, out Ticket ticket)
+    {
+        ticket = null;
+        var slot = slotSelectionStrategy.SelectSlot(vehicle, this);
+        if (slot == null || !slot.ParkVehicle(vehicle))
+            return false;
+        ticket = new Ticket
+        {
+            Id = Guid.NewGuid().ToString(),
+            Vehicle = vehicle,
+            ParkingSpace = slot,
+            EntryTime = DateTime.Now
+        };
+        NotifyObservers();
+        return true;
+    }

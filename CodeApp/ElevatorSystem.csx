@@ -29,6 +29,14 @@
     - Assign Best  Elevator to user based on their location and the current position of the elevators.
     - Enter Destination floor and move the elevator to that floor.
     - Handle edge cases such as multiple users calling the elevator at the same time, or an elevator being out of service.
+
+request:
+    - Direction : Up, Down, Idle
+    - Floor Number : 1, 2, 3, 4, 5, etc.
+    - Elevator ID : 1, 2, 3, etc.
+Should be able assign bets elevator
+Should use different elevator start strategy like nearest, least busy, etc.
+
  
  * 
  */
