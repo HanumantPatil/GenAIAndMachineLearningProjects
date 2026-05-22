@@ -11,4 +11,8 @@
     <Compile Include="Practice01\DependancyInversionPrinciple.csx" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DSA\" />
+  </ItemGroup>
+
 </Project>
