@@ -3,6 +3,10 @@
 //Problem: Given an array of integers and a target sum, return the indices of the two numbers that add up to the target.
 //Time Complexity: O(N)
 
+//1.Two Sum(Arrays & Hashing)
+//Problem: Given an array of integers and a target sum, return the indices of the two numbers that add up to the target.
+//Time Complexity: O(N)
+
 using System;
 using System.Collections.Generic;
 
