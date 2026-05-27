@@ -1,4 +1,5 @@
 using System;
+using static Script;
 // Question prompt: LLD Code for Notification System for interview prespective simpler code covering system in c#
 
 
@@ -8,6 +9,23 @@ using System;
 //Strategy Pattern: To handle different types of notifications (Email, SMS, Push) interchangeably.
 
 //Factory Pattern: To instantiate the correct notification strategy without hardcoding dependencies in the main service.
+
+
+//Key Talking Points for the Interviewer
+//When presenting this code, you should mention how it handles future requirements:
+
+//Open / Closed Principle(OCP): If a new notification type is required(e.g., WhatsApp or Slack), you do not need to modify the NotificationService.
+//You simply create a WhatsAppSender : INotificationSender and add one line to the NotificationFactory.
+
+//Single Responsibility Principle (SRP): Each class does exactly one thing.The SmsSender only formats SMS, the Factory only creates objects, and
+//the Service coordinates the flow.
+
+//Extensibility(Next Steps): Mention that in a real-world, highly scalable system, the SendNotification method wouldn't 
+//    send the message synchronously. Instead, it would publish an event to a message broker (like RabbitMQ or Kafka), and 
+//    asynchronous worker services would pick up the message and execute the strategy. This prevents your API from hanging 
+//    if the third-party email provider is slow.
+
+
 
 // ==========================================
 // 1. Models & Enums
