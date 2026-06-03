@@ -25,6 +25,8 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
+import secrets
 import sys
 from pathlib import Path
 
@@ -357,6 +359,23 @@ def _make_escalation_agent(
 
 # ── Entry point ───────────────────────────────────────────────────────────────
 
+def _prepare_devui_auth_token(host: str) -> str | None:
+    """Ensure a DevUI auth token exists and return it when determinable.
+
+    For loopback hosts, generate a token when one is not already provided via
+    DEVUI_AUTH_TOKEN so startup logs can always display a copyable value.
+    """
+    token = os.getenv("DEVUI_AUTH_TOKEN")
+    if token:
+        return token
+
+    if host in {"127.0.0.1", "localhost"}:
+        token = secrets.token_urlsafe(32)
+        os.environ["DEVUI_AUTH_TOKEN"] = token
+        return token
+
+    return None
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description="Launch the IT Helpdesk Agent Framework DevUI for local testing."
@@ -378,6 +397,14 @@ def main() -> None:
         help="Do not automatically open the browser on start.",
     )
     args = parser.parse_args()
+
+    devui_token = _prepare_devui_auth_token(args.host)
+    if devui_token:
+        print("DevUI authentication is enabled.")
+        print(f"Authentication token: {devui_token}")
+        print("Use this value in the browser prompt or as Bearer token.\n")
+    else:
+        print("DEVUI_AUTH_TOKEN is not set. If auth is required, set it before startup.\n")
 
     print("Loading settings and building use cases...")
     settings = get_settings()

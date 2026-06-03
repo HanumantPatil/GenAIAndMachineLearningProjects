@@ -289,6 +289,8 @@ AppsandData_IT_Helpdesk/
 #### Step 1.1 — Create Python Virtual Environment
 
 ```bash
+# Windows ARM64 users: prefer an x64 Python interpreter from `py -0p`
+# Example: C:/Users/<user>/AppData/Local/Programs/Python/Python313/python.exe -m venv .venv
 python -m venv .venv
 .venv\Scripts\activate          # Windows
 pip install -r requirements.txt
@@ -1140,6 +1142,7 @@ Goodbye!
 ### Prerequisites
 
 - Python 3.12+
+- Windows ARM64: install and use an x64 CPython interpreter for virtual environment creation
 - Docker Desktop
 - Azure CLI (`az`)
 - Active Azure subscription with the resources listed in Phase 1
@@ -1151,9 +1154,14 @@ Goodbye!
 cd AppsandData_IT_Helpdesk
 
 # 2. Create and activate virtual environment
+# Windows ARM64 users: run the x64 interpreter path shown by `py -0p`
+# Example: C:/Users/<user>/AppData/Local/Programs/Python/Python313/python.exe -m venv .venv
 python -m venv .venv
 .venv\Scripts\activate   # Windows
 # source .venv/bin/activate  # macOS/Linux
+
+# One-command setup (recommended on Windows ARM64)
+pwsh -ExecutionPolicy Bypass -File scripts/setup-venv.ps1
 
 # 3. Install dependencies
 pip install -r requirements.txt
@@ -1363,6 +1371,30 @@ PYTHONPATH=. python devui_app.py
 ```
 
 DevUI starts at **http://localhost:8080** (or your chosen port) and opens automatically in your default browser.
+
+### Authentication Token
+
+If the browser shows **Authentication Required**, DevUI expects a bearer token.
+
+1. Optionally set a fixed token before launch:
+
+```powershell
+$env:DEVUI_AUTH_TOKEN = "my-local-devui-token"
+```
+
+2. Start DevUI from a terminal.
+3. Watch startup logs in that same terminal.
+4. Copy the printed token value.
+
+The startup output now includes a token line like:
+
+```text
+Authentication token: abc123xyz...
+```
+
+5. Paste the token into the **Authentication Token** field in DevUI and select **Connect**.
+
+If you miss the token, stop DevUI and start it again to print a new token.
 
 ### CLI Options
 
