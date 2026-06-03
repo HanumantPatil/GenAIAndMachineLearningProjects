@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <Compile Include="Practice01\DependancyInversionPrinciple.csx" />
+    <Compile Include="split_wise.csx" />
   </ItemGroup>
 
   <ItemGroup>
