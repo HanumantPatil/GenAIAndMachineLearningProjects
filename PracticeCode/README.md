@@ -19,6 +19,12 @@ PracticeCode is a hands-on learning repository for Python, NumPy, pandas, statis
 * `PolynomialRegression/`: Polynomial regression notebooks and car price dataset
 * Root notebooks: Statistics and probability practice such as central limit theorem, confidence scores, confidence intervals, and height analysis
 
+## Updated Solutions
+
+* Added an updated income bucket analysis in `health_insurance_cost_prediector/data_cleaning/ml_premium_prediction_imp.ipynb` using `pd.cut` and `pd.crosstab`.
+* The income ranges are grouped as `<10L`, `10L-25L`, `25L-40L`, and `>40L` before generating the contingency table.
+* The notebook now visualizes this grouped crosstab with a stacked bar chart and uses the same `crosstab` output for the heatmap.
+
 ## Prerequisites
 
 * Python 3.10 or later
