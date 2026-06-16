@@ -1,18 +1,28 @@
-# Versions below are compatible with Python 3.13
-numpy==2.2.5
-pandas==2.2.3
-matplotlib==3.10.1
-seaborn==0.13.2
-scipy==1.15.2
-scikit-learn==1.6.1
+# Versions compatible with Python 3.13 on ARM64 (prefer pre-built wheels)
+numpy>=1.26.0
+pandas>=2.1.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+scipy>=1.11.0
+scikit-learn>=1.6.1,<1.9
 
-ipykernel==6.25.0
-jupyterlab==3.2.1
-openpyxl==3.1.2
+ipykernel>=6.25.0
+jupyterlab>=4.0.0
+openpyxl>=3.1.0
 
+imbalanced-learn>=0.13.0
+# xgboost has no reliable wheel path on this Python/ARM64 combo; install separately if needed
 
-imbalanced-learn==0.13.0
-xgboost==1.7.5
+# statsmodels has no reliable cp313-win_arm64 wheel path; keep optional on this platform
+statsmodels>=0.14.0; platform_system != "Windows" or platform_machine != "ARM64" or python_version < "3.13"
+joblib>=1.3.0
 
-statsmodels
-scipy
+# Run separatly pip install --only-binary=:all: xgboost 3.2.0
+
+# streamlit now has wheel support on Windows ARM64 + Python 3.13
+streamlit
+
+# xgboost optional on Windows ARM64 + Python 3.13; install separately if needed:
+#   pip install --only-binary=:all: xgboost 3.2.0
+
+xgboost==3.2.0; platform_system != "Windows" or platform_machine != "ARM64" or python_version < "3.13"
