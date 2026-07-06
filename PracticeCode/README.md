@@ -1,11 +1,11 @@
 ---
 title: PracticeCode
-description: Python and machine learning practice repository with scripts, notebooks, and sample datasets for statistics and regression exercises.
+description: Python and machine learning practice repository with scripts, notebooks, and sample datasets for statistics and regression exercises, credit risk analysis, and shared study notes.
 ---
 
 ## Overview
 
-PracticeCode is a comprehensive hands-on learning repository for Python, NumPy, pandas, statistics, and machine learning fundamentals. It includes standalone scripts, Jupyter notebooks, CSV datasets, and complete ML projects used across topics like distributions, confidence intervals, regression, classification, clustering, ensemble methods, feature engineering, and model evaluation.
+PracticeCode is a comprehensive hands-on learning repository for Python, NumPy, pandas, statistics, and machine learning fundamentals. It includes standalone scripts, Jupyter notebooks, CSV datasets, and complete ML projects used across topics like distributions, confidence intervals, regression, classification, clustering, ensemble methods, feature engineering, model evaluation, credit risk analysis, and shared study notes.
 
 ## Repository Structure
 
@@ -17,20 +17,16 @@ PracticeCode is a comprehensive hands-on learning repository for Python, NumPy, 
 ### Regression Models
 * `GradientDescent/`: Gradient descent optimization algorithm with implementations and home price dataset
 * `PolynomialRegression/`: Non-linear regression using polynomial features
-* `House_Prediector_Model/`: End-to-end house price prediction project with feature engineering
 
 ### Classification Models
 * `LogsticRegression/`: Binary and multi-class logistic regression with probability calibration
 * `decision_tree_model/`: Decision tree implementation with feature importance and visualization
 * `RandomForestClassifierModel/`: Ensemble random forest for robust classification
 * `SVM_Algo_Model_Classification/`: Support Vector Machines with kernel methods
-* `MultiClassClassificationModel/`: Handling 3+ class problems with appropriate metrics
-* `Spam_Classification/`: Real-world text classification for spam detection
 * `XGBoost_Classifier_Model/`: XGBoost for binary and multi-class classification
 
 ### Ensemble & Boosting Methods
 * `Gradient_Boosting_Classification/`: Titanic survival prediction with gradient boosting
-* `Gradient_Boosting_Model/`: Ad spend regression prediction with boosting
 * `XGBoostingModel/`: Extreme gradient boosting (XGBoost) implementation
 * `VotingRrgrassionAndClassifier/`: Voting ensemble combining multiple diverse models
 
@@ -60,6 +56,10 @@ PracticeCode is a comprehensive hands-on learning repository for Python, NumPy, 
 * `health_insurance_cost_prediector/`: Complete ML application with Streamlit UI for insurance cost prediction
   - Includes data cleaning, feature engineering, model training, and web application
 * `ATM_Card_ML_Model/`: Financial fraud detection/risk assessment project
+* `cradit_risk_prediector/`: Credit risk default prediction project with feature engineering, Optuna experiments, and rank-order/KS evaluation
+
+### Reference Notes
+* `Notes/`: Curated PDF takeaways for supervised learning, feature engineering, model evaluation, and the ML project lifecycle
 
 ### Infrastructure & Design
 * `ML_Ops/`: Machine Learning Operations - deployment, monitoring, versioning, retraining pipelines
@@ -88,12 +88,14 @@ PracticeCode is a comprehensive hands-on learning repository for Python, NumPy, 
 ### Expert: Real-World Projects
 1. Complete ML Application: `health_insurance_cost_prediector/` (Streamlit + ML)
 2. Financial ML: `ATM_Card_ML_Model/` (Fraud Detection)
-3. Operations: `ML_Ops/` (Production ML)
-4. Design: `LLD/` (Software Architecture)
+3. Credit Risk Modeling: `cradit_risk_prediector/` (default prediction, feature engineering, KS evaluation)
+4. Operations: `ML_Ops/` (Production ML)
+5. Design: `LLD/` (Software Architecture)
+6. Study Notes: `Notes/` (topic takeaways and review PDFs)
 
 ## Key Features
 
-✅ **34 ML Folders** with dedicated README files for each topic
+✅ **36 level-1 project folders** documented across the workspace
 ✅ **Comprehensive Documentation** covering theory and implementation
 ✅ **Algorithm Comparisons** to understand trade-offs
 ✅ **Best Practices** for production-ready code
@@ -105,10 +107,11 @@ PracticeCode is a comprehensive hands-on learning repository for Python, NumPy, 
 
 ## Updated Solutions
 
+* Added folder-level documentation for the credit risk project and the shared notes index so the top-level navigation covers every level-1 folder.
 * Added an updated income bucket analysis in `health_insurance_cost_prediector/data_cleaning/ml_premium_prediction_imp.ipynb` using `pd.cut` and `pd.crosstab`.
 * The income ranges are grouped as `<10L`, `10L-25L`, `25L-40L`, and `>40L` before generating the contingency table.
 * The notebook now visualizes this grouped crosstab with a stacked bar chart and uses the same `crosstab` output for the heatmap.
-* Created comprehensive README files for all 34 ML folders with theory, implementation details, best practices, and learning outcomes.
+* The repository now keeps folder-level README coverage aligned with the documented level-1 project structure.
 
 ## Prerequisites
 
@@ -236,10 +239,10 @@ Every folder contains a comprehensive `README.md` with:
 
 ## Notes
 
-* Every ML folder now includes a detailed `README.md` for quick reference and comprehensive learning
+* Every level-1 project folder now includes a detailed `README.md` for quick reference and comprehensive learning
 * Folder names are kept as-is to preserve existing notebook paths and references
 * Some topic folders contain similarly named datasets for isolated practice scenarios
 * Root-level README provides complete navigation and learning path guidance
 * Each folder's README is self-contained and can be read independently or as part of the structured learning path
-* All 34 ML folders are fully documented with theory, implementation, and best practices
+* All level-1 project folders are documented with theory, implementation, and best practices
 * Use the Learning Paths section to follow a structured progression from beginner to expert level

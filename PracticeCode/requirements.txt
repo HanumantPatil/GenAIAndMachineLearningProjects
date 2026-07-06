@@ -26,3 +26,5 @@ streamlit
 #   pip install --only-binary=:all: xgboost 3.2.0
 
 xgboost==3.2.0; platform_system != "Windows" or platform_machine != "ARM64" or python_version < "3.13"
+
+optuna
