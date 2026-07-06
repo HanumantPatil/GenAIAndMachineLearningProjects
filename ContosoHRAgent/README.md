@@ -1,6 +1,24 @@
-# ContosoHRAgent
+---
+title: ContosoHRAgent
+description: .NET-based Contoso HR agent solution with Teams integration and Microsoft 365 agent assets.
+author: Hanumant Patil
+ms.date: 2026-07-06
+ms.topic: overview
+keywords:
+  - dotnet
+  - teams
+  - semantic kernel
+estimated_reading_time: 3
+---
 
-.NET-based Contoso HR agent solution with Microsoft Teams integration.
+## ContosoHRAgent
+
+.NET-based Contoso HR agent solution with Teams integration.
+
+## What Changed
+
+* Added frontmatter metadata for consistent documentation style
+* Updated run and build commands to use explicit project paths
 
 ## Project Layout
 
@@ -16,15 +34,13 @@
 ## Run
 
 ```bash
-cd ContosoHRAgent/ContosoHRAgent
-dotnet run
+dotnet run --project ContosoHRAgent/ContosoHRAgent.csproj
 ```
 
 ## Build
 
 ```bash
-cd ContosoHRAgent/ContosoHRAgent
-dotnet build
+dotnet build ContosoHRAgent/ContosoHRAgent.csproj
 ```
 
 ## Notes

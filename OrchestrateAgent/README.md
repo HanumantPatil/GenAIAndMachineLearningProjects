@@ -1,6 +1,24 @@
-# OrchestrateAgent
+---
+title: OrchestrateAgent
+description: Multi-project .NET solution with layered architecture, Web API host, and test projects.
+author: Hanumant Patil
+ms.date: 2026-07-06
+ms.topic: overview
+keywords:
+  - dotnet
+  - clean architecture
+  - web api
+estimated_reading_time: 3
+---
+
+## OrchestrateAgent
 
 Multi-project .NET solution following a layered architecture with Web API, identity, persistence, and test projects.
+
+## What Changed
+
+* Added metadata frontmatter
+* Confirmed solution build and test commands
 
 ## Structure
 

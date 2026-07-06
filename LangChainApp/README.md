@@ -1,6 +1,24 @@
-# LangChainApp
+---
+title: LangChainApp
+description: LangChain demo application for Azure OpenAI models deployed in Azure AI Foundry.
+author: Hanumant Patil
+ms.date: 2026-07-06
+ms.topic: how-to
+keywords:
+  - langchain
+  - azure openai
+  - python
+estimated_reading_time: 2
+---
+
+## LangChainApp
 
 LangChain demo application for Azure OpenAI models deployed in Azure AI Foundry.
+
+## What Changed
+
+* Added metadata frontmatter
+* Kept setup and run instructions aligned with current files
 
 ## What It Demonstrates
 

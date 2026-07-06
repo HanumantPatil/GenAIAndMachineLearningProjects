@@ -1,6 +1,24 @@
-# CodeApp
+---
+title: CodeApp
+description: C# console-based practice repository for design patterns, algorithms, and low-level design examples.
+author: Hanumant Patil
+ms.date: 2026-07-06
+ms.topic: overview
+keywords:
+  - csharp
+  - design patterns
+  - algorithms
+estimated_reading_time: 3
+---
 
-This folder contains C# console-based practice code and algorithm examples.
+## CodeApp
+
+This folder contains C# practice code across design patterns, low-level design, and algorithm examples.
+
+## What Changed
+
+* Updated the summary to reflect broader pattern and LLD coverage
+* Refreshed run and build commands
 
 ## Contents
 
@@ -16,13 +34,11 @@ This folder contains C# console-based practice code and algorithm examples.
 ## Run
 
 ```bash
-cd CodeApp
-dotnet run
+dotnet run --project CodeApp.csproj
 ```
 
 ## Build
 
 ```bash
-cd CodeApp
-dotnet build
+dotnet build CodeApp.csproj
 ```

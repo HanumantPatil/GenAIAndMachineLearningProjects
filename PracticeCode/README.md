@@ -1,6 +1,15 @@
 ---
 title: PracticeCode
 description: Python and machine learning practice repository with scripts, notebooks, and sample datasets for statistics and regression exercises, credit risk analysis, and shared study notes.
+author: Hanumant Patil
+ms.date: 2026-07-06
+ms.topic: overview
+keywords:
+  - python
+  - machine learning
+  - notebooks
+  - statistics
+estimated_reading_time: 8
 ---
 
 ## Overview

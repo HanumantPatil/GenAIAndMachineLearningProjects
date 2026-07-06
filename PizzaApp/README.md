@@ -1,5 +1,25 @@
-# PizzaApp
+---
+title: PizzaApp
+description: Azure AI Agents sample for a Contoso Pizza ordering assistant with vector search, function tools, and MCP tools.
+author: Hanumant Patil
+ms.date: 2026-07-06
+ms.topic: how-to
+keywords:
+  - azure ai agents
+  - python
+  - mcp
+  - vector search
+estimated_reading_time: 4
+---
+
+## PizzaApp
+
 Azure AI Agents sample that powers a Contoso Pizza ordering assistant. It wires together an Azure AI Agent, vector search over store docs, a sizing helper function, and Contoso Pizza MCP APIs.
+
+## What Changed
+
+* Added metadata frontmatter
+* Confirmed setup, data upload, and runtime steps
 
 ## What it does
 - Loads a custom persona from `instructions.txt` to act as Contoso PizzaBot.

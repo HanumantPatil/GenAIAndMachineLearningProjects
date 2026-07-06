@@ -1,8 +1,25 @@
-# Pizza Agent – A2A + AG-UI Dual-Protocol Server
-
-An AI-powered pizza ordering assistant built with the **Microsoft Agent Framework (Python SDK)**, supporting both the **A2A (Agent-to-Agent)** and **AG-UI (Agent-to-UI)** protocols with full streaming capabilities.
-
 ---
+title: Pizza Agent A2A and AG-UI Server
+description: Dual-protocol pizza assistant using Microsoft Agent Framework with A2A and AG-UI streaming endpoints.
+author: Hanumant Patil
+ms.date: 2026-07-06
+ms.topic: how-to
+keywords:
+  - a2a
+  - ag-ui
+  - fastapi
+  - microsoft agent framework
+estimated_reading_time: 6
+---
+
+## Pizza Agent A2A and AG-UI Dual-Protocol Server
+
+An AI-powered pizza ordering assistant built with the Microsoft Agent Framework Python SDK, supporting both A2A and AG-UI protocols with streaming.
+
+## What Changed
+
+* Added metadata frontmatter for consistent documentation indexing
+* Confirmed current endpoints, setup steps, and test coverage details
 
 ## Table of Contents
 

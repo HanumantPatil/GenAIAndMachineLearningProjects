@@ -1,10 +1,29 @@
-# IT Helpdesk Multi-Agent Assistant
+---
+title: IT Helpdesk Multi-Agent Assistant
+description: Production-grade IT helpdesk chatbot using Microsoft Agent Framework, Azure AI Search, and Azure Cosmos DB.
+author: Hanumant Patil
+ms.date: 2026-07-06
+ms.topic: overview
+keywords:
+    - microsoft agent framework
+    - fastapi
+    - azure ai search
+    - cosmos db
+estimated_reading_time: 12
+---
 
-**Author:** Hanumant Patil — [hapatil@microsoft.com](mailto:hapatil@microsoft.com)
+## IT Helpdesk Multi-Agent Assistant
+
+**Author:** Hanumant Patil ([hapatil@microsoft.com](mailto:hapatil@microsoft.com))
 
 **Capstone Project — Microsoft Agent Framework + Azure AI Search + Azure Cosmos DB**
 
-A production-grade IT helpdesk chatbot that resolves employee technical support queries by retrieving answers from an internal knowledge base, tracking ticket history per user, and routing complex issues to specialized sub-agents — deployed as a FastAPI web endpoint using the Microsoft Agent Framework (Azure AI Agent Service SDK).
+A production-grade IT helpdesk chatbot that resolves employee technical support queries by retrieving answers from an internal knowledge base, tracking ticket history per user, and routing complex issues to specialized sub-agents. It is deployed as a FastAPI web endpoint using the Microsoft Agent Framework.
+
+## What Changed
+
+* Added documentation frontmatter metadata for consistency
+* Refreshed top-level description wording for clarity
 
 ---
 
