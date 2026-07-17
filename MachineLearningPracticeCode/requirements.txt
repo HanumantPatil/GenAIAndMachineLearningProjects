@@ -30,3 +30,5 @@ xgboost==3.2.0; platform_system != "Windows" or platform_machine != "ARM64" or p
 optuna
 
 mlflow
+
+fastapi[standard]
