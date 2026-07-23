@@ -25,7 +25,7 @@ estimated_reading_time: 3
 3. Run the model locally.
 
 Model page: <https://ollama.com/library/ornith:9b>
-
+Use a smaller model (for example 3b to 7b) to improve inference time.
 ## Pull and run the model
 
 ```powershell
