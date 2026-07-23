@@ -1,5 +1,21 @@
+ # uv pip install --python .venv-x64\Scripts\python.exe -r requirements.txt
+ 
  transformers
  torch
  datasets
  accelerate
  sentencepiece
+
+ # install Langchain
+
+ langchain
+ langchain-community
+ # access OpenAI LLMs such as GPT-4, GPT-3.5, etc.
+ langchain-openai
+ # access open source LLMs such as Mistral, Falcon, LLaMA, etc.
+ langchain-groq
+ # access LLM locally via ollama
+langchain-ollama
+
+
+
