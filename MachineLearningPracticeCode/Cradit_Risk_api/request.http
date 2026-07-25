@@ -1,0 +1,23 @@
+
+### Predict credit risk
+POST http://127.0.0.1:8000/predict
+Content-Type: application/json
+
+{
+    "age": 30,
+    "income": 50000,
+    "loan_amount": 100000,
+    "loan_tenure_months": 36,
+    "avg_dpd_per_delinquency": 5.0,
+    "delinquency_ratio": 0.1,
+    "credit_utilization_ratio": 0.3,
+    "num_open_accounts": 5,
+    "residence_type": "Owned",
+    "loan_purpose": "Personal",
+    "loan_type": "Unsecured"
+}
+
+
+### Health check
+GET http://127.0.0.1:8000/ping
+Content-Type: application/json

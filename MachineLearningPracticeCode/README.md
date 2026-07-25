@@ -66,6 +66,7 @@ PracticeCode is a comprehensive hands-on learning repository for Python, NumPy, 
   - Includes data cleaning, feature engineering, model training, and web application
 * `ATM_Card_ML_Model/`: Financial fraud detection/risk assessment project
 * `cradit_risk_prediector/`: Credit risk default prediction project with feature engineering, Optuna experiments, and rank-order/KS evaluation
+* `Cradit_Risk_api/`: FastAPI service that exposes credit-risk scoring endpoints (`/ping` and `/predict`)
 
 ### Reference Notes
 * `Notes/`: Curated PDF takeaways for supervised learning, feature engineering, model evaluation, and the ML project lifecycle
@@ -157,6 +158,19 @@ Open notebooks from the workspace in VS Code and run cells using the selected Py
 # Health Insurance Cost Predictor
 .\.venv\Scripts\Activate.ps1
 streamlit run health_insurance_cost_prediector/app/main.py
+```
+
+### FastAPI Service
+```powershell
+# Credit Risk API
+.\.venv\Scripts\Activate.ps1
+python .\Cradit_Risk_api\main.py
+```
+
+After starting the API, test the health endpoint:
+
+```powershell
+Invoke-RestMethod http://127.0.0.1:8000/ping | ConvertTo-Json -Compress
 ```
 
 ### Explore Specific Topics
