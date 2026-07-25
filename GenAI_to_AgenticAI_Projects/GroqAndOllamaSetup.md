@@ -25,7 +25,37 @@ estimated_reading_time: 3
 3. Run the model locally.
 
 Model page: <https://ollama.com/library/ornith:9b>
-Use a smaller model (for example 3b to 7b) to improve inference time.
+Llama 3.1 8B Instruct
+
+Very strong general capabilities (chat, reasoning, code help) in a relatively small size.
+ollama pull llama3.1:8b-instruct
+ollama run llama3.1:8b-instruct
+
+Mistral 7B Instruct (latest v0.3 or similar)
+
+Known to be roughly ~20% faster than comparable Llama models with similar quality on many everyday tasks.
+
+ollama pull mistral:7b-instruct
+ollama run mistral:7b-instruct
+
+On low‑end hardware (8–16 GB, CPU‑only), you might also consider:
+
+Phi‑3 Mini / Phi series (Microsoft)
+
+Designed for efficiency; good reasoning for small parameter count, and runs fast on modest hardware.
+
+Gemma 2B–4B
+
+Very lightweight, suitable when you care more about speed and resource usage than peak accuracy.
+
+| Need                            | Best choice (offline Ollama)      | Why                                                                              |
+| ------------------------------- | --------------------------------- | -------------------------------------------------------------------------------- |
+| One general assistant           | Llama 3.1 8B Instruct             | Strong accuracy, still relatively fast and lightweight.deploybase+1              |
+| Max speed on mid‑range CPU      | Mistral 7B Instruct or Phi‑3 Mini | Smaller, optimized; good enough for 70–80% of daily tasks.localaimaster+1youtube |
+| Very low RAM / older laptop     | Gemma small (2–4B) or Phi‑2       | Runs in tight memory budgets with acceptable quality.youtubezeroclaws            |
+| Highest local quality (big rig) | Llama 3.x 70B, DeepSeek R1, etc.  | Near cloud‑level reasoning, but heavy and slower.deploybase+1                    |
+
+
 ## Pull and run the model
 
 ```powershell

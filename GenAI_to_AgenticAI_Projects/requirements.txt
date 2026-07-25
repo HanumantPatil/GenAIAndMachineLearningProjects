@@ -17,5 +17,12 @@
  # access LLM locally via ollama
 langchain-ollama
 
+# install streamlit 
+streamlit
+
+# vector database for Langchain
+chromadb
+huggingface-hub
+sentence-transformers
 
 
