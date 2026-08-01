@@ -1,5 +1,5 @@
- # uv pip install --python .venv-x64\Scripts\python.exe -r requirements.txt
- 
+
+  # uv pip install --python .venv-x64\Scripts\python.exe -r requirements.txt
  transformers
  torch
  datasets
@@ -10,6 +10,7 @@
 
  langchain
  langchain-community
+ unstructured
  # access OpenAI LLMs such as GPT-4, GPT-3.5, etc.
  langchain-openai
  # access open source LLMs such as Mistral, Falcon, LLaMA, etc.
@@ -26,3 +27,10 @@ huggingface-hub
 sentence-transformers
 
 
+# Langchain text splitter
+langchain-text-splitters
+
+
+python-dotenv
+langchain-chroma
+langchain-huggingface
