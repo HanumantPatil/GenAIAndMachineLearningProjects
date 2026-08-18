@@ -1,0 +1,2 @@
+https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/exploring-multi-agent-workflows-with-microsoft-agent-framework/4542512
+https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/exploring-multi-agent-workflows-with-microsoft-agent-framework/4542512
