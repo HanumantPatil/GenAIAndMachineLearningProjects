@@ -2,6 +2,7 @@
   # uv pip install --python .venv-x64\Scripts\python.exe -r requirements.txt
  transformers
  torch
+ torchvision
  datasets
  accelerate
  sentencepiece
