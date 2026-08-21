@@ -9,6 +9,18 @@ ms.topic: tutorial
 
 An operations team receives permits, applications, and forms without knowing each layout in advance. This lab uses `prebuilt-documentFields` to discover common key-value fields before the team decides whether to build a custom analyzer.
 
+## About the Analyzer
+
+The Document Fields analyzer finds labels and associated values in varied PDFs
+and images without requiring a predefined domain schema. It returns inferred
+field names, values, and confidence scores, which makes it useful when document
+layouts differ or the desired schema is still being explored.
+
+Use this analyzer for discovery, intake prototypes, and heterogeneous forms.
+Unlike the Invoice or US Tax analyzers, its inferred fields are not guaranteed
+to follow one stable business schema. Build a custom analyzer when production
+automation requires consistent field names and validation rules.
+
 ## Prerequisites
 
 - Python 3.9 or later, Azure CLI, Bicep CLI, and an Azure subscription.

@@ -11,6 +11,18 @@ A maintenance team receives scanned inspection notes and photographed equipment 
 
 The Read analyzer does not require a generative model deployment.
 
+## About the Analyzer
+
+The OCR Read analyzer recognizes printed and handwritten text in PDFs and
+images. It returns readable markdown plus detailed word, line, page, and
+location information. Its purpose is text recognition, so it does not infer a
+stable business schema or assign semantic meaning to fields.
+
+Use this analyzer to digitize scans, photographs, labels, and notes when the
+visible text and its position matter. Choose Layout when document structure such
+as sections and tables is central, or choose a domain analyzer when named
+business fields are required.
+
 ## 1. Deploy and Install
 
 To create the shared resource without Bicep, follow the

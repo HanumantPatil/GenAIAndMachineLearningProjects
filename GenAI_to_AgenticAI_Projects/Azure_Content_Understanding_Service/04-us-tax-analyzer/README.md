@@ -11,6 +11,17 @@ A tax-intake team receives different US tax forms and needs to classify each for
 
 Use synthetic or public samples only. Tax forms contain highly sensitive personal and financial data.
 
+## About the Analyzer
+
+The US Tax analyzer identifies supported US tax-document categories and extracts
+tax-specific fields. Depending on the detected form, results can include payer,
+recipient, wages, income, tax, and withholding values with confidence scores.
+The analyzer provides structured extraction, not tax calculations or tax advice.
+
+Use it for tax-document intake and classification when the source forms match
+the supported categories. Confirm the detected category and review extracted
+values before using them in financial, filing, or compliance workflows.
+
 ## Prerequisites
 
 - Python 3.9 or later, Azure CLI, Bicep CLI, and an Azure subscription.

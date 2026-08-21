@@ -11,6 +11,19 @@ A loan-processing team receives policy documents and application forms in many P
 
 This lab uses the `prebuilt-layout` analyzer to turn a document into structured markdown and a detailed JSON result.
 
+## About the Analyzer
+
+The Document Layout analyzer identifies the physical and logical structure of a
+PDF or image. It recognizes paragraphs, headings, sections, tables, figures,
+selection marks, and page-level coordinates, then represents the content as
+markdown and detailed JSON. It does not apply an invoice, tax, or other
+business-specific schema.
+
+Use this analyzer when downstream systems need faithful document structure for
+search indexing, retrieval-augmented generation, chunking, accessibility, or
+document reconstruction. Use a domain analyzer instead when you need stable
+business fields such as an invoice total or tax withholding amount.
+
 ## What You Learn
 
 - Deploy a Microsoft Foundry resource with Bicep.

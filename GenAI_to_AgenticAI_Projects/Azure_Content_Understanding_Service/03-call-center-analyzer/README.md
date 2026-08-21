@@ -11,6 +11,18 @@ A support manager wants to review calls for topics, summaries, sentiment, and fo
 
 Use only recordings that participants are authorized to process. Remove names, account numbers, and other personal data from classroom samples.
 
+## About the Analyzer
+
+The Call Center analyzer processes audio or video conversations. It combines
+speech recognition with conversation understanding to produce a transcript and
+structured insights such as speaker turns, summaries, sentiment, topics, and
+follow-up actions when those values are available for the input.
+
+Use this analyzer to assist support-call review, issue categorization, and
+follow-up workflows. Treat sentiment and summaries as decision support. They
+must not be the sole basis for employee evaluation or other consequential
+decisions.
+
 ## Prerequisites
 
 - Python 3.9 or later, Azure CLI, Bicep CLI, and an Azure subscription.

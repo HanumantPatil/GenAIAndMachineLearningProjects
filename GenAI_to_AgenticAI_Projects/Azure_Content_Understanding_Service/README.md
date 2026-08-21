@@ -21,6 +21,28 @@ This workshop teaches an Aspire batch how to turn documents, images, audio, and 
 | [OCR Read](05-ocr-read-analyzer/README.md) | Digitize scanned field notes | `prebuilt-read` | PDF or image |
 | [Document Fields](06-document-fields-analyzer/README.md) | Discover key-value data in unknown forms | `prebuilt-documentFields` | PDF or image |
 
+## Services and Analyzers
+
+Azure Content Understanding is an Azure AI service that converts documents,
+images, audio, and video into structured content. An analyzer defines how the
+service interprets an input and which fields or representations it returns.
+This workshop uses the following prebuilt analyzers, so no custom analyzer
+schema or training data is required.
+
+| Analyzer | What it does | Typical output | Best use |
+| --- | --- | --- | --- |
+| Document Layout | Detects document structure without applying a business-specific schema | Markdown, paragraphs, sections, tables, figures, and page metadata | Search preparation, chunking, and document reconstruction |
+| Invoice | Applies an invoice-specific schema to bills and invoices | Vendor, customer, invoice ID, dates, totals, taxes, and line items with confidence | Accounts-payable capture and validation |
+| Call Center | Combines speech transcription with conversation understanding | Transcript, speakers, summary, sentiment, topics, and follow-up actions | Support-call review and quality workflows |
+| US Tax | Classifies supported US tax forms and extracts tax-specific values | Form category, payer and recipient details, income, and withholding fields | Tax-document intake with human review |
+| OCR Read | Recognizes visible text with location and page context | Printed or handwritten text, markdown, words, lines, and coordinates | Text digitization when semantic field extraction is not required |
+| Document Fields | Discovers key-value pairs without requiring a fixed domain schema | Inferred field names, values, and confidence scores | Exploring varied forms before defining a custom schema |
+
+The Microsoft Foundry resource supplies the endpoint, authentication boundary,
+quota, and model deployments used by Content Understanding. Layout and OCR Read
+work without a generative model deployment. The domain analyzers can require
+supported chat and embedding model defaults configured in Foundry.
+
 ## Bundled Demonstration Assets
 
 Each lab includes a small, fictional asset in its `assets` folder. The samples

@@ -9,6 +9,18 @@ ms.topic: tutorial
 
 An accounts-payable team manually copies supplier names, invoice numbers, dates, totals, taxes, and line items into an ERP system. This lab uses `prebuilt-invoice` to produce structured values that can be validated before posting.
 
+## About the Analyzer
+
+The Invoice analyzer applies a predefined invoice schema to PDFs and images. It
+extracts common header fields such as vendor, customer, invoice number, dates,
+purchase order, subtotal, tax, and total, together with itemized descriptions,
+quantities, prices, and amounts. Returned confidence scores help identify values
+that need human verification.
+
+Use this analyzer for accounts-payable capture when a consistent invoice schema
+is more useful than raw text or inferred key-value pairs. Validate totals and
+low-confidence fields before posting data to a financial system.
+
 ## Prerequisites
 
 - Python 3.9 or later, Azure CLI, Bicep CLI, and an Azure subscription.
