@@ -1,0 +1,1538 @@
+{
+  "analyzerId": "prebuilt-tax.us",
+  "apiVersion": "2025-11-01",
+  "createdAt": "2026-08-24T15:13:24Z",
+  "stringEncoding": "codePoint",
+  "warnings": [],
+  "contents": [
+    {
+      "path": "input1/segment1",
+      "category": "tax.us.w2",
+      "markdown": "# 2025 W-2 WAGE AND TAX STATEMENT Training copy | Not an official tax document\n\na Employee SSN\n000-12-3456\n\nb Employer EIN\n00-0000000\n\nc Employer\nContoso Training Company, 1 Demo Way, Redmond, WA 98052\n\ne Employee\nALEX SAMPLE, 200 EXAMPLE STREET, SEATTLE, WA 98101\n\n1 Wages, tips, other compensation\n$72,500.00\n\n2 Federal income tax withheld\n$9,425.00\n\n3 Social Security wages\n$72,500.00\n\n4 Social Security tax withheld\n$4,495.00\n\n5 Medicare wages and tips\n$72,500.00\n\n6 Medicare tax withheld\n$1,051.25\n\nFOR DEMONSTRATION ONLY - ALL IDENTIFIERS ARE FICTIONAL\n\n<!-- PageFooter: FICTIONAL DEMO DATA -->\n",
+      "fields": {
+        "W2Copies": {
+          "type": "array",
+          "valueArray": [
+            {
+              "type": "object",
+              "valueObject": {
+                "FormVariant": {
+                  "type": "string",
+                  "confidence": 0.855
+                },
+                "TaxYear": {
+                  "type": "string",
+                  "valueString": "2025",
+                  "spans": [
+                    {
+                      "offset": 2,
+                      "length": 4
+                    }
+                  ],
+                  "confidence": 0.688,
+                  "source": "D(1,0.4506,0.3356,1.0997,0.3345,1.0997,0.6183,0.4506,0.6179)"
+                },
+                "CopyLabel": {
+                  "type": "string",
+                  "confidence": 0.855
+                },
+                "Employee": {
+                  "type": "object",
+                  "valueObject": {
+                    "SSN": {
+                      "type": "string",
+                      "valueString": "000-12-3456",
+                      "spans": [
+                        {
+                          "offset": 95,
+                          "length": 11
+                        }
+                      ],
+                      "confidence": 0.859,
+                      "source": "D(1,0.5499,1.8692,1.4578,1.8680,1.4578,2.0263,0.5510,2.0265)"
+                    },
+                    "Name": {
+                      "type": "string",
+                      "valueString": "ALEX SAMPLE",
+                      "spans": [
+                        {
+                          "offset": 214,
+                          "length": 11
+                        }
+                      ],
+                      "confidence": 0.535,
+                      "source": "D(1,0.5442,3.9559,1.6336,3.9567,1.6335,4.1421,0.5441,4.1413)"
+                    },
+                    "Address": {
+                      "type": "string",
+                      "valueString": "200 EXAMPLE STREET, SEATTLE, WA 98101",
+                      "spans": [
+                        {
+                          "offset": 227,
+                          "length": 37
+                        }
+                      ],
+                      "confidence": 0.794,
+                      "source": "D(1,1.7129,3.9556,4.9846,3.9550,4.9846,4.1433,1.7129,4.1440)"
+                    }
+                  }
+                },
+                "ControlNumber": {
+                  "type": "string",
+                  "confidence": 0.855
+                },
+                "Employer": {
+                  "type": "object",
+                  "valueObject": {
+                    "EIN": {
+                      "type": "string",
+                      "valueString": "00-0000000",
+                      "spans": [
+                        {
+                          "offset": 123,
+                          "length": 10
+                        }
+                      ],
+                      "confidence": 0.831,
+                      "source": "D(1,0.5489,2.5679,1.4028,2.5650,1.4028,2.7243,0.5499,2.7242)"
+                    },
+                    "Name": {
+                      "type": "string",
+                      "valueString": "Contoso Training Company",
+                      "spans": [
+                        {
+                          "offset": 146,
+                          "length": 24
+                        }
+                      ],
+                      "confidence": 0.722,
+                      "source": "D(1,0.5510,3.2606,2.5560,3.2617,2.5559,3.4506,0.5509,3.4495)"
+                    },
+                    "Address": {
+                      "type": "string",
+                      "valueString": "1 Demo Way, Redmond, WA 98052",
+                      "spans": [
+                        {
+                          "offset": 172,
+                          "length": 29
+                        }
+                      ],
+                      "confidence": 0.848,
+                      "source": "D(1,2.6519,3.2600,5.1755,3.2557,5.1758,3.4462,2.6522,3.4505)"
+                    }
+                  }
+                },
+                "WagesTipsAndOtherCompensation": {
+                  "type": "number",
+                  "valueNumber": 72500,
+                  "spans": [
+                    {
+                      "offset": 300,
+                      "length": 10
+                    }
+                  ],
+                  "confidence": 0.778,
+                  "source": "D(1,0.5510,4.6621,1.3447,4.6621,1.3447,4.8340,0.5510,4.8340)"
+                },
+                "FederalIncomeTaxWithheld": {
+                  "type": "number",
+                  "valueNumber": 9425,
+                  "spans": [
+                    {
+                      "offset": 342,
+                      "length": 9
+                    }
+                  ],
+                  "confidence": 0.781,
+                  "source": "D(1,0.5513,5.3689,1.2555,5.3641,1.2567,5.5349,0.5525,5.5397)"
+                },
+                "SocialSecurityWages": {
+                  "type": "number",
+                  "valueNumber": 72500,
+                  "spans": [
+                    {
+                      "offset": 377,
+                      "length": 10
+                    }
+                  ],
+                  "confidence": 0.774,
+                  "source": "D(1,0.5499,6.0640,1.3427,6.0640,1.3427,6.2358,0.5499,6.2358)"
+                },
+                "SocialSecurityTaxWithheld": {
+                  "type": "number",
+                  "valueNumber": 4495,
+                  "spans": [
+                    {
+                      "offset": 420,
+                      "length": 9
+                    }
+                  ],
+                  "confidence": 0.73,
+                  "source": "D(1,0.5520,6.7676,1.2576,6.7676,1.2576,6.9395,0.5520,6.9395)"
+                },
+                "MedicareWagesAndTips": {
+                  "type": "number",
+                  "valueNumber": 72500,
+                  "spans": [
+                    {
+                      "offset": 457,
+                      "length": 10
+                    }
+                  ],
+                  "confidence": 0.712,
+                  "source": "D(1,0.5500,7.4658,1.3416,7.4587,1.3431,7.6303,0.5515,7.6374)"
+                },
+                "MedicareTaxWithheld": {
+                  "type": "number",
+                  "valueNumber": 1051.25,
+                  "spans": [
+                    {
+                      "offset": 493,
+                      "length": 9
+                    }
+                  ],
+                  "confidence": 0.731,
+                  "source": "D(1,0.5499,8.1644,1.2603,8.1674,1.2596,8.3389,0.5492,8.3359)"
+                },
+                "SocialSecurityTips": {
+                  "type": "number",
+                  "confidence": 0.926
+                },
+                "AllocatedTips": {
+                  "type": "number",
+                  "confidence": 0.926
+                },
+                "DependentCareBenefits": {
+                  "type": "number",
+                  "confidence": 0.926
+                },
+                "NonQualifiedPlans": {
+                  "type": "number",
+                  "confidence": 0.926
+                },
+                "AdditionalInfo": {
+                  "type": "array"
+                },
+                "IsStatutoryEmployee": {
+                  "type": "boolean",
+                  "confidence": 0.985
+                },
+                "IsRetirementPlan": {
+                  "type": "boolean",
+                  "confidence": 0.985
+                },
+                "IsThirdPartySickPay": {
+                  "type": "boolean",
+                  "confidence": 0.985
+                },
+                "Other": {
+                  "type": "array"
+                },
+                "StateTaxes": {
+                  "type": "array"
+                },
+                "LocalTaxes": {
+                  "type": "array"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "kind": "document",
+      "startPageNumber": 1,
+      "endPageNumber": 1,
+      "unit": "inch",
+      "pages": [
+        {
+          "pageNumber": 1,
+          "angle": 0,
+          "width": 8.5,
+          "height": 11,
+          "spans": [
+            {
+              "offset": 0,
+              "length": 601
+            }
+          ],
+          "words": [
+            {
+              "content": "2025",
+              "span": {
+                "offset": 2,
+                "length": 4
+              },
+              "confidence": 0.897,
+              "source": "D(1,0.4506,0.3356,1.0997,0.3345,1.0997,0.6183,0.4506,0.6179)"
+            },
+            {
+              "content": "W",
+              "span": {
+                "offset": 7,
+                "length": 1
+              },
+              "confidence": 0.938,
+              "source": "D(1,1.1566,0.3345,1.4503,0.334,1.4504,0.6185,1.1566,0.6184)"
+            },
+            {
+              "content": "-",
+              "span": {
+                "offset": 8,
+                "length": 1
+              },
+              "confidence": 0.991,
+              "source": "D(1,1.4598,0.334,1.5546,0.3338,1.5546,0.6186,1.4598,0.6186)"
+            },
+            {
+              "content": "2",
+              "span": {
+                "offset": 9,
+                "length": 1
+              },
+              "confidence": 0.941,
+              "source": "D(1,1.5546,0.3338,1.7204,0.3335,1.7204,0.6187,1.5546,0.6186)"
+            },
+            {
+              "content": "WAGE",
+              "span": {
+                "offset": 11,
+                "length": 4
+              },
+              "confidence": 0.977,
+              "source": "D(1,1.7868,0.3334,2.7107,0.3324,2.7107,0.6187,1.7868,0.6188)"
+            },
+            {
+              "content": "AND",
+              "span": {
+                "offset": 16,
+                "length": 3
+              },
+              "confidence": 0.994,
+              "source": "D(1,2.7771,0.3323,3.4215,0.332,3.4215,0.6182,2.7771,0.6187)"
+            },
+            {
+              "content": "TAX",
+              "span": {
+                "offset": 20,
+                "length": 3
+              },
+              "confidence": 0.986,
+              "source": "D(1,3.502,0.3319,4.099,0.3316,4.099,0.6177,3.502,0.6182)"
+            },
+            {
+              "content": "STATEMENT",
+              "span": {
+                "offset": 24,
+                "length": 9
+              },
+              "confidence": 0.988,
+              "source": "D(1,4.1748,0.3316,5.9849,0.3326,5.9849,0.6138,4.1749,0.6176)"
+            },
+            {
+              "content": "Training",
+              "span": {
+                "offset": 34,
+                "length": 8
+              },
+              "confidence": 0.997,
+              "source": "D(1,0.4622,0.7394,1.0242,0.7399,1.0246,0.9319,0.4628,0.933)"
+            },
+            {
+              "content": "copy",
+              "span": {
+                "offset": 43,
+                "length": 4
+              },
+              "confidence": 0.992,
+              "source": "D(1,1.0708,0.7399,1.4061,0.7401,1.4064,0.9311,1.0712,0.9318)"
+            },
+            {
+              "content": "|",
+              "span": {
+                "offset": 48,
+                "length": 1
+              },
+              "confidence": 0.915,
+              "source": "D(1,1.4464,0.7402,1.4837,0.7402,1.484,0.9308,1.4468,0.931)"
+            },
+            {
+              "content": "Not",
+              "span": {
+                "offset": 50,
+                "length": 3
+              },
+              "confidence": 0.969,
+              "source": "D(1,1.5303,0.7402,1.7693,0.7402,1.7696,0.9295,1.5306,0.9306)"
+            },
+            {
+              "content": "an",
+              "span": {
+                "offset": 54,
+                "length": 2
+              },
+              "confidence": 0.985,
+              "source": "D(1,1.8035,0.7402,1.968,0.7402,1.9683,0.9286,1.8038,0.9294)"
+            },
+            {
+              "content": "official",
+              "span": {
+                "offset": 57,
+                "length": 8
+              },
+              "confidence": 0.987,
+              "source": "D(1,2.0146,0.7401,2.4524,0.7401,2.4525,0.9264,2.0149,0.9284)"
+            },
+            {
+              "content": "tax",
+              "span": {
+                "offset": 66,
+                "length": 3
+              },
+              "confidence": 0.993,
+              "source": "D(1,2.4927,0.7401,2.7007,0.7399,2.7009,0.9247,2.4929,0.9261)"
+            },
+            {
+              "content": "document",
+              "span": {
+                "offset": 70,
+                "length": 8
+              },
+              "confidence": 0.996,
+              "source": "D(1,2.738,0.7399,3.4427,0.7393,3.4427,0.9194,2.7381,0.9244)"
+            },
+            {
+              "content": "a",
+              "span": {
+                "offset": 80,
+                "length": 1
+              },
+              "confidence": 0.994,
+              "source": "D(1,0.5468,1.6182,0.6223,1.6175,0.6233,1.7581,0.5479,1.7583)"
+            },
+            {
+              "content": "Employee",
+              "span": {
+                "offset": 82,
+                "length": 8
+              },
+              "confidence": 0.993,
+              "source": "D(1,0.6554,1.6172,1.1912,1.614,1.1916,1.7566,0.6563,1.758)"
+            },
+            {
+              "content": "SSN",
+              "span": {
+                "offset": 91,
+                "length": 3
+              },
+              "confidence": 0.994,
+              "source": "D(1,1.2266,1.614,1.491,1.6142,1.491,1.7561,1.2269,1.7565)"
+            },
+            {
+              "content": "000-12-3456",
+              "span": {
+                "offset": 95,
+                "length": 11
+              },
+              "confidence": 0.99,
+              "source": "D(1,0.5499,1.8692,1.4578,1.868,1.4578,2.0263,0.551,2.0265)"
+            },
+            {
+              "content": "b",
+              "span": {
+                "offset": 108,
+                "length": 1
+              },
+              "confidence": 0.992,
+              "source": "D(1,0.5458,2.3123,0.6199,2.3123,0.6208,2.4587,0.5468,2.4589)"
+            },
+            {
+              "content": "Employer",
+              "span": {
+                "offset": 110,
+                "length": 8
+              },
+              "confidence": 0.994,
+              "source": "D(1,0.652,2.3123,1.1732,2.3117,1.1735,2.4576,0.6529,2.4586)"
+            },
+            {
+              "content": "EIN",
+              "span": {
+                "offset": 119,
+                "length": 3
+              },
+              "confidence": 0.981,
+              "source": "D(1,1.2053,2.3116,1.4153,2.311,1.4153,2.4576,1.2056,2.4576)"
+            },
+            {
+              "content": "00-0000000",
+              "span": {
+                "offset": 123,
+                "length": 10
+              },
+              "confidence": 0.963,
+              "source": "D(1,0.5489,2.5679,1.4028,2.565,1.4028,2.7243,0.5499,2.7242)"
+            },
+            {
+              "content": "c",
+              "span": {
+                "offset": 135,
+                "length": 1
+              },
+              "confidence": 0.949,
+              "source": "D(1,0.5489,3.0212,0.6179,3.0212,0.6184,3.1609,0.5494,3.1609)"
+            },
+            {
+              "content": "Employer",
+              "span": {
+                "offset": 137,
+                "length": 8
+              },
+              "confidence": 0.995,
+              "source": "D(1,0.6478,3.0212,1.1746,3.0212,1.1746,3.1609,0.6482,3.1609)"
+            },
+            {
+              "content": "Contoso",
+              "span": {
+                "offset": 146,
+                "length": 7
+              },
+              "confidence": 0.997,
+              "source": "D(1,0.551,3.2645,1.1912,3.2637,1.1916,3.4485,0.5515,3.447)"
+            },
+            {
+              "content": "Training",
+              "span": {
+                "offset": 154,
+                "length": 8
+              },
+              "confidence": 0.997,
+              "source": "D(1,1.2285,3.2636,1.819,3.2629,1.8194,3.4501,1.2289,3.4486)"
+            },
+            {
+              "content": "Company",
+              "span": {
+                "offset": 163,
+                "length": 7
+              },
+              "confidence": 0.991,
+              "source": "D(1,1.8625,3.2628,2.5556,3.2617,2.5559,3.4502,1.8629,3.4502)"
+            },
+            {
+              "content": ",",
+              "span": {
+                "offset": 170,
+                "length": 1
+              },
+              "confidence": 0.998,
+              "source": "D(1,2.5556,3.2617,2.596,3.2616,2.5963,3.4501,2.5559,3.4502)"
+            },
+            {
+              "content": "1",
+              "span": {
+                "offset": 172,
+                "length": 1
+              },
+              "confidence": 0.922,
+              "source": "D(1,2.6519,3.2615,2.711,3.2614,2.7112,3.45,2.6522,3.4501)"
+            },
+            {
+              "content": "Demo",
+              "span": {
+                "offset": 174,
+                "length": 4
+              },
+              "confidence": 0.876,
+              "source": "D(1,2.7762,3.2613,3.2051,3.2604,3.2054,3.4494,2.7765,3.4499)"
+            },
+            {
+              "content": "Way",
+              "span": {
+                "offset": 179,
+                "length": 3
+              },
+              "confidence": 0.994,
+              "source": "D(1,3.2362,3.2604,3.5656,3.2598,3.5658,3.4489,3.2364,3.4493)"
+            },
+            {
+              "content": ",",
+              "span": {
+                "offset": 182,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,3.5594,3.2598,3.6029,3.2597,3.6031,3.4489,3.5596,3.4489)"
+            },
+            {
+              "content": "Redmond",
+              "span": {
+                "offset": 184,
+                "length": 7
+              },
+              "confidence": 0.99,
+              "source": "D(1,3.6464,3.2596,4.3395,3.2579,4.3396,3.4453,3.6466,3.4488)"
+            },
+            {
+              "content": ",",
+              "span": {
+                "offset": 191,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,4.3426,3.2578,4.383,3.2577,4.3831,3.4451,4.3427,3.4453)"
+            },
+            {
+              "content": "WA",
+              "span": {
+                "offset": 193,
+                "length": 2
+              },
+              "confidence": 0.796,
+              "source": "D(1,4.4141,3.2577,4.6783,3.257,4.6783,3.4437,4.4142,3.445)"
+            },
+            {
+              "content": "98052",
+              "span": {
+                "offset": 196,
+                "length": 5
+              },
+              "confidence": 0.523,
+              "source": "D(1,4.7125,3.2569,5.1755,3.2557,5.1755,3.4412,4.7125,3.4435)"
+            },
+            {
+              "content": "e",
+              "span": {
+                "offset": 203,
+                "length": 1
+              },
+              "confidence": 0.998,
+              "source": "D(1,0.5489,3.7218,0.6218,3.722,0.6222,3.8618,0.5494,3.8617)"
+            },
+            {
+              "content": "Employee",
+              "span": {
+                "offset": 205,
+                "length": 8
+              },
+              "confidence": 0.997,
+              "source": "D(1,0.6536,3.7221,1.2047,3.7194,1.2047,3.8602,0.6541,3.8618)"
+            },
+            {
+              "content": "ALEX",
+              "span": {
+                "offset": 214,
+                "length": 4
+              },
+              "confidence": 0.993,
+              "source": "D(1,0.5442,3.958,0.9605,3.9575,0.9614,4.1404,0.5453,4.1393)"
+            },
+            {
+              "content": "SAMPLE",
+              "span": {
+                "offset": 219,
+                "length": 6
+              },
+              "confidence": 0.991,
+              "source": "D(1,1.0037,3.9574,1.6327,3.9567,1.6335,4.1421,1.0046,4.1405)"
+            },
+            {
+              "content": ",",
+              "span": {
+                "offset": 225,
+                "length": 1
+              },
+              "confidence": 0.997,
+              "source": "D(1,1.6327,3.9567,1.6697,3.9566,1.6705,4.1422,1.6335,4.1421)"
+            },
+            {
+              "content": "200",
+              "span": {
+                "offset": 227,
+                "length": 3
+              },
+              "confidence": 0.964,
+              "source": "D(1,1.7129,3.9566,1.975,3.9563,1.9757,4.143,1.7137,4.1423)"
+            },
+            {
+              "content": "EXAMPLE",
+              "span": {
+                "offset": 231,
+                "length": 7
+              },
+              "confidence": 0.972,
+              "source": "D(1,2.0274,3.9562,2.749,3.9557,2.7495,4.1433,2.0281,4.1431)"
+            },
+            {
+              "content": "STREET",
+              "span": {
+                "offset": 239,
+                "length": 6
+              },
+              "confidence": 0.994,
+              "source": "D(1,2.7891,3.9557,3.3935,3.9553,3.3938,4.1436,2.7896,4.1434)"
+            },
+            {
+              "content": ",",
+              "span": {
+                "offset": 245,
+                "length": 1
+              },
+              "confidence": 0.998,
+              "source": "D(1,3.3904,3.9553,3.4274,3.9553,3.4278,4.1436,3.3908,4.1436)"
+            },
+            {
+              "content": "SEATTLE",
+              "span": {
+                "offset": 247,
+                "length": 7
+              },
+              "confidence": 0.993,
+              "source": "D(1,3.4767,3.9553,4.1613,3.9552,4.1615,4.1424,3.4771,4.1436)"
+            },
+            {
+              "content": ",",
+              "span": {
+                "offset": 254,
+                "length": 1
+              },
+              "confidence": 0.998,
+              "source": "D(1,4.1613,3.9552,4.1983,3.9552,4.1985,4.1423,4.1615,4.1424)"
+            },
+            {
+              "content": "WA",
+              "span": {
+                "offset": 256,
+                "length": 2
+              },
+              "confidence": 0.944,
+              "source": "D(1,4.2353,3.9552,4.4974,3.9552,4.4975,4.1418,4.2355,4.1423)"
+            },
+            {
+              "content": "98101",
+              "span": {
+                "offset": 259,
+                "length": 5
+              },
+              "confidence": 0.801,
+              "source": "D(1,4.5375,3.9552,4.9846,3.9552,4.9846,4.1409,4.5376,4.1417)"
+            },
+            {
+              "content": "1",
+              "span": {
+                "offset": 266,
+                "length": 1
+              },
+              "confidence": 0.771,
+              "source": "D(1,0.5562,4.414,0.6119,4.4139,0.6129,4.5651,0.5572,4.565)"
+            },
+            {
+              "content": "Wages",
+              "span": {
+                "offset": 268,
+                "length": 5
+              },
+              "confidence": 0.264,
+              "source": "D(1,0.6499,4.4139,1.0276,4.4132,1.0284,4.5658,0.6509,4.5652)"
+            },
+            {
+              "content": ",",
+              "span": {
+                "offset": 273,
+                "length": 1
+              },
+              "confidence": 0.997,
+              "source": "D(1,1.0327,4.4132,1.0606,4.4131,1.0613,4.5659,1.0335,4.5658)"
+            },
+            {
+              "content": "tips",
+              "span": {
+                "offset": 275,
+                "length": 4
+              },
+              "confidence": 0.997,
+              "source": "D(1,1.0935,4.4131,1.2811,4.413,1.2817,4.5661,1.0943,4.5659)"
+            },
+            {
+              "content": ",",
+              "span": {
+                "offset": 279,
+                "length": 1
+              },
+              "confidence": 0.998,
+              "source": "D(1,1.2862,4.413,1.3115,4.413,1.3121,4.5661,1.2868,4.5661)"
+            },
+            {
+              "content": "other",
+              "span": {
+                "offset": 281,
+                "length": 5
+              },
+              "confidence": 0.996,
+              "source": "D(1,1.3495,4.4131,1.6309,4.4134,1.6313,4.5661,1.3501,4.5661)"
+            },
+            {
+              "content": "compensation",
+              "span": {
+                "offset": 287,
+                "length": 12
+              },
+              "confidence": 0.995,
+              "source": "D(1,1.6588,4.4134,2.4218,4.416,2.4218,4.5651,1.6592,4.5661)"
+            },
+            {
+              "content": "$",
+              "span": {
+                "offset": 300,
+                "length": 1
+              },
+              "confidence": 0.997,
+              "source": "D(1,0.551,4.6621,0.6356,4.6621,0.6365,4.834,0.552,4.834)"
+            },
+            {
+              "content": "72,500.00",
+              "span": {
+                "offset": 301,
+                "length": 9
+              },
+              "confidence": 0.982,
+              "source": "D(1,0.6443,4.6621,1.3447,4.6621,1.3447,4.834,0.6453,4.834)"
+            },
+            {
+              "content": "2",
+              "span": {
+                "offset": 312,
+                "length": 1
+              },
+              "confidence": 0.942,
+              "source": "D(1,0.5458,5.1079,0.6218,5.1079,0.6228,5.2476,0.5468,5.2476)"
+            },
+            {
+              "content": "Federal",
+              "span": {
+                "offset": 314,
+                "length": 7
+              },
+              "confidence": 0.93,
+              "source": "D(1,0.661,5.1079,1.0621,5.1079,1.0628,5.2476,0.662,5.2476)"
+            },
+            {
+              "content": "income",
+              "span": {
+                "offset": 322,
+                "length": 6
+              },
+              "confidence": 0.987,
+              "source": "D(1,1.1036,5.1079,1.4817,5.1079,1.4821,5.2476,1.1043,5.2476)"
+            },
+            {
+              "content": "tax",
+              "span": {
+                "offset": 329,
+                "length": 3
+              },
+              "confidence": 0.991,
+              "source": "D(1,1.5139,5.1079,1.6799,5.1079,1.6802,5.2476,1.5143,5.2476)"
+            },
+            {
+              "content": "withheld",
+              "span": {
+                "offset": 333,
+                "length": 8
+              },
+              "confidence": 0.982,
+              "source": "D(1,1.7099,5.1079,2.1686,5.1079,2.1686,5.2476,1.7102,5.2476)"
+            },
+            {
+              "content": "$",
+              "span": {
+                "offset": 342,
+                "length": 1
+              },
+              "confidence": 0.997,
+              "source": "D(1,0.552,5.3713,0.6344,5.3693,0.6349,5.5379,0.5525,5.5397)"
+            },
+            {
+              "content": "9,425.00",
+              "span": {
+                "offset": 343,
+                "length": 8
+              },
+              "confidence": 0.981,
+              "source": "D(1,0.6427,5.3691,1.2555,5.3641,1.2555,5.5343,0.6431,5.5377)"
+            },
+            {
+              "content": "3",
+              "span": {
+                "offset": 353,
+                "length": 1
+              },
+              "confidence": 0.989,
+              "source": "D(1,0.5479,5.813,0.6239,5.8125,0.6244,5.9629,0.5484,5.9634)"
+            },
+            {
+              "content": "Social",
+              "span": {
+                "offset": 355,
+                "length": 6
+              },
+              "confidence": 0.99,
+              "source": "D(1,0.6543,5.8123,0.9839,5.8104,0.9843,5.9608,0.6548,5.9627)"
+            },
+            {
+              "content": "Security",
+              "span": {
+                "offset": 362,
+                "length": 8
+              },
+              "confidence": 0.995,
+              "source": "D(1,1.0194,5.8105,1.4606,5.8128,1.4607,5.9632,1.0197,5.9609)"
+            },
+            {
+              "content": "wages",
+              "span": {
+                "offset": 371,
+                "length": 5
+              },
+              "confidence": 0.997,
+              "source": "D(1,1.4834,5.8132,1.8459,5.8183,1.8459,5.9687,1.4835,5.9635)"
+            },
+            {
+              "content": "$",
+              "span": {
+                "offset": 377,
+                "length": 1
+              },
+              "confidence": 0.997,
+              "source": "D(1,0.5499,6.064,0.6344,6.064,0.6354,6.2358,0.551,6.2358)"
+            },
+            {
+              "content": "72,500.00",
+              "span": {
+                "offset": 378,
+                "length": 9
+              },
+              "confidence": 0.982,
+              "source": "D(1,0.6432,6.064,1.3427,6.064,1.3427,6.2358,0.6441,6.2358)"
+            },
+            {
+              "content": "4",
+              "span": {
+                "offset": 389,
+                "length": 1
+              },
+              "confidence": 0.992,
+              "source": "D(1,0.5468,6.5101,0.6212,6.51,0.6222,6.6604,0.5479,6.6605)"
+            },
+            {
+              "content": "Social",
+              "span": {
+                "offset": 391,
+                "length": 6
+              },
+              "confidence": 0.982,
+              "source": "D(1,0.6584,6.5099,0.9831,6.5093,0.9838,6.6597,0.6593,6.6603)"
+            },
+            {
+              "content": "Security",
+              "span": {
+                "offset": 398,
+                "length": 8
+              },
+              "confidence": 0.994,
+              "source": "D(1,1.0178,6.5092,1.464,6.5091,1.4644,6.6595,1.0185,6.6596)"
+            },
+            {
+              "content": "tax",
+              "span": {
+                "offset": 407,
+                "length": 3
+              },
+              "confidence": 0.996,
+              "source": "D(1,1.4888,6.5091,1.6524,6.5092,1.6527,6.6596,1.4892,6.6595)"
+            },
+            {
+              "content": "withheld",
+              "span": {
+                "offset": 411,
+                "length": 8
+              },
+              "confidence": 0.995,
+              "source": "D(1,1.6772,6.5092,2.1333,6.5101,2.1333,6.6605,1.6775,6.6596)"
+            },
+            {
+              "content": "$",
+              "span": {
+                "offset": 420,
+                "length": 1
+              },
+              "confidence": 0.997,
+              "source": "D(1,0.552,6.7676,0.6343,6.7676,0.6352,6.9395,0.553,6.9395)"
+            },
+            {
+              "content": "4,495.00",
+              "span": {
+                "offset": 421,
+                "length": 8
+              },
+              "confidence": 0.968,
+              "source": "D(1,0.6343,6.7676,1.2576,6.7676,1.2576,6.9395,0.6352,6.9395)"
+            },
+            {
+              "content": "5",
+              "span": {
+                "offset": 431,
+                "length": 1
+              },
+              "confidence": 0.958,
+              "source": "D(1,0.5499,7.2136,0.6205,7.2135,0.6215,7.3638,0.551,7.364)"
+            },
+            {
+              "content": "Medicare",
+              "span": {
+                "offset": 433,
+                "length": 8
+              },
+              "confidence": 0.986,
+              "source": "D(1,0.6558,7.2134,1.1501,7.2127,1.1508,7.3631,0.6568,7.3638)"
+            },
+            {
+              "content": "wages",
+              "span": {
+                "offset": 442,
+                "length": 5
+              },
+              "confidence": 0.998,
+              "source": "D(1,1.1804,7.2127,1.5335,7.2128,1.5338,7.3632,1.181,7.3631)"
+            },
+            {
+              "content": "and",
+              "span": {
+                "offset": 448,
+                "length": 3
+              },
+              "confidence": 0.999,
+              "source": "D(1,1.5663,7.2129,1.7655,7.2133,1.7657,7.3637,1.5666,7.3633)"
+            },
+            {
+              "content": "tips",
+              "span": {
+                "offset": 452,
+                "length": 4
+              },
+              "confidence": 0.998,
+              "source": "D(1,1.7983,7.2134,2.0026,7.2139,2.0026,7.3642,1.7984,7.3638)"
+            },
+            {
+              "content": "$",
+              "span": {
+                "offset": 457,
+                "length": 1
+              },
+              "confidence": 0.998,
+              "source": "D(1,0.551,7.4664,0.6323,7.4652,0.6328,7.6367,0.5515,7.6374)"
+            },
+            {
+              "content": "72,500.00",
+              "span": {
+                "offset": 458,
+                "length": 9
+              },
+              "confidence": 0.987,
+              "source": "D(1,0.644,7.465,1.3416,7.4608,1.3416,7.6283,0.6444,7.6366)"
+            },
+            {
+              "content": "6",
+              "span": {
+                "offset": 469,
+                "length": 1
+              },
+              "confidence": 0.978,
+              "source": "D(1,0.5489,7.9116,0.6202,7.9116,0.6212,8.0513,0.5499,8.0513)"
+            },
+            {
+              "content": "Medicare",
+              "span": {
+                "offset": 471,
+                "length": 8
+              },
+              "confidence": 0.988,
+              "source": "D(1,0.657,7.9116,1.1495,7.9116,1.1501,8.0513,0.658,8.0513)"
+            },
+            {
+              "content": "tax",
+              "span": {
+                "offset": 480,
+                "length": 3
+              },
+              "confidence": 0.997,
+              "source": "D(1,1.184,7.9116,1.3474,7.9116,1.3478,8.0513,1.1846,8.0513)"
+            },
+            {
+              "content": "withheld",
+              "span": {
+                "offset": 484,
+                "length": 8
+              },
+              "confidence": 0.996,
+              "source": "D(1,1.3773,7.9116,1.8376,7.9116,1.8376,8.0513,1.3777,8.0513)"
+            },
+            {
+              "content": "$",
+              "span": {
+                "offset": 493,
+                "length": 1
+              },
+              "confidence": 0.996,
+              "source": "D(1,0.5499,8.1648,0.6331,8.1655,0.6336,8.3359,0.5504,8.3359)"
+            },
+            {
+              "content": "1,051.25",
+              "span": {
+                "offset": 494,
+                "length": 8
+              },
+              "confidence": 0.954,
+              "source": "D(1,0.647,8.1656,1.2596,8.1674,1.2596,8.3359,0.6474,8.3359)"
+            },
+            {
+              "content": "FOR",
+              "span": {
+                "offset": 504,
+                "length": 3
+              },
+              "confidence": 0.998,
+              "source": "D(1,0.4469,8.9264,0.766,8.9258,0.7665,9.0977,0.4475,9.0983)"
+            },
+            {
+              "content": "DEMONSTRATION",
+              "span": {
+                "offset": 508,
+                "length": 13
+              },
+              "confidence": 0.995,
+              "source": "D(1,0.8063,8.9257,2.0913,8.9234,2.0916,9.0952,0.8068,9.0976)"
+            },
+            {
+              "content": "ONLY",
+              "span": {
+                "offset": 522,
+                "length": 4
+              },
+              "confidence": 0.996,
+              "source": "D(1,2.1373,8.9233,2.5513,8.9231,2.5515,9.0949,2.1376,9.0952)"
+            },
+            {
+              "content": "-",
+              "span": {
+                "offset": 527,
+                "length": 1
+              },
+              "confidence": 0.986,
+              "source": "D(1,2.5858,8.923,2.6432,8.923,2.6435,9.0949,2.586,9.0949)"
+            },
+            {
+              "content": "ALL",
+              "span": {
+                "offset": 529,
+                "length": 3
+              },
+              "confidence": 0.992,
+              "source": "D(1,2.6662,8.923,2.9566,8.9228,2.9568,9.0947,2.6665,9.0949)"
+            },
+            {
+              "content": "IDENTIFIERS",
+              "span": {
+                "offset": 533,
+                "length": 11
+              },
+              "confidence": 0.982,
+              "source": "D(1,2.9968,8.9228,3.9024,8.9227,3.9025,9.0945,2.9971,9.0947)"
+            },
+            {
+              "content": "ARE",
+              "span": {
+                "offset": 545,
+                "length": 3
+              },
+              "confidence": 0.996,
+              "source": "D(1,3.9369,8.9227,4.2531,8.9229,4.2532,9.0948,3.937,9.0946)"
+            },
+            {
+              "content": "FICTIONAL",
+              "span": {
+                "offset": 549,
+                "length": 9
+              },
+              "confidence": 0.985,
+              "source": "D(1,4.302,8.9229,5.0925,8.9234,5.0925,9.0953,4.3021,9.0948)"
+            },
+            {
+              "content": "FICTIONAL",
+              "span": {
+                "offset": 577,
+                "length": 9
+              },
+              "confidence": 0.997,
+              "source": "D(1,5.9766,10.5596,6.6981,10.5596,6.6981,10.7103,5.9766,10.7099)"
+            },
+            {
+              "content": "DEMO",
+              "span": {
+                "offset": 587,
+                "length": 4
+              },
+              "confidence": 0.997,
+              "source": "D(1,6.7413,10.5596,7.1377,10.5596,7.1377,10.7112,6.7413,10.7104)"
+            },
+            {
+              "content": "DATA",
+              "span": {
+                "offset": 592,
+                "length": 4
+              },
+              "confidence": 0.996,
+              "source": "D(1,7.1834,10.5596,7.562,10.5596,7.562,10.7126,7.1834,10.7114)"
+            }
+          ],
+          "lines": [
+            {
+              "content": "2025 W-2 WAGE AND TAX STATEMENT",
+              "source": "D(1,0.4504,0.3336,5.9849,0.3306,5.985,0.6171,0.4506,0.62)",
+              "span": {
+                "offset": 2,
+                "length": 31
+              }
+            },
+            {
+              "content": "Training copy | Not an official tax document",
+              "source": "D(1,0.4622,0.7394,3.4427,0.7393,3.4428,0.9329,0.4623,0.933)",
+              "span": {
+                "offset": 34,
+                "length": 44
+              }
+            },
+            {
+              "content": "a Employee SSN",
+              "source": "D(1,0.5468,1.6154,1.491,1.6132,1.4914,1.7561,0.5471,1.7583)",
+              "span": {
+                "offset": 80,
+                "length": 14
+              }
+            },
+            {
+              "content": "000-12-3456",
+              "source": "D(1,0.5499,1.8665,1.4578,1.8663,1.4579,2.0263,0.55,2.0265)",
+              "span": {
+                "offset": 95,
+                "length": 11
+              }
+            },
+            {
+              "content": "b Employer EIN",
+              "source": "D(1,0.5458,2.3123,1.4153,2.311,1.4155,2.4576,0.546,2.4589)",
+              "span": {
+                "offset": 108,
+                "length": 14
+              }
+            },
+            {
+              "content": "00-0000000",
+              "source": "D(1,0.5489,2.565,1.4028,2.565,1.4028,2.7243,0.5489,2.7243)",
+              "span": {
+                "offset": 123,
+                "length": 10
+              }
+            },
+            {
+              "content": "c Employer",
+              "source": "D(1,0.5489,3.0212,1.1746,3.0212,1.1746,3.1609,0.5489,3.1609)",
+              "span": {
+                "offset": 135,
+                "length": 10
+              }
+            },
+            {
+              "content": "Contoso Training Company, 1 Demo Way, Redmond, WA 98052",
+              "source": "D(1,0.551,3.2645,5.1755,3.2557,5.1759,3.4459,0.5513,3.4545)",
+              "span": {
+                "offset": 146,
+                "length": 55
+              }
+            },
+            {
+              "content": "e Employee",
+              "source": "D(1,0.5489,3.7218,1.2047,3.7194,1.2052,3.8606,0.5494,3.863)",
+              "span": {
+                "offset": 203,
+                "length": 10
+              }
+            },
+            {
+              "content": "ALEX SAMPLE, 200 EXAMPLE STREET, SEATTLE, WA 98101",
+              "source": "D(1,0.5442,3.9554,4.9846,3.9552,4.9846,4.1435,0.5442,4.1438)",
+              "span": {
+                "offset": 214,
+                "length": 50
+              }
+            },
+            {
+              "content": "1 Wages, tips, other compensation",
+              "source": "D(1,0.5562,4.4129,2.4218,4.413,2.4218,4.5662,0.5561,4.566)",
+              "span": {
+                "offset": 266,
+                "length": 33
+              }
+            },
+            {
+              "content": "$72,500.00",
+              "source": "D(1,0.551,4.6621,1.3447,4.6621,1.3447,4.834,0.551,4.834)",
+              "span": {
+                "offset": 300,
+                "length": 10
+              }
+            },
+            {
+              "content": "2 Federal income tax withheld",
+              "source": "D(1,0.5458,5.1079,2.1686,5.1079,2.1686,5.2476,0.5458,5.2476)",
+              "span": {
+                "offset": 312,
+                "length": 29
+              }
+            },
+            {
+              "content": "$9,425.00",
+              "source": "D(1,0.5512,5.3667,1.2555,5.3614,1.2562,5.5343,0.5525,5.5397)",
+              "span": {
+                "offset": 342,
+                "length": 9
+              }
+            },
+            {
+              "content": "3 Social Security wages",
+              "source": "D(1,0.5479,5.8086,1.8465,5.8139,1.8459,5.9687,0.5479,5.9634)",
+              "span": {
+                "offset": 353,
+                "length": 23
+              }
+            },
+            {
+              "content": "$72,500.00",
+              "source": "D(1,0.5499,6.064,1.3427,6.064,1.3427,6.2358,0.5499,6.2358)",
+              "span": {
+                "offset": 377,
+                "length": 10
+              }
+            },
+            {
+              "content": "4 Social Security tax withheld",
+              "source": "D(1,0.5468,6.5091,2.1333,6.5091,2.1333,6.6605,0.5468,6.6605)",
+              "span": {
+                "offset": 389,
+                "length": 30
+              }
+            },
+            {
+              "content": "$4,495.00",
+              "source": "D(1,0.552,6.7676,1.2576,6.7676,1.2576,6.9395,0.552,6.9395)",
+              "span": {
+                "offset": 420,
+                "length": 9
+              }
+            },
+            {
+              "content": "5 Medicare wages and tips",
+              "source": "D(1,0.5499,7.2126,2.0026,7.2129,2.0026,7.3642,0.5499,7.364)",
+              "span": {
+                "offset": 431,
+                "length": 25
+              }
+            },
+            {
+              "content": "$72,500.00",
+              "source": "D(1,0.55,7.4649,1.3416,7.4581,1.3431,7.6306,0.5515,7.6374)",
+              "span": {
+                "offset": 457,
+                "length": 10
+              }
+            },
+            {
+              "content": "6 Medicare tax withheld",
+              "source": "D(1,0.5489,7.9116,1.8376,7.9116,1.8376,8.0513,0.5489,8.0513)",
+              "span": {
+                "offset": 469,
+                "length": 23
+              }
+            },
+            {
+              "content": "$1,051.25",
+              "source": "D(1,0.5499,8.1648,1.2596,8.1648,1.2596,8.3359,0.5499,8.3359)",
+              "span": {
+                "offset": 493,
+                "length": 9
+              }
+            },
+            {
+              "content": "FOR DEMONSTRATION ONLY - ALL IDENTIFIERS ARE FICTIONAL",
+              "source": "D(1,0.4469,8.9244,5.0925,8.9215,5.0926,9.0953,0.4471,9.0983)",
+              "span": {
+                "offset": 504,
+                "length": 54
+              }
+            },
+            {
+              "content": "FICTIONAL DEMO DATA",
+              "source": "D(1,5.9766,10.5596,7.562,10.5596,7.562,10.7126,5.9766,10.7126)",
+              "span": {
+                "offset": 577,
+                "length": 19
+              }
+            }
+          ]
+        }
+      ],
+      "paragraphs": [
+        {
+          "role": "sectionHeading",
+          "content": "2025 W-2 WAGE AND TAX STATEMENT Training copy | Not an official tax document",
+          "source": "D(1,0.4504,0.3336,5.9849,0.3306,5.9852,0.9315,0.4507,0.9345)",
+          "span": {
+            "offset": 0,
+            "length": 78
+          }
+        },
+        {
+          "content": "a Employee SSN 000-12-3456",
+          "source": "D(1,0.5468,1.6154,1.491,1.6132,1.492,2.0262,0.5478,2.0284)",
+          "span": {
+            "offset": 80,
+            "length": 26
+          }
+        },
+        {
+          "content": "b Employer EIN 00-0000000",
+          "source": "D(1,0.5458,2.3123,1.4153,2.311,1.4159,2.7243,0.5464,2.7256)",
+          "span": {
+            "offset": 108,
+            "length": 25
+          }
+        },
+        {
+          "content": "c Employer Contoso Training Company, 1 Demo Way, Redmond, WA 98052",
+          "source": "D(1,0.5486,3.0212,5.1751,3.0127,5.1759,3.4459,0.5494,3.4545)",
+          "span": {
+            "offset": 135,
+            "length": 66
+          }
+        },
+        {
+          "content": "e Employee ALEX SAMPLE, 200 EXAMPLE STREET, SEATTLE, WA 98101",
+          "source": "D(1,0.5442,3.7194,4.9846,3.7192,4.9846,4.1435,0.5442,4.1438)",
+          "span": {
+            "offset": 203,
+            "length": 61
+          }
+        },
+        {
+          "content": "1 Wages, tips, other compensation $72,500.00",
+          "source": "D(1,0.551,4.4129,2.4218,4.413,2.4217,4.8341,0.551,4.834)",
+          "span": {
+            "offset": 266,
+            "length": 44
+          }
+        },
+        {
+          "content": "2 Federal income tax withheld $9,425.00",
+          "source": "D(1,0.5458,5.1079,2.1686,5.1079,2.1686,5.5397,0.5458,5.5397)",
+          "span": {
+            "offset": 312,
+            "length": 39
+          }
+        },
+        {
+          "content": "3 Social Security wages $72,500.00",
+          "source": "D(1,0.5479,5.8086,1.8465,5.8139,1.8448,6.2412,0.5461,6.2358)",
+          "span": {
+            "offset": 353,
+            "length": 34
+          }
+        },
+        {
+          "content": "4 Social Security tax withheld $4,495.00",
+          "source": "D(1,0.5468,6.5091,2.1333,6.5091,2.1333,6.9395,0.5468,6.9395)",
+          "span": {
+            "offset": 389,
+            "length": 40
+          }
+        },
+        {
+          "content": "5 Medicare wages and tips $72,500.00",
+          "source": "D(1,0.5499,7.2126,2.0026,7.2129,2.0025,7.6377,0.5498,7.6374)",
+          "span": {
+            "offset": 431,
+            "length": 36
+          }
+        },
+        {
+          "content": "6 Medicare tax withheld $1,051.25",
+          "source": "D(1,0.5489,7.9116,1.8376,7.9116,1.8376,8.3359,0.5489,8.3359)",
+          "span": {
+            "offset": 469,
+            "length": 33
+          }
+        },
+        {
+          "content": "FOR DEMONSTRATION ONLY - ALL IDENTIFIERS ARE FICTIONAL",
+          "source": "D(1,0.4469,8.9244,5.0925,8.9215,5.0926,9.0953,0.4471,9.0983)",
+          "span": {
+            "offset": 504,
+            "length": 54
+          }
+        },
+        {
+          "role": "pageFooter",
+          "content": "FICTIONAL DEMO DATA",
+          "source": "D(1,5.9766,10.5596,7.562,10.5596,7.562,10.7126,5.9766,10.7126)",
+          "span": {
+            "offset": 560,
+            "length": 40
+          }
+        }
+      ],
+      "sections": [
+        {
+          "span": {
+            "offset": 0,
+            "length": 558
+          },
+          "elements": [
+            "/paragraphs/0",
+            "/paragraphs/1",
+            "/paragraphs/2",
+            "/paragraphs/3",
+            "/paragraphs/4",
+            "/paragraphs/5",
+            "/paragraphs/6",
+            "/paragraphs/7",
+            "/paragraphs/8",
+            "/paragraphs/9",
+            "/paragraphs/10",
+            "/paragraphs/11"
+          ]
+        }
+      ],
+      "segments": [
+        {
+          "span": {
+            "offset": 0,
+            "length": 601
+          },
+          "segmentId": "segment1",
+          "startPageNumber": 1,
+          "endPageNumber": 1,
+          "category": "tax.us.w2"
+        }
+      ],
+      "analyzerId": "prebuilt-tax.us.w2",
+      "mimeType": "application/pdf"
+    }
+  ]
+}

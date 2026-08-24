@@ -24,9 +24,25 @@ search indexing, retrieval-augmented generation, chunking, accessibility, or
 document reconstruction. Use a domain analyzer instead when you need stable
 business fields such as an invoice total or tax withholding amount.
 
+## Scenario Configuration
+
+| Setting | Required value for this lab |
+| --- | --- |
+| Azure service | Azure Content Understanding in a Microsoft Foundry resource |
+| Foundry project | Not required. The script calls the Foundry resource endpoint directly. |
+| Analyzer | `prebuilt-layout` |
+| Example input | `assets/sample-layout-policy.pdf`, submitted as document bytes |
+| Model deployment | Not required for this content-extraction analyzer |
+| Access | API key, or `Cognitive Services Content Understanding Reader` for analysis with Microsoft Entra ID |
+| Verify | Markdown preserves headings, paragraphs, sections, and the policy table; JSON contains page and layout details |
+
+Use the same Foundry resource for the remaining labs. Do not create a separate
+project or resource for this scenario unless isolation, billing, or access
+policy requires it.
+
 ## What You Learn
 
-- Deploy a Microsoft Foundry resource with Bicep.
+- Create a Microsoft Foundry resource with Bicep or the Azure portal.
 - Authenticate with an API key for a classroom exercise.
 - Authenticate with Microsoft Entra ID or managed identity for production.
 - Submit an asynchronous Content Understanding analysis.
@@ -36,42 +52,59 @@ business fields such as an invoice total or tax withholding amount.
 
 - An Azure subscription.
 - Python 3.9 or later.
-- Azure CLI and Bicep CLI.
+- Azure CLI and Bicep CLI when using the Bicep option.
 - Permission to create Microsoft Cognitive Services resources.
 - A Microsoft Foundry resource in a supported Content Understanding region.
 
 The layout analyzer does not require an LLM deployment. Domain-specific analyzers in later labs can require model deployments and default model mappings.
 
-## 1. Deploy the Azure Resource
+## 1. Create and Configure the Azure Resource
 
-To create the shared resource without Bicep, follow the
-[manual portal setup](../README.md#create-the-services-manually-in-the-portals),
-then continue with step 2.
+One Microsoft Foundry resource can support all six workshop labs. Use either
+the Bicep option or the portal option.
 
-Open PowerShell in this folder and choose unique values:
+### Option A: Bicep
+
+Open PowerShell in this lab folder:
 
 ```powershell
 $resourceGroup = "rg-content-understanding-lab"
 $location = "eastus"
 $accountName = "cu-layout-$((Get-Random -Maximum 99999))"
-
 az login
 az group create --name $resourceGroup --location $location
-az deployment group create `
-  --resource-group $resourceGroup `
+az deployment group create --resource-group $resourceGroup `
   --template-file infra/main.bicep `
   --parameters accountName=$accountName location=$location
+$endpoint = az cognitiveservices account show --resource-group $resourceGroup `
+  --name $accountName --query properties.endpoint --output tsv
 ```
 
-Read the endpoint from the deployment output:
+### Option B: Azure portal and Content Understanding Studio
 
-```powershell
-$endpoint = az deployment group show `
-  --resource-group $resourceGroup `
-  --name main `
-  --query properties.outputs.endpoint.value `
-  --output tsv
-```
+1. Sign in to the [Azure portal](https://portal.azure.com/).
+1. Create or select a resource group in a
+    [supported region](https://learn.microsoft.com/azure/ai-services/content-understanding/language-region-support#region-support).
+1. Open [Create a Microsoft Foundry resource](https://portal.azure.com/#create/Microsoft.CognitiveServicesAIFoundry).
+1. Select the subscription, resource group, supported region, a globally unique
+    name, and the **S0** pricing tier.
+1. Allow public network access for the workshop, keep local authentication
+    enabled, and enable the system-assigned managed identity under **Identity**.
+1. Select **Review + create** > **Create**, then open the deployed resource.
+1. Under **Access control (IAM)**, assign **Cognitive Services User** to the
+    person configuring the lab. For an analysis-only identity, assign
+    **Cognitive Services Content Understanding Reader**.
+1. Open [Content Understanding Studio settings](https://contentunderstanding.ai.azure.com/settings),
+    select **+ Add resource**, choose the new resource, and select **Save**.
+    Layout does not require a generative model deployment.
+1. In the Azure portal, open **Resource Management** > **Keys and Endpoint**.
+    Copy the endpoint and, for key authentication, **Key 1** into `.env`.
+1. In [Content Understanding Studio](https://contentunderstanding.ai.azure.com/),
+    open **Browse prebuilt analyzers**, select `prebuilt-layout`, and run a
+    portal sample to verify the configuration.
+
+See the [shared portal guide](../README.md#create-the-services-manually-in-the-portals)
+for screenshots-equivalent field descriptions, model configuration, and cleanup.
 
 ## 2. Create the Python Environment
 
@@ -95,21 +128,24 @@ CONTENTUNDERSTANDING_ENDPOINT=https://your-resource.services.ai.azure.com/
 CONTENTUNDERSTANDING_KEY=your-api-key
 ```
 
-## 3A. Run with Key Authentication
+## 3A. Test with Key Authentication
 
 Use key authentication only for learning and short-lived test resources. Do not store the key in source control.
 
 ```powershell
 python analyze.py "assets/sample-layout-policy.pdf" `
-  --output output/layout-result.json
+  --output "output/layout-test-result.json"
 ```
 
 The bundled PDF contains fictional policy sections, a table, and a checklist.
 You can replace the path with a public `http` or `https` URL.
 
+A successful test prints the extracted markdown and creates
+`output/layout-test-result.json`. No generative model deployment is required.
+
 When `CONTENTUNDERSTANDING_KEY` exists, the code creates an `AzureKeyCredential`.
 
-## 3B. Run with Microsoft Entra ID
+## 3B. Test with Microsoft Entra ID
 
 Leave the key empty in `.env` so that the code selects `DefaultAzureCredential`:
 

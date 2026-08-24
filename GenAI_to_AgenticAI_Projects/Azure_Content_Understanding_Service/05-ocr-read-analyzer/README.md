@@ -23,11 +23,34 @@ visible text and its position matter. Choose Layout when document structure such
 as sections and tables is central, or choose a domain analyzer when named
 business fields are required.
 
-## 1. Deploy and Install
+## Scenario Configuration
 
-To create the shared resource without Bicep, follow the
-[manual portal setup](../README.md#create-the-services-manually-in-the-portals),
-then return here to install the dependencies.
+| Setting | Required value for this lab |
+| --- | --- |
+| Azure service | Azure Content Understanding in a Microsoft Foundry resource |
+| Foundry project | Not required. The script calls the Foundry resource endpoint directly. |
+| Analyzer | `prebuilt-read` |
+| Example input | `assets/sample-field-notes.png`, submitted as image bytes |
+| Model deployment | Not required for this content-extraction analyzer |
+| Access | API key, or `Cognitive Services Content Understanding Reader` for analysis with Microsoft Entra ID |
+| Verify | Printed and handwritten text in markdown, with page, word, line, and location details in JSON |
+
+No separate Vision or Document Intelligence resource is needed for this lab.
+Keep the image upright and readable for the baseline run, then vary image
+quality to demonstrate OCR limitations.
+
+## Prerequisites
+
+- Python 3.9 or later and an Azure subscription.
+- Permission to create Microsoft Cognitive Services resources.
+- Azure CLI and Bicep CLI when using the Bicep option.
+
+## 1. Create and Configure the Resource
+
+One Microsoft Foundry resource can support all six workshop labs. Use either
+the Bicep option or the portal option.
+
+### Option A: Bicep
 
 ```powershell
 $resourceGroup = "rg-cu-ocr-lab"
@@ -40,6 +63,32 @@ az deployment group create --resource-group $resourceGroup `
   --parameters accountName=$accountName location=$location
 $endpoint = az cognitiveservices account show --resource-group $resourceGroup `
   --name $accountName --query properties.endpoint --output tsv
+```
+
+### Option B: Azure portal and Content Understanding Studio
+
+1. Sign in to the [Azure portal](https://portal.azure.com/) and create or select
+    a resource group in a [supported region](https://learn.microsoft.com/azure/ai-services/content-understanding/language-region-support#region-support).
+1. Create a [Microsoft Foundry resource](https://portal.azure.com/#create/Microsoft.CognitiveServicesAIFoundry)
+    using the resource group, supported region, a unique name, and **S0** tier.
+1. Allow public workshop access, keep local authentication enabled, enable the
+    system-assigned managed identity, and complete **Review + create**.
+1. Under **Access control (IAM)**, assign **Cognitive Services User** to the
+    person configuring the resource. Assign **Cognitive Services Content
+    Understanding Reader** to an analysis-only identity.
+1. In [Content Understanding Studio settings](https://contentunderstanding.ai.azure.com/settings),
+    add the resource and save it. OCR Read does not require a generative model.
+1. Copy the endpoint and optional **Key 1** from **Resource Management** >
+    **Keys and Endpoint** into `.env`.
+1. In Content Understanding Studio, open `prebuilt-read`, upload an image or
+    PDF, and verify the recognized text and markdown output.
+
+See the [shared portal guide](../README.md#create-the-services-manually-in-the-portals)
+for detailed role and cleanup guidance.
+
+## 2. Install and Run
+
+```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
@@ -54,16 +103,20 @@ CONTENTUNDERSTANDING_ENDPOINT=https://your-resource.services.ai.azure.com/
 CONTENTUNDERSTANDING_KEY=your-api-key
 ```
 
-## 2A. API-Key Authentication
+## 2A. Test with API-Key Authentication
 
 ```powershell
-python analyze.py $document --output output/read.json
+python analyze.py $document `
+  --output "output/ocr-read-test-result.json"
 ```
 
 The bundled image contains fictional field notes. You can replace its path with
 another local PDF or image, or with a public HTTPS URL.
 
-## 2B. Microsoft Entra Authentication
+A successful test prints the recognized site-visit notes and creates
+`output/ocr-read-test-result.json`. No generative model deployment is required.
+
+## 2B. Test with Microsoft Entra Authentication
 
 Set `CONTENTUNDERSTANDING_KEY=` in `.env`, then sign in and assign access:
 

@@ -1,0 +1,1500 @@
+{
+  "analyzerId": "prebuilt-layout",
+  "apiVersion": "2025-11-01",
+  "createdAt": "2026-08-24T15:14:32Z",
+  "stringEncoding": "codePoint",
+  "warnings": [],
+  "contents": [
+    {
+      "path": "input1",
+      "markdown": "<!-- PageHeader: Northwind Home Loan Policy Document layout demonstration -->\n\n\n# 1. Purpose\n\nThis policy defines the review process for fictional home-loan applications.\n\n\n# 2. Required Documents\n\nApplicants provide identification, income evidence, and property details.\n\n\n# 3. Review Timeline\n\nThe operations team completes each stage according to the table below.\n\n\n<table>\n<tr>\n<th>Stage</th>\n<th>Owner</th>\n<th>Target</th>\n</tr>\n<tr>\n<td>Intake</td>\n<td>Coordinator</td>\n<td>1 day</td>\n</tr>\n<tr>\n<td>Verification</td>\n<td>Analyst</td>\n<td>2 days</td>\n</tr>\n<tr>\n<td>Decision</td>\n<td>Underwriter</td>\n<td>3 days</td>\n</tr>\n</table>\n\n\n# 4. Approval Checklist\n\n[ ] Identity verified\n\n[ ] Income reviewed\n\n[ ] Property details confirmed\n\n<!-- PageFooter: FICTIONAL DEMO DATA -->\n",
+      "kind": "document",
+      "startPageNumber": 1,
+      "endPageNumber": 1,
+      "unit": "inch",
+      "pages": [
+        {
+          "pageNumber": 1,
+          "angle": 0,
+          "width": 8.5,
+          "height": 11,
+          "spans": [
+            {
+              "offset": 0,
+              "length": 782
+            }
+          ],
+          "words": [
+            {
+              "content": "Northwind",
+              "span": {
+                "offset": 17,
+                "length": 9
+              },
+              "confidence": 0.997,
+              "source": "D(1,0.4573,0.3372,1.8924,0.3364,1.8924,0.6295,0.4573,0.6209)"
+            },
+            {
+              "content": "Home",
+              "span": {
+                "offset": 27,
+                "length": 4
+              },
+              "confidence": 0.998,
+              "source": "D(1,2.005,0.3366,2.7984,0.3382,2.7984,0.6359,2.005,0.6303)"
+            },
+            {
+              "content": "Loan",
+              "span": {
+                "offset": 32,
+                "length": 4
+              },
+              "confidence": 0.996,
+              "source": "D(1,2.8915,0.3384,3.5625,0.3408,3.5625,0.6418,2.8915,0.6366)"
+            },
+            {
+              "content": "Policy",
+              "span": {
+                "offset": 37,
+                "length": 6
+              },
+              "confidence": 0.993,
+              "source": "D(1,3.6702,0.3413,4.5322,0.3453,4.5322,0.6498,3.6702,0.6427)"
+            },
+            {
+              "content": "Document",
+              "span": {
+                "offset": 44,
+                "length": 8
+              },
+              "confidence": 0.994,
+              "source": "D(1,0.4664,0.7396,1.1845,0.7381,1.1849,0.9276,0.4669,0.9239)"
+            },
+            {
+              "content": "layout",
+              "span": {
+                "offset": 53,
+                "length": 6
+              },
+              "confidence": 0.992,
+              "source": "D(1,1.2251,0.7381,1.6373,0.7381,1.6375,0.9273,1.2255,0.9277)"
+            },
+            {
+              "content": "demonstration",
+              "span": {
+                "offset": 60,
+                "length": 13
+              },
+              "confidence": 0.995,
+              "source": "D(1,1.6685,0.7381,2.6646,0.7397,2.6646,0.9221,1.6688,0.9273)"
+            },
+            {
+              "content": "1",
+              "span": {
+                "offset": 82,
+                "length": 1
+              },
+              "confidence": 0.935,
+              "source": "D(1,0.4949,1.6076,0.5892,1.6089,0.5893,1.8309,0.4949,1.8306)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 83,
+                "length": 1
+              },
+              "confidence": 0.943,
+              "source": "D(1,0.6043,1.6091,0.6572,1.6099,0.6572,1.8312,0.6043,1.831)"
+            },
+            {
+              "content": "Purpose",
+              "span": {
+                "offset": 85,
+                "length": 7
+              },
+              "confidence": 0.916,
+              "source": "D(1,0.71,1.6107,1.5211,1.6192,1.5211,1.8388,0.71,1.8314)"
+            },
+            {
+              "content": "This",
+              "span": {
+                "offset": 94,
+                "length": 4
+              },
+              "confidence": 0.996,
+              "source": "D(1,0.4809,1.919,0.783,1.919,0.7837,2.1164,0.4817,2.1165)"
+            },
+            {
+              "content": "policy",
+              "span": {
+                "offset": 99,
+                "length": 6
+              },
+              "confidence": 0.991,
+              "source": "D(1,0.8355,1.9189,1.2361,1.9189,1.2368,2.1162,0.8363,2.1164)"
+            },
+            {
+              "content": "defines",
+              "span": {
+                "offset": 106,
+                "length": 7
+              },
+              "confidence": 0.988,
+              "source": "D(1,1.2788,1.9189,1.7943,1.9189,1.7949,2.116,1.2795,2.1162)"
+            },
+            {
+              "content": "the",
+              "span": {
+                "offset": 114,
+                "length": 3
+              },
+              "confidence": 0.982,
+              "source": "D(1,1.8403,1.9189,2.0635,1.9189,2.0641,2.1159,1.8408,2.116)"
+            },
+            {
+              "content": "review",
+              "span": {
+                "offset": 118,
+                "length": 6
+              },
+              "confidence": 0.891,
+              "source": "D(1,2.1128,1.9189,2.5626,1.919,2.5631,2.1159,2.1133,2.1159)"
+            },
+            {
+              "content": "process",
+              "span": {
+                "offset": 125,
+                "length": 7
+              },
+              "confidence": 0.924,
+              "source": "D(1,2.6053,1.919,3.1536,1.9193,3.154,2.1159,2.6058,2.1159)"
+            },
+            {
+              "content": "for",
+              "span": {
+                "offset": 133,
+                "length": 3
+              },
+              "confidence": 0.923,
+              "source": "D(1,3.2029,1.9193,3.4032,1.9194,3.4035,2.1159,3.2033,2.1159)"
+            },
+            {
+              "content": "fictional",
+              "span": {
+                "offset": 137,
+                "length": 9
+              },
+              "confidence": 0.911,
+              "source": "D(1,3.4426,1.9194,3.9712,1.9197,3.9715,2.1158,3.4429,2.1159)"
+            },
+            {
+              "content": "home",
+              "span": {
+                "offset": 147,
+                "length": 4
+              },
+              "confidence": 0.988,
+              "source": "D(1,4.027,1.9197,4.4079,1.9201,4.4081,2.116,4.0273,2.1159)"
+            },
+            {
+              "content": "-",
+              "span": {
+                "offset": 151,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,4.4079,1.9201,4.4539,1.9202,4.4541,2.116,4.4081,2.116)"
+            },
+            {
+              "content": "loan",
+              "span": {
+                "offset": 152,
+                "length": 4
+              },
+              "confidence": 0.977,
+              "source": "D(1,4.4604,1.9202,4.7494,1.9205,4.7495,2.1161,4.4606,2.116)"
+            },
+            {
+              "content": "applications",
+              "span": {
+                "offset": 157,
+                "length": 12
+              },
+              "confidence": 0.877,
+              "source": "D(1,4.8019,1.9205,5.6326,1.9213,5.6326,2.1163,4.8021,2.1161)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 169,
+                "length": 1
+              },
+              "confidence": 0.985,
+              "source": "D(1,5.6392,1.9213,5.6819,1.9214,5.6819,2.1164,5.6392,2.1163)"
+            },
+            {
+              "content": "2",
+              "span": {
+                "offset": 175,
+                "length": 1
+              },
+              "confidence": 0.916,
+              "source": "D(1,0.4812,2.4958,0.6003,2.4954,0.6008,2.7176,0.4817,2.7178)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 176,
+                "length": 1
+              },
+              "confidence": 0.943,
+              "source": "D(1,0.6039,2.4954,0.6472,2.4952,0.6477,2.7175,0.6044,2.7176)"
+            },
+            {
+              "content": "Required",
+              "span": {
+                "offset": 178,
+                "length": 8
+              },
+              "confidence": 0.958,
+              "source": "D(1,0.7121,2.495,1.571,2.4935,1.5713,2.7152,0.7126,2.7174)"
+            },
+            {
+              "content": "Documents",
+              "span": {
+                "offset": 187,
+                "length": 9
+              },
+              "confidence": 0.993,
+              "source": "D(1,1.6324,2.4936,2.733,2.4971,2.733,2.7093,1.6326,2.715)"
+            },
+            {
+              "content": "Applicants",
+              "span": {
+                "offset": 198,
+                "length": 10
+              },
+              "confidence": 0.996,
+              "source": "D(1,0.4783,2.8041,1.2166,2.8038,1.2172,2.9978,0.4791,2.9983)"
+            },
+            {
+              "content": "provide",
+              "span": {
+                "offset": 209,
+                "length": 7
+              },
+              "confidence": 0.997,
+              "source": "D(1,1.2651,2.8038,1.7735,2.8036,1.774,2.9974,1.2658,2.9978)"
+            },
+            {
+              "content": "identification",
+              "span": {
+                "offset": 217,
+                "length": 14
+              },
+              "confidence": 0.995,
+              "source": "D(1,1.822,2.8036,2.6962,2.8035,2.6967,2.9971,1.8226,2.9974)"
+            },
+            {
+              "content": ",",
+              "span": {
+                "offset": 231,
+                "length": 1
+              },
+              "confidence": 0.997,
+              "source": "D(1,2.7059,2.8035,2.7383,2.8035,2.7388,2.9971,2.7064,2.9971)"
+            },
+            {
+              "content": "income",
+              "span": {
+                "offset": 233,
+                "length": 6
+              },
+              "confidence": 0.996,
+              "source": "D(1,2.7901,2.8035,3.292,2.8035,3.2923,2.9971,2.7906,2.9971)"
+            },
+            {
+              "content": "evidence",
+              "span": {
+                "offset": 240,
+                "length": 8
+              },
+              "confidence": 0.989,
+              "source": "D(1,3.3373,2.8035,3.9752,2.8036,3.9754,2.9972,3.3377,2.9971)"
+            },
+            {
+              "content": ",",
+              "span": {
+                "offset": 248,
+                "length": 1
+              },
+              "confidence": 0.998,
+              "source": "D(1,3.9784,2.8036,4.014,2.8036,4.0143,2.9972,3.9786,2.9972)"
+            },
+            {
+              "content": "and",
+              "span": {
+                "offset": 250,
+                "length": 3
+              },
+              "confidence": 0.995,
+              "source": "D(1,4.0658,2.8037,4.3151,2.8038,4.3153,2.9973,4.0661,2.9972)"
+            },
+            {
+              "content": "property",
+              "span": {
+                "offset": 254,
+                "length": 8
+              },
+              "confidence": 0.934,
+              "source": "D(1,4.3734,2.8038,4.9562,2.8041,4.9563,2.9977,4.3736,2.9974)"
+            },
+            {
+              "content": "details",
+              "span": {
+                "offset": 263,
+                "length": 7
+              },
+              "confidence": 0.975,
+              "source": "D(1,4.9951,2.8041,5.4516,2.8043,5.4516,2.998,4.9952,2.9977)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 270,
+                "length": 1
+              },
+              "confidence": 0.987,
+              "source": "D(1,5.4613,2.8043,5.5034,2.8043,5.5034,2.998,5.4613,2.998)"
+            },
+            {
+              "content": "3",
+              "span": {
+                "offset": 276,
+                "length": 1
+              },
+              "confidence": 0.927,
+              "source": "D(1,0.484,3.383,0.5996,3.383,0.6001,3.5869,0.4846,3.5866)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 277,
+                "length": 1
+              },
+              "confidence": 0.946,
+              "source": "D(1,0.6098,3.3831,0.654,3.3831,0.6544,3.587,0.6103,3.5869)"
+            },
+            {
+              "content": "Review",
+              "span": {
+                "offset": 279,
+                "length": 6
+              },
+              "confidence": 0.951,
+              "source": "D(1,0.7186,3.3831,1.4051,3.3839,1.4053,3.588,0.719,3.5871)"
+            },
+            {
+              "content": "Timeline",
+              "span": {
+                "offset": 286,
+                "length": 8
+              },
+              "confidence": 0.988,
+              "source": "D(1,1.4493,3.3839,2.2786,3.3857,2.2786,3.5876,1.4495,3.588)"
+            },
+            {
+              "content": "The",
+              "span": {
+                "offset": 296,
+                "length": 3
+              },
+              "confidence": 0.997,
+              "source": "D(1,0.482,3.6937,0.7602,3.6939,0.7609,3.8867,0.4827,3.8862)"
+            },
+            {
+              "content": "operations",
+              "span": {
+                "offset": 300,
+                "length": 10
+              },
+              "confidence": 0.996,
+              "source": "D(1,0.8018,3.6939,1.5373,3.6945,1.5379,3.8879,0.8025,3.8867)"
+            },
+            {
+              "content": "team",
+              "span": {
+                "offset": 311,
+                "length": 4
+              },
+              "confidence": 0.998,
+              "source": "D(1,1.5821,3.6945,1.9371,3.6948,1.9376,3.8886,1.5827,3.888)"
+            },
+            {
+              "content": "completes",
+              "span": {
+                "offset": 316,
+                "length": 9
+              },
+              "confidence": 0.993,
+              "source": "D(1,1.9851,3.6948,2.7046,3.6949,2.7051,3.8886,1.9856,3.8886)"
+            },
+            {
+              "content": "each",
+              "span": {
+                "offset": 326,
+                "length": 4
+              },
+              "confidence": 0.994,
+              "source": "D(1,2.7526,3.6949,3.0948,3.6948,3.0952,3.8883,2.753,3.8885)"
+            },
+            {
+              "content": "stage",
+              "span": {
+                "offset": 331,
+                "length": 5
+              },
+              "confidence": 0.977,
+              "source": "D(1,3.1428,3.6948,3.5297,3.6948,3.53,3.8879,3.1431,3.8882)"
+            },
+            {
+              "content": "according",
+              "span": {
+                "offset": 337,
+                "length": 9
+              },
+              "confidence": 0.929,
+              "source": "D(1,3.5745,3.6948,4.2525,3.6944,4.2527,3.8865,3.5748,3.8879)"
+            },
+            {
+              "content": "to",
+              "span": {
+                "offset": 347,
+                "length": 2
+              },
+              "confidence": 0.837,
+              "source": "D(1,4.2973,3.6944,4.438,3.6942,4.4382,3.8859,4.2975,3.8863)"
+            },
+            {
+              "content": "the",
+              "span": {
+                "offset": 350,
+                "length": 3
+              },
+              "confidence": 0.635,
+              "source": "D(1,4.4796,3.6942,4.7034,3.694,4.7036,3.8851,4.4797,3.8858)"
+            },
+            {
+              "content": "table",
+              "span": {
+                "offset": 354,
+                "length": 5
+              },
+              "confidence": 0.653,
+              "source": "D(1,4.7482,3.694,5.0936,3.6936,5.0937,3.8838,4.7483,3.8849)"
+            },
+            {
+              "content": "below",
+              "span": {
+                "offset": 360,
+                "length": 5
+              },
+              "confidence": 0.97,
+              "source": "D(1,5.1384,3.6936,5.5509,3.6932,5.5509,3.8824,5.1384,3.8837)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 365,
+                "length": 1
+              },
+              "confidence": 0.986,
+              "source": "D(1,5.5541,3.6932,5.5989,3.6932,5.5989,3.8822,5.5541,3.8823)"
+            },
+            {
+              "content": "Stage",
+              "span": {
+                "offset": 386,
+                "length": 5
+              },
+              "confidence": 0.993,
+              "source": "D(1,0.5665,4.3775,0.9655,4.3786,0.9655,4.5363,0.567,4.5341)"
+            },
+            {
+              "content": "Owner",
+              "span": {
+                "offset": 401,
+                "length": 5
+              },
+              "confidence": 0.998,
+              "source": "D(1,2.8658,4.378,3.3203,4.3789,3.3203,4.5141,2.8658,4.5132)"
+            },
+            {
+              "content": "Target",
+              "span": {
+                "offset": 416,
+                "length": 6
+              },
+              "confidence": 0.997,
+              "source": "D(1,5.2627,4.3666,5.7234,4.3713,5.7234,4.5324,5.2627,4.5277)"
+            },
+            {
+              "content": "Intake",
+              "span": {
+                "offset": 443,
+                "length": 6
+              },
+              "confidence": 0.953,
+              "source": "D(1,0.5676,4.7726,0.9753,4.7718,0.9753,4.9141,0.5686,4.9124)"
+            },
+            {
+              "content": "Coordinator",
+              "span": {
+                "offset": 459,
+                "length": 11
+              },
+              "confidence": 0.997,
+              "source": "D(1,2.8679,4.7722,3.6357,4.7722,3.6357,4.9172,2.8679,4.9172)"
+            },
+            {
+              "content": "1",
+              "span": {
+                "offset": 480,
+                "length": 1
+              },
+              "confidence": 0.983,
+              "source": "D(1,5.2751,4.7669,5.3353,4.7671,5.3353,4.9229,5.2751,4.9227)"
+            },
+            {
+              "content": "day",
+              "span": {
+                "offset": 482,
+                "length": 3
+              },
+              "confidence": 0.989,
+              "source": "D(1,5.388,4.7673,5.6362,4.7709,5.6362,4.9266,5.388,4.9231)"
+            },
+            {
+              "content": "Verification",
+              "span": {
+                "offset": 506,
+                "length": 12
+              },
+              "confidence": 0.997,
+              "source": "D(1,0.5613,5.1675,1.2918,5.1669,1.2918,5.3157,0.5624,5.3146)"
+            },
+            {
+              "content": "Analyst",
+              "span": {
+                "offset": 528,
+                "length": 7
+              },
+              "confidence": 0.997,
+              "source": "D(1,2.8638,5.1662,3.3639,5.1711,3.3639,5.3296,2.8638,5.3224)"
+            },
+            {
+              "content": "2",
+              "span": {
+                "offset": 545,
+                "length": 1
+              },
+              "confidence": 0.965,
+              "source": "D(1,5.2585,5.1678,5.3502,5.1717,5.3502,5.3231,5.2585,5.3204)"
+            },
+            {
+              "content": "days",
+              "span": {
+                "offset": 547,
+                "length": 4
+              },
+              "confidence": 0.986,
+              "source": "D(1,5.3833,5.1731,5.7068,5.175,5.7068,5.3313,5.3833,5.3241)"
+            },
+            {
+              "content": "Decision",
+              "span": {
+                "offset": 572,
+                "length": 8
+              },
+              "confidence": 0.996,
+              "source": "D(1,0.5676,5.5691,1.1382,5.5621,1.1382,5.7091,0.5686,5.7081)"
+            },
+            {
+              "content": "Underwriter",
+              "span": {
+                "offset": 590,
+                "length": 11
+              },
+              "confidence": 0.997,
+              "source": "D(1,2.8679,5.5644,3.6212,5.5649,3.6212,5.7153,2.8679,5.7148)"
+            },
+            {
+              "content": "3",
+              "span": {
+                "offset": 611,
+                "length": 1
+              },
+              "confidence": 0.986,
+              "source": "D(1,5.2627,5.5751,5.346,5.5744,5.3461,5.7264,5.2627,5.7286)"
+            },
+            {
+              "content": "days",
+              "span": {
+                "offset": 613,
+                "length": 4
+              },
+              "confidence": 0.987,
+              "source": "D(1,5.3813,5.5741,5.7068,5.5789,5.7068,5.7424,5.3814,5.7255)"
+            },
+            {
+              "content": "4",
+              "span": {
+                "offset": 642,
+                "length": 1
+              },
+              "confidence": 0.954,
+              "source": "D(1,0.484,6.3754,0.6059,6.3754,0.6064,6.591,0.4846,6.591)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 643,
+                "length": 1
+              },
+              "confidence": 0.973,
+              "source": "D(1,0.6095,6.3754,0.6525,6.3754,0.653,6.591,0.61,6.591)"
+            },
+            {
+              "content": "Approval",
+              "span": {
+                "offset": 645,
+                "length": 8
+              },
+              "confidence": 0.972,
+              "source": "D(1,0.7027,6.3754,1.5771,6.3742,1.5774,6.5894,0.7031,6.591)"
+            },
+            {
+              "content": "Checklist",
+              "span": {
+                "offset": 654,
+                "length": 9
+              },
+              "confidence": 0.992,
+              "source": "D(1,1.6273,6.374,2.5483,6.3687,2.5483,6.5833,1.6275,6.5892)"
+            },
+            {
+              "content": "[",
+              "span": {
+                "offset": 665,
+                "length": 1
+              },
+              "confidence": 0.997,
+              "source": "D(1,0.6537,6.6941,0.7119,6.6928,0.7124,6.8754,0.6542,6.8767)"
+            },
+            {
+              "content": "]",
+              "span": {
+                "offset": 667,
+                "length": 1
+              },
+              "confidence": 0.995,
+              "source": "D(1,0.7334,6.6923,0.7885,6.6911,0.789,6.8737,0.7339,6.8749)"
+            },
+            {
+              "content": "Identity",
+              "span": {
+                "offset": 669,
+                "length": 8
+              },
+              "confidence": 0.71,
+              "source": "D(1,0.8529,6.6897,1.3617,6.6822,1.362,6.8648,0.8533,6.8723)"
+            },
+            {
+              "content": "verified",
+              "span": {
+                "offset": 678,
+                "length": 8
+              },
+              "confidence": 0.993,
+              "source": "D(1,1.4047,6.6818,1.9289,6.6825,1.9289,6.8651,1.4049,6.8644)"
+            },
+            {
+              "content": "[",
+              "span": {
+                "offset": 688,
+                "length": 1
+              },
+              "confidence": 0.997,
+              "source": "D(1,0.649,7.0099,0.7067,7.0092,0.7077,7.1905,0.6501,7.1908)"
+            },
+            {
+              "content": "]",
+              "span": {
+                "offset": 690,
+                "length": 1
+              },
+              "confidence": 0.995,
+              "source": "D(1,0.728,7.009,0.7857,7.0084,0.7867,7.1902,0.729,7.1904)"
+            },
+            {
+              "content": "Income",
+              "span": {
+                "offset": 692,
+                "length": 6
+              },
+              "confidence": 0.888,
+              "source": "D(1,0.8465,7.0077,1.3629,7.0034,1.3635,7.1861,0.8474,7.1899)"
+            },
+            {
+              "content": "reviewed",
+              "span": {
+                "offset": 699,
+                "length": 8
+              },
+              "confidence": 0.992,
+              "source": "D(1,1.4145,7.0031,2.0586,7.0026,2.0586,7.1766,1.4151,7.1856)"
+            },
+            {
+              "content": "[",
+              "span": {
+                "offset": 709,
+                "length": 1
+              },
+              "confidence": 0.996,
+              "source": "D(1,0.6511,7.3283,0.7105,7.3274,0.7116,7.5191,0.6521,7.5199)"
+            },
+            {
+              "content": "]",
+              "span": {
+                "offset": 711,
+                "length": 1
+              },
+              "confidence": 0.99,
+              "source": "D(1,0.7293,7.3271,0.7856,7.3263,0.7866,7.5181,0.7303,7.5188)"
+            },
+            {
+              "content": "Property",
+              "span": {
+                "offset": 713,
+                "length": 8
+              },
+              "confidence": 0.99,
+              "source": "D(1,0.8482,7.3253,1.4522,7.3178,1.4528,7.5094,0.8492,7.5172)"
+            },
+            {
+              "content": "details",
+              "span": {
+                "offset": 722,
+                "length": 7
+              },
+              "confidence": 0.996,
+              "source": "D(1,1.4897,7.3178,1.9435,7.3169,1.9439,7.5054,1.4903,7.5091)"
+            },
+            {
+              "content": "confirmed",
+              "span": {
+                "offset": 730,
+                "length": 9
+              },
+              "confidence": 0.995,
+              "source": "D(1,1.9905,7.3168,2.704,7.3242,2.704,7.5033,1.9908,7.505)"
+            },
+            {
+              "content": "FICTIONAL",
+              "span": {
+                "offset": 758,
+                "length": 9
+              },
+              "confidence": 0.995,
+              "source": "D(1,5.9766,10.5542,6.7004,10.5542,6.7004,10.7153,5.9766,10.7153)"
+            },
+            {
+              "content": "DEMO",
+              "span": {
+                "offset": 768,
+                "length": 4
+              },
+              "confidence": 0.997,
+              "source": "D(1,6.7432,10.5542,7.1358,10.5542,7.1358,10.7153,6.7432,10.7153)"
+            },
+            {
+              "content": "DATA",
+              "span": {
+                "offset": 773,
+                "length": 4
+              },
+              "confidence": 0.995,
+              "source": "D(1,7.1812,10.5542,7.5579,10.5542,7.5579,10.7153,7.1812,10.7153)"
+            }
+          ],
+          "lines": [
+            {
+              "content": "Northwind Home Loan Policy",
+              "source": "D(1,0.4574,0.3322,4.5322,0.3454,4.5322,0.6498,0.4559,0.6307)",
+              "span": {
+                "offset": 17,
+                "length": 26
+              }
+            },
+            {
+              "content": "Document layout demonstration",
+              "source": "D(1,0.4664,0.7381,2.6646,0.7381,2.6646,0.9277,0.4664,0.9277)",
+              "span": {
+                "offset": 44,
+                "length": 29
+              }
+            },
+            {
+              "content": "1. Purpose",
+              "source": "D(1,0.4949,1.6076,1.5218,1.6158,1.5211,1.8388,0.4931,1.8305)",
+              "span": {
+                "offset": 82,
+                "length": 10
+              }
+            },
+            {
+              "content": "This policy defines the review process for fictional home-loan applications.",
+              "source": "D(1,0.4809,1.9189,5.6819,1.9188,5.6819,2.1164,0.4809,2.1165)",
+              "span": {
+                "offset": 94,
+                "length": 76
+              }
+            },
+            {
+              "content": "2. Required Documents",
+              "source": "D(1,0.4812,2.4951,2.733,2.4912,2.7335,2.713,0.4817,2.7182)",
+              "span": {
+                "offset": 175,
+                "length": 21
+              }
+            },
+            {
+              "content": "Applicants provide identification, income evidence, and property details.",
+              "source": "D(1,0.4783,2.8035,5.5034,2.8033,5.5034,2.998,0.4783,2.9983)",
+              "span": {
+                "offset": 198,
+                "length": 73
+              }
+            },
+            {
+              "content": "3. Review Timeline",
+              "source": "D(1,0.484,3.383,2.2787,3.3842,2.2786,3.5886,0.4839,3.5874)",
+              "span": {
+                "offset": 276,
+                "length": 18
+              }
+            },
+            {
+              "content": "The operations team completes each stage according to the table below.",
+              "source": "D(1,0.482,3.6937,5.5989,3.6932,5.5989,3.8886,0.482,3.8892)",
+              "span": {
+                "offset": 296,
+                "length": 70
+              }
+            },
+            {
+              "content": "Stage",
+              "source": "D(1,0.5665,4.3775,0.9659,4.3786,0.9655,4.5363,0.5661,4.5353)",
+              "span": {
+                "offset": 386,
+                "length": 5
+              }
+            },
+            {
+              "content": "Owner",
+              "source": "D(1,2.8658,4.378,3.3203,4.3789,3.3203,4.515,2.8656,4.514)",
+              "span": {
+                "offset": 401,
+                "length": 5
+              }
+            },
+            {
+              "content": "Target",
+              "source": "D(1,5.2627,4.3666,5.725,4.3713,5.7234,4.5325,5.2627,4.5278)",
+              "span": {
+                "offset": 416,
+                "length": 6
+              }
+            },
+            {
+              "content": "Intake",
+              "source": "D(1,0.5676,4.7726,0.9753,4.7718,0.9756,4.9146,0.5679,4.9154)",
+              "span": {
+                "offset": 443,
+                "length": 6
+              }
+            },
+            {
+              "content": "Coordinator",
+              "source": "D(1,2.8679,4.7722,3.6357,4.7722,3.6357,4.9172,2.8679,4.9172)",
+              "span": {
+                "offset": 459,
+                "length": 11
+              }
+            },
+            {
+              "content": "1 day",
+              "source": "D(1,5.2752,4.7665,5.6379,4.77,5.6362,4.9266,5.2738,4.9227)",
+              "span": {
+                "offset": 480,
+                "length": 5
+              }
+            },
+            {
+              "content": "Verification",
+              "source": "D(1,0.5613,5.1675,1.2918,5.1669,1.2919,5.3171,0.5615,5.3177)",
+              "span": {
+                "offset": 506,
+                "length": 12
+              }
+            },
+            {
+              "content": "Analyst",
+              "source": "D(1,2.8638,5.1662,3.3646,5.1711,3.3639,5.3334,2.8622,5.3286)",
+              "span": {
+                "offset": 528,
+                "length": 7
+              }
+            },
+            {
+              "content": "2 days",
+              "source": "D(1,5.2585,5.1678,5.7093,5.175,5.7068,5.3313,5.2572,5.3241)",
+              "span": {
+                "offset": 545,
+                "length": 6
+              }
+            },
+            {
+              "content": "Decision",
+              "source": "D(1,0.567,5.5688,1.1382,5.5621,1.14,5.7104,0.5687,5.7131)",
+              "span": {
+                "offset": 572,
+                "length": 8
+              }
+            },
+            {
+              "content": "Underwriter",
+              "source": "D(1,2.8679,5.5637,3.6213,5.5641,3.6212,5.7153,2.8678,5.7148)",
+              "span": {
+                "offset": 590,
+                "length": 11
+              }
+            },
+            {
+              "content": "3 days",
+              "source": "D(1,5.2629,5.5692,5.7109,5.579,5.7068,5.7424,5.2627,5.731)",
+              "span": {
+                "offset": 611,
+                "length": 6
+              }
+            },
+            {
+              "content": "4. Approval Checklist",
+              "source": "D(1,0.4839,6.3754,2.5483,6.3687,2.549,6.5865,0.4846,6.5932)",
+              "span": {
+                "offset": 642,
+                "length": 21
+              }
+            },
+            {
+              "content": "[ ] Identity verified",
+              "source": "D(1,0.653,6.6886,1.9288,6.6771,1.9305,6.8651,0.6542,6.8767)",
+              "span": {
+                "offset": 665,
+                "length": 21
+              }
+            },
+            {
+              "content": "[ ] Income reviewed",
+              "source": "D(1,0.649,7.0073,2.0586,6.9992,2.0586,7.1832,0.6501,7.1912)",
+              "span": {
+                "offset": 688,
+                "length": 19
+              }
+            },
+            {
+              "content": "[ ] Property details confirmed",
+              "source": "D(1,0.6505,7.3236,2.7038,7.313,2.7054,7.5033,0.6521,7.5199)",
+              "span": {
+                "offset": 709,
+                "length": 30
+              }
+            },
+            {
+              "content": "FICTIONAL DEMO DATA",
+              "source": "D(1,5.9766,10.5542,7.5579,10.5542,7.5579,10.7153,5.9766,10.7153)",
+              "span": {
+                "offset": 758,
+                "length": 19
+              }
+            }
+          ]
+        }
+      ],
+      "paragraphs": [
+        {
+          "role": "pageHeader",
+          "content": "Northwind Home Loan Policy Document layout demonstration",
+          "source": "D(1,0.4569,0.3322,4.5332,0.3454,4.5313,0.9409,0.455,0.9277)",
+          "span": {
+            "offset": 0,
+            "length": 77
+          }
+        },
+        {
+          "role": "sectionHeading",
+          "content": "1. Purpose",
+          "source": "D(1,0.4949,1.6076,1.5229,1.6158,1.5211,1.8388,0.4931,1.8305)",
+          "span": {
+            "offset": 80,
+            "length": 12
+          }
+        },
+        {
+          "content": "This policy defines the review process for fictional home-loan applications.",
+          "source": "D(1,0.4809,1.9189,5.6819,1.9188,5.6819,2.1164,0.4809,2.1165)",
+          "span": {
+            "offset": 94,
+            "length": 76
+          }
+        },
+        {
+          "role": "sectionHeading",
+          "content": "2. Required Documents",
+          "source": "D(1,0.4812,2.4951,2.733,2.4899,2.7335,2.713,0.4817,2.7182)",
+          "span": {
+            "offset": 173,
+            "length": 23
+          }
+        },
+        {
+          "content": "Applicants provide identification, income evidence, and property details.",
+          "source": "D(1,0.4783,2.8035,5.5034,2.8033,5.5034,2.998,0.4783,2.9983)",
+          "span": {
+            "offset": 198,
+            "length": 73
+          }
+        },
+        {
+          "role": "sectionHeading",
+          "content": "3. Review Timeline",
+          "source": "D(1,0.484,3.383,2.2787,3.3842,2.2786,3.5886,0.4839,3.5874)",
+          "span": {
+            "offset": 274,
+            "length": 20
+          }
+        },
+        {
+          "content": "The operations team completes each stage according to the table below.",
+          "source": "D(1,0.482,3.6937,5.5989,3.6932,5.5989,3.8886,0.482,3.8892)",
+          "span": {
+            "offset": 296,
+            "length": 70
+          }
+        },
+        {
+          "content": "Stage",
+          "source": "D(1,0.5665,4.3769,0.9661,4.3786,0.9655,4.5363,0.5659,4.5347)",
+          "span": {
+            "offset": 386,
+            "length": 5
+          }
+        },
+        {
+          "content": "Owner",
+          "source": "D(1,2.8658,4.378,3.3206,4.3789,3.3203,4.5141,2.8656,4.5132)",
+          "span": {
+            "offset": 401,
+            "length": 5
+          }
+        },
+        {
+          "content": "Target",
+          "source": "D(1,5.2627,4.3666,5.725,4.3713,5.7234,4.5324,5.261,4.5277)",
+          "span": {
+            "offset": 416,
+            "length": 6
+          }
+        },
+        {
+          "content": "Intake",
+          "source": "D(1,0.5676,4.7713,0.9755,4.7718,0.9753,4.9141,0.5674,4.9137)",
+          "span": {
+            "offset": 443,
+            "length": 6
+          }
+        },
+        {
+          "content": "Coordinator",
+          "source": "D(1,2.8679,4.7722,3.6357,4.7722,3.6357,4.9172,2.8679,4.9172)",
+          "span": {
+            "offset": 459,
+            "length": 11
+          }
+        },
+        {
+          "content": "1 day",
+          "source": "D(1,5.2752,4.7657,5.6385,4.7709,5.6362,4.9279,5.2729,4.9227)",
+          "span": {
+            "offset": 480,
+            "length": 5
+          }
+        },
+        {
+          "content": "Verification",
+          "source": "D(1,0.5613,5.1666,1.2919,5.1669,1.2918,5.3157,0.5613,5.3155)",
+          "span": {
+            "offset": 506,
+            "length": 12
+          }
+        },
+        {
+          "content": "Analyst",
+          "source": "D(1,2.8638,5.1651,3.3658,5.1711,3.3639,5.3296,2.8619,5.3236)",
+          "span": {
+            "offset": 528,
+            "length": 7
+          }
+        },
+        {
+          "content": "2 days",
+          "source": "D(1,5.2589,5.159,5.7123,5.1752,5.7066,5.3364,5.2531,5.3202)",
+          "span": {
+            "offset": 545,
+            "length": 6
+          }
+        },
+        {
+          "content": "Decision",
+          "source": "D(1,0.5675,5.5651,1.1382,5.5621,1.139,5.7091,0.5683,5.7121)",
+          "span": {
+            "offset": 572,
+            "length": 8
+          }
+        },
+        {
+          "content": "Underwriter",
+          "source": "D(1,2.8679,5.5644,3.6213,5.5649,3.6212,5.7153,2.8678,5.7148)",
+          "span": {
+            "offset": 590,
+            "length": 11
+          }
+        },
+        {
+          "content": "3 days",
+          "source": "D(1,5.2631,5.564,5.7123,5.579,5.7068,5.7435,5.2576,5.7284)",
+          "span": {
+            "offset": 611,
+            "length": 6
+          }
+        },
+        {
+          "role": "sectionHeading",
+          "content": "4. Approval Checklist",
+          "source": "D(1,0.4839,6.3754,2.5483,6.3687,2.549,6.5865,0.4846,6.5932)",
+          "span": {
+            "offset": 640,
+            "length": 23
+          }
+        },
+        {
+          "content": "[ ] Identity verified",
+          "source": "D(1,0.6525,6.6886,1.9288,6.6771,1.9305,6.8651,0.6542,6.8767)",
+          "span": {
+            "offset": 665,
+            "length": 21
+          }
+        },
+        {
+          "content": "[ ] Income reviewed",
+          "source": "D(1,0.649,7.0073,2.0586,6.9992,2.0596,7.1832,0.6501,7.1913)",
+          "span": {
+            "offset": 688,
+            "length": 19
+          }
+        },
+        {
+          "content": "[ ] Property details confirmed",
+          "source": "D(1,0.6505,7.3236,2.7038,7.307,2.7054,7.5033,0.6521,7.52)",
+          "span": {
+            "offset": 709,
+            "length": 30
+          }
+        },
+        {
+          "role": "pageFooter",
+          "content": "FICTIONAL DEMO DATA",
+          "source": "D(1,5.9766,10.5542,7.5579,10.5542,7.5579,10.7153,5.9766,10.7153)",
+          "span": {
+            "offset": 741,
+            "length": 40
+          }
+        }
+      ],
+      "sections": [
+        {
+          "span": {
+            "offset": 80,
+            "length": 659
+          },
+          "elements": [
+            "/sections/1",
+            "/sections/2",
+            "/sections/3",
+            "/sections/4"
+          ]
+        },
+        {
+          "span": {
+            "offset": 80,
+            "length": 90
+          },
+          "elements": [
+            "/paragraphs/1",
+            "/paragraphs/2"
+          ]
+        },
+        {
+          "span": {
+            "offset": 173,
+            "length": 98
+          },
+          "elements": [
+            "/paragraphs/3",
+            "/paragraphs/4"
+          ]
+        },
+        {
+          "span": {
+            "offset": 274,
+            "length": 363
+          },
+          "elements": [
+            "/paragraphs/5",
+            "/paragraphs/6",
+            "/tables/0"
+          ]
+        },
+        {
+          "span": {
+            "offset": 640,
+            "length": 99
+          },
+          "elements": [
+            "/paragraphs/19",
+            "/paragraphs/20",
+            "/paragraphs/21",
+            "/paragraphs/22"
+          ]
+        }
+      ],
+      "tables": [
+        {
+          "rowCount": 4,
+          "columnCount": 3,
+          "cells": [
+            {
+              "kind": "columnHeader",
+              "rowIndex": 0,
+              "columnIndex": 0,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Stage",
+              "source": "D(1,0.495,4.2591,2.6635,4.2599,2.6712,4.6583,0.4946,4.6583)",
+              "span": {
+                "offset": 386,
+                "length": 5
+              },
+              "elements": [
+                "/paragraphs/7"
+              ]
+            },
+            {
+              "kind": "columnHeader",
+              "rowIndex": 0,
+              "columnIndex": 1,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Owner",
+              "source": "D(1,2.6635,4.2599,4.6745,4.2602,4.6829,4.6588,2.6712,4.6583)",
+              "span": {
+                "offset": 401,
+                "length": 5
+              },
+              "elements": [
+                "/paragraphs/8"
+              ]
+            },
+            {
+              "kind": "columnHeader",
+              "rowIndex": 0,
+              "columnIndex": 2,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Target",
+              "source": "D(1,4.6745,4.2602,7.7194,4.2606,7.7192,4.6599,4.6829,4.6588)",
+              "span": {
+                "offset": 416,
+                "length": 6
+              },
+              "elements": [
+                "/paragraphs/9"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 1,
+              "columnIndex": 0,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Intake",
+              "source": "D(1,0.4946,4.6583,2.6712,4.6583,2.6691,5.0574,0.4946,5.0577)",
+              "span": {
+                "offset": 443,
+                "length": 6
+              },
+              "elements": [
+                "/paragraphs/10"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 1,
+              "columnIndex": 1,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Coordinator",
+              "source": "D(1,2.6712,4.6583,4.6829,4.6588,4.6756,5.0579,2.6691,5.0574)",
+              "span": {
+                "offset": 459,
+                "length": 11
+              },
+              "elements": [
+                "/paragraphs/11"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 1,
+              "columnIndex": 2,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "1 day",
+              "source": "D(1,4.6829,4.6588,7.7192,4.6599,7.7191,5.0588,4.6756,5.0579)",
+              "span": {
+                "offset": 480,
+                "length": 5
+              },
+              "elements": [
+                "/paragraphs/12"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 2,
+              "columnIndex": 0,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Verification",
+              "source": "D(1,0.4946,5.0577,2.6691,5.0574,2.6721,5.4564,0.4945,5.457)",
+              "span": {
+                "offset": 506,
+                "length": 12
+              },
+              "elements": [
+                "/paragraphs/13"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 2,
+              "columnIndex": 1,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Analyst",
+              "source": "D(1,2.6691,5.0574,4.6756,5.0579,4.6854,5.4565,2.6721,5.4564)",
+              "span": {
+                "offset": 528,
+                "length": 7
+              },
+              "elements": [
+                "/paragraphs/14"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 2,
+              "columnIndex": 2,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "2 days",
+              "source": "D(1,4.6756,5.0579,7.7191,5.0588,7.7194,5.4569,4.6854,5.4565)",
+              "span": {
+                "offset": 545,
+                "length": 6
+              },
+              "elements": [
+                "/paragraphs/15"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 3,
+              "columnIndex": 0,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Decision",
+              "source": "D(1,0.4945,5.457,2.6721,5.4564,2.6679,5.8558,0.494,5.856)",
+              "span": {
+                "offset": 572,
+                "length": 8
+              },
+              "elements": [
+                "/paragraphs/16"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 3,
+              "columnIndex": 1,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Underwriter",
+              "source": "D(1,2.6721,5.4564,4.6854,5.4565,4.6829,5.8557,2.6679,5.8558)",
+              "span": {
+                "offset": 590,
+                "length": 11
+              },
+              "elements": [
+                "/paragraphs/17"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 3,
+              "columnIndex": 2,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "3 days",
+              "source": "D(1,4.6854,5.4565,7.7194,5.4569,7.7193,5.8564,4.6829,5.8557)",
+              "span": {
+                "offset": 611,
+                "length": 6
+              },
+              "elements": [
+                "/paragraphs/18"
+              ]
+            }
+          ],
+          "source": "D(1,0.4843,4.2432,7.7156,4.2432,7.7197,5.8384,0.4861,5.8545)",
+          "span": {
+            "offset": 369,
+            "length": 268
+          }
+        }
+      ],
+      "analyzerId": "prebuilt-layout",
+      "mimeType": "application/pdf"
+    }
+  ]
+}

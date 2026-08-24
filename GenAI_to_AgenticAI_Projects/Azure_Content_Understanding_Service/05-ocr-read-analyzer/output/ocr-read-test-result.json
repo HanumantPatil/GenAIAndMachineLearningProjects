@@ -1,0 +1,779 @@
+{
+  "analyzerId": "prebuilt-read",
+  "apiVersion": "2025-11-01",
+  "createdAt": "2026-08-24T15:14:47Z",
+  "stringEncoding": "codePoint",
+  "warnings": [],
+  "contents": [
+    {
+      "path": "input1",
+      "markdown": "Site Visit Notes - Demo Warehouse\n\nDate: August 20, 2026 Inspector: Jordan Sample\n\n1\\. Loading bay door closes normally.\n\n2\\. Replace light above aisle 4 by Friday.\n\n3\\. Inventory count: 248 labeled cartons.\n\n4\\. Follow up with facilities team at 2:30 PM.\n\nStatus: Inspection complete - no safety incident.\n\nFICTIONAL DEMO DATA\n",
+      "kind": "document",
+      "startPageNumber": 1,
+      "endPageNumber": 1,
+      "unit": "pixel",
+      "pages": [
+        {
+          "pageNumber": 1,
+          "angle": 0.04473482,
+          "width": 1200,
+          "height": 900,
+          "spans": [
+            {
+              "offset": 0,
+              "length": 328
+            }
+          ],
+          "words": [
+            {
+              "content": "Site",
+              "span": {
+                "offset": 0,
+                "length": 4
+              },
+              "confidence": 0.992,
+              "source": "D(1,64,38,134,38,134,74,63,74)"
+            },
+            {
+              "content": "Visit",
+              "span": {
+                "offset": 5,
+                "length": 5
+              },
+              "confidence": 0.977,
+              "source": "D(1,145,38,227,38,227,74,145,74)"
+            },
+            {
+              "content": "Notes",
+              "span": {
+                "offset": 11,
+                "length": 5
+              },
+              "confidence": 0.995,
+              "source": "D(1,236,38,340,38,340,74,236,74)"
+            },
+            {
+              "content": "-",
+              "span": {
+                "offset": 17,
+                "length": 1
+              },
+              "confidence": 0.998,
+              "source": "D(1,353,38,366,38,366,74,353,74)"
+            },
+            {
+              "content": "Demo",
+              "span": {
+                "offset": 19,
+                "length": 4
+              },
+              "confidence": 0.986,
+              "source": "D(1,377,38,481,38,481,74,377,74)"
+            },
+            {
+              "content": "Warehouse",
+              "span": {
+                "offset": 24,
+                "length": 9
+              },
+              "confidence": 0.994,
+              "source": "D(1,490,38,698,39,698,75,490,74)"
+            },
+            {
+              "content": "Date",
+              "span": {
+                "offset": 35,
+                "length": 4
+              },
+              "confidence": 0.998,
+              "source": "D(1,74,150,135,150,135,182,74,182)"
+            },
+            {
+              "content": ":",
+              "span": {
+                "offset": 39,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,136,150,143,150,143,182,136,182)"
+            },
+            {
+              "content": "August",
+              "span": {
+                "offset": 41,
+                "length": 6
+              },
+              "confidence": 0.979,
+              "source": "D(1,152,150,243,150,243,183,152,182)"
+            },
+            {
+              "content": "20",
+              "span": {
+                "offset": 48,
+                "length": 2
+              },
+              "confidence": 0.845,
+              "source": "D(1,252,150,285,150,285,183,252,183)"
+            },
+            {
+              "content": ",",
+              "span": {
+                "offset": 50,
+                "length": 1
+              },
+              "confidence": 0.918,
+              "source": "D(1,287,150,294,150,294,183,287,183)"
+            },
+            {
+              "content": "2026",
+              "span": {
+                "offset": 52,
+                "length": 4
+              },
+              "confidence": 0.715,
+              "source": "D(1,302,150,369,150,369,183,302,183)"
+            },
+            {
+              "content": "Inspector",
+              "span": {
+                "offset": 57,
+                "length": 9
+              },
+              "confidence": 0.99,
+              "source": "D(1,394,150,524,150,524,183,394,183)"
+            },
+            {
+              "content": ":",
+              "span": {
+                "offset": 66,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,523,150,530,150,530,183,523,183)"
+            },
+            {
+              "content": "Jordan",
+              "span": {
+                "offset": 68,
+                "length": 6
+              },
+              "confidence": 0.994,
+              "source": "D(1,539,150,630,150,630,183,539,183)"
+            },
+            {
+              "content": "Sample",
+              "span": {
+                "offset": 75,
+                "length": 6
+              },
+              "confidence": 0.992,
+              "source": "D(1,640,150,735,150,735,183,640,183)"
+            },
+            {
+              "content": "1",
+              "span": {
+                "offset": 83,
+                "length": 1
+              },
+              "confidence": 0.971,
+              "source": "D(1,82,255,94,255,94,288,82,288)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 84,
+                "length": 2
+              },
+              "confidence": 0.981,
+              "source": "D(1,96,255,102,255,102,288,96,288)"
+            },
+            {
+              "content": "Loading",
+              "span": {
+                "offset": 87,
+                "length": 7
+              },
+              "confidence": 0.92,
+              "source": "D(1,110,255,207,255,207,288,110,288)"
+            },
+            {
+              "content": "bay",
+              "span": {
+                "offset": 95,
+                "length": 3
+              },
+              "confidence": 0.998,
+              "source": "D(1,216,255,262,255,262,288,216,288)"
+            },
+            {
+              "content": "door",
+              "span": {
+                "offset": 99,
+                "length": 4
+              },
+              "confidence": 0.998,
+              "source": "D(1,270,255,329,255,329,288,270,288)"
+            },
+            {
+              "content": "closes",
+              "span": {
+                "offset": 104,
+                "length": 6
+              },
+              "confidence": 0.998,
+              "source": "D(1,336,255,416,255,416,288,336,288)"
+            },
+            {
+              "content": "normally",
+              "span": {
+                "offset": 111,
+                "length": 8
+              },
+              "confidence": 0.997,
+              "source": "D(1,425,255,536,255,536,288,425,288)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 119,
+                "length": 1
+              },
+              "confidence": 0.994,
+              "source": "D(1,535,255,543,255,543,288,535,288)"
+            },
+            {
+              "content": "2",
+              "span": {
+                "offset": 122,
+                "length": 1
+              },
+              "confidence": 0.937,
+              "source": "D(1,73,360,90,360,90,395,73,395)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 123,
+                "length": 2
+              },
+              "confidence": 0.936,
+              "source": "D(1,90,360,97,360,97,395,90,395)"
+            },
+            {
+              "content": "Replace",
+              "span": {
+                "offset": 126,
+                "length": 7
+              },
+              "confidence": 0.758,
+              "source": "D(1,105,360,205,359,205,395,105,395)"
+            },
+            {
+              "content": "light",
+              "span": {
+                "offset": 134,
+                "length": 5
+              },
+              "confidence": 0.996,
+              "source": "D(1,213,359,272,359,272,395,213,395)"
+            },
+            {
+              "content": "above",
+              "span": {
+                "offset": 140,
+                "length": 5
+              },
+              "confidence": 0.994,
+              "source": "D(1,280,359,356,359,356,395,280,395)"
+            },
+            {
+              "content": "aisle",
+              "span": {
+                "offset": 146,
+                "length": 5
+              },
+              "confidence": 0.927,
+              "source": "D(1,363,359,423,360,423,395,363,395)"
+            },
+            {
+              "content": "4",
+              "span": {
+                "offset": 152,
+                "length": 1
+              },
+              "confidence": 0.863,
+              "source": "D(1,429,360,447,360,447,395,429,395)"
+            },
+            {
+              "content": "by",
+              "span": {
+                "offset": 154,
+                "length": 2
+              },
+              "confidence": 0.711,
+              "source": "D(1,456,360,488,360,488,395,456,395)"
+            },
+            {
+              "content": "Friday",
+              "span": {
+                "offset": 157,
+                "length": 6
+              },
+              "confidence": 0.922,
+              "source": "D(1,495,360,580,360,580,395,495,395)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 163,
+                "length": 1
+              },
+              "confidence": 0.993,
+              "source": "D(1,579,360,587,360,587,395,579,395)"
+            },
+            {
+              "content": "3",
+              "span": {
+                "offset": 166,
+                "length": 1
+              },
+              "confidence": 0.964,
+              "source": "D(1,82,465,97,465,97,499,82,499)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 167,
+                "length": 2
+              },
+              "confidence": 0.966,
+              "source": "D(1,98,465,105,465,105,499,98,499)"
+            },
+            {
+              "content": "Inventory",
+              "span": {
+                "offset": 170,
+                "length": 9
+              },
+              "confidence": 0.966,
+              "source": "D(1,113,465,244,465,244,499,113,499)"
+            },
+            {
+              "content": "count",
+              "span": {
+                "offset": 180,
+                "length": 5
+              },
+              "confidence": 0.998,
+              "source": "D(1,251,465,323,465,323,499,251,499)"
+            },
+            {
+              "content": ":",
+              "span": {
+                "offset": 185,
+                "length": 1
+              },
+              "confidence": 0.998,
+              "source": "D(1,324,465,331,465,331,499,324,499)"
+            },
+            {
+              "content": "248",
+              "span": {
+                "offset": 187,
+                "length": 3
+              },
+              "confidence": 0.996,
+              "source": "D(1,341,465,390,465,390,498,341,499)"
+            },
+            {
+              "content": "labeled",
+              "span": {
+                "offset": 191,
+                "length": 7
+              },
+              "confidence": 0.995,
+              "source": "D(1,400,465,491,465,491,498,400,498)"
+            },
+            {
+              "content": "cartons",
+              "span": {
+                "offset": 199,
+                "length": 7
+              },
+              "confidence": 0.998,
+              "source": "D(1,500,465,598,465,598,498,500,498)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 206,
+                "length": 1
+              },
+              "confidence": 0.993,
+              "source": "D(1,599,465,606,465,606,498,599,498)"
+            },
+            {
+              "content": "4",
+              "span": {
+                "offset": 209,
+                "length": 1
+              },
+              "confidence": 0.894,
+              "source": "D(1,73,569,90,569,90,603,73,603)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 210,
+                "length": 2
+              },
+              "confidence": 0.923,
+              "source": "D(1,91,569,96,569,96,603,91,603)"
+            },
+            {
+              "content": "Follow",
+              "span": {
+                "offset": 213,
+                "length": 6
+              },
+              "confidence": 0.561,
+              "source": "D(1,107,569,188,569,188,603,107,603)"
+            },
+            {
+              "content": "up",
+              "span": {
+                "offset": 220,
+                "length": 2
+              },
+              "confidence": 0.998,
+              "source": "D(1,197,569,226,570,226,603,197,603)"
+            },
+            {
+              "content": "with",
+              "span": {
+                "offset": 223,
+                "length": 4
+              },
+              "confidence": 0.997,
+              "source": "D(1,234,570,290,570,290,603,234,603)"
+            },
+            {
+              "content": "facilities",
+              "span": {
+                "offset": 228,
+                "length": 10
+              },
+              "confidence": 0.997,
+              "source": "D(1,299,570,413,569,413,603,299,603)"
+            },
+            {
+              "content": "team",
+              "span": {
+                "offset": 239,
+                "length": 4
+              },
+              "confidence": 0.997,
+              "source": "D(1,423,569,485,569,485,602,423,603)"
+            },
+            {
+              "content": "at",
+              "span": {
+                "offset": 244,
+                "length": 2
+              },
+              "confidence": 0.987,
+              "source": "D(1,493,569,520,569,520,602,493,602)"
+            },
+            {
+              "content": "2",
+              "span": {
+                "offset": 247,
+                "length": 1
+              },
+              "confidence": 0.979,
+              "source": "D(1,528,569,544,569,544,602,528,602)"
+            },
+            {
+              "content": ":",
+              "span": {
+                "offset": 248,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,546,569,553,569,553,602,546,602)"
+            },
+            {
+              "content": "30",
+              "span": {
+                "offset": 249,
+                "length": 2
+              },
+              "confidence": 0.596,
+              "source": "D(1,555,569,588,569,588,602,555,602)"
+            },
+            {
+              "content": "PM",
+              "span": {
+                "offset": 252,
+                "length": 2
+              },
+              "confidence": 0.528,
+              "source": "D(1,597,569,634,569,634,601,597,602)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 254,
+                "length": 1
+              },
+              "confidence": 0.986,
+              "source": "D(1,636,569,643,569,643,601,636,601)"
+            },
+            {
+              "content": "Status",
+              "span": {
+                "offset": 257,
+                "length": 6
+              },
+              "confidence": 0.993,
+              "source": "D(1,82,675,169,675,169,709,82,709)"
+            },
+            {
+              "content": ":",
+              "span": {
+                "offset": 263,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,170,675,177,675,177,709,170,709)"
+            },
+            {
+              "content": "Inspection",
+              "span": {
+                "offset": 265,
+                "length": 10
+              },
+              "confidence": 0.993,
+              "source": "D(1,186,675,325,675,325,709,186,709)"
+            },
+            {
+              "content": "complete",
+              "span": {
+                "offset": 276,
+                "length": 8
+              },
+              "confidence": 0.993,
+              "source": "D(1,332,675,450,675,450,709,332,709)"
+            },
+            {
+              "content": "-",
+              "span": {
+                "offset": 285,
+                "length": 1
+              },
+              "confidence": 0.99,
+              "source": "D(1,457,675,469,675,469,709,457,709)"
+            },
+            {
+              "content": "no",
+              "span": {
+                "offset": 287,
+                "length": 2
+              },
+              "confidence": 0.994,
+              "source": "D(1,477,675,507,675,507,709,477,709)"
+            },
+            {
+              "content": "safety",
+              "span": {
+                "offset": 290,
+                "length": 6
+              },
+              "confidence": 0.946,
+              "source": "D(1,516,675,602,675,602,708,516,709)"
+            },
+            {
+              "content": "incident",
+              "span": {
+                "offset": 297,
+                "length": 8
+              },
+              "confidence": 0.942,
+              "source": "D(1,610,675,713,675,713,708,610,708)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 305,
+                "length": 1
+              },
+              "confidence": 0.99,
+              "source": "D(1,713,675,720,675,720,708,713,708)"
+            },
+            {
+              "content": "FICTIONAL",
+              "span": {
+                "offset": 308,
+                "length": 9
+              },
+              "confidence": 0.999,
+              "source": "D(1,728,822,840,821,840,842,728,842)"
+            },
+            {
+              "content": "DEMO",
+              "span": {
+                "offset": 318,
+                "length": 4
+              },
+              "confidence": 0.999,
+              "source": "D(1,847,821,911,821,911,842,847,842)"
+            },
+            {
+              "content": "DATA",
+              "span": {
+                "offset": 323,
+                "length": 4
+              },
+              "confidence": 0.998,
+              "source": "D(1,916,821,976,821,976,842,916,842)"
+            }
+          ],
+          "lines": [
+            {
+              "content": "Site Visit Notes - Demo Warehouse",
+              "source": "D(1,64,38,698,39,698,75,63,74)",
+              "span": {
+                "offset": 0,
+                "length": 33
+              }
+            },
+            {
+              "content": "Date: August 20, 2026 Inspector: Jordan Sample",
+              "source": "D(1,74,149,735,150,735,183,74,183)",
+              "span": {
+                "offset": 35,
+                "length": 46
+              }
+            },
+            {
+              "content": "1. Loading bay door closes normally.",
+              "source": "D(1,82,255,543,255,543,289,82,288)",
+              "span": {
+                "offset": 83,
+                "length": 37
+              }
+            },
+            {
+              "content": "2. Replace light above aisle 4 by Friday.",
+              "source": "D(1,73,359,587,360,587,395,73,395)",
+              "span": {
+                "offset": 122,
+                "length": 42
+              }
+            },
+            {
+              "content": "3. Inventory count: 248 labeled cartons.",
+              "source": "D(1,82,465,606,464,606,498,82,499)",
+              "span": {
+                "offset": 166,
+                "length": 41
+              }
+            },
+            {
+              "content": "4. Follow up with facilities team at 2:30 PM.",
+              "source": "D(1,73,569,643,569,643,603,73,603)",
+              "span": {
+                "offset": 209,
+                "length": 46
+              }
+            },
+            {
+              "content": "Status: Inspection complete - no safety incident.",
+              "source": "D(1,82,675,720,675,720,709,82,709)",
+              "span": {
+                "offset": 257,
+                "length": 49
+              }
+            },
+            {
+              "content": "FICTIONAL DEMO DATA",
+              "source": "D(1,728,821,976,821,976,842,728,842)",
+              "span": {
+                "offset": 308,
+                "length": 19
+              }
+            }
+          ]
+        }
+      ],
+      "paragraphs": [
+        {
+          "content": "Site Visit Notes - Demo Warehouse",
+          "source": "D(1,64,38,698,39,698,75,63,74)",
+          "span": {
+            "offset": 0,
+            "length": 33
+          }
+        },
+        {
+          "content": "Date: August 20, 2026 Inspector: Jordan Sample",
+          "source": "D(1,74,149,735,150,735,183,74,183)",
+          "span": {
+            "offset": 35,
+            "length": 46
+          }
+        },
+        {
+          "content": "1. Loading bay door closes normally.",
+          "source": "D(1,82,255,543,255,543,289,82,288)",
+          "span": {
+            "offset": 83,
+            "length": 37
+          }
+        },
+        {
+          "content": "2. Replace light above aisle 4 by Friday.",
+          "source": "D(1,73,359,587,360,587,395,73,395)",
+          "span": {
+            "offset": 122,
+            "length": 42
+          }
+        },
+        {
+          "content": "3. Inventory count: 248 labeled cartons.",
+          "source": "D(1,82,465,606,464,606,498,82,499)",
+          "span": {
+            "offset": 166,
+            "length": 41
+          }
+        },
+        {
+          "content": "4. Follow up with facilities team at 2:30 PM.",
+          "source": "D(1,73,569,643,569,643,603,73,603)",
+          "span": {
+            "offset": 209,
+            "length": 46
+          }
+        },
+        {
+          "content": "Status: Inspection complete - no safety incident.",
+          "source": "D(1,82,675,720,675,720,709,82,709)",
+          "span": {
+            "offset": 257,
+            "length": 49
+          }
+        },
+        {
+          "content": "FICTIONAL DEMO DATA",
+          "source": "D(1,728,821,976,821,976,842,728,842)",
+          "span": {
+            "offset": 308,
+            "length": 19
+          }
+        }
+      ],
+      "analyzerId": "prebuilt-read",
+      "mimeType": "image/png"
+    }
+  ]
+}

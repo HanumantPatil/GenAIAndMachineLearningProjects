@@ -1,0 +1,1399 @@
+{
+  "analyzerId": "prebuilt-documentFields",
+  "apiVersion": "2025-11-01",
+  "createdAt": "2026-08-24T15:13:44Z",
+  "stringEncoding": "codePoint",
+  "warnings": [],
+  "contents": [
+    {
+      "path": "input1",
+      "markdown": "# Equipment Request Form General document-fields demonstration\n\n\n<table>\n<tr>\n<td>Request ID</td>\n<td>REQ-2026-0148</td>\n</tr>\n<tr>\n<td>Employee name</td>\n<td>Taylor Sample</td>\n</tr>\n<tr>\n<td>Department</td>\n<td>Product Design</td>\n</tr>\n<tr>\n<td>Manager</td>\n<td>Morgan Example</td>\n</tr>\n<tr>\n<td>Requested item</td>\n<td>27-inch color-accurate monitor</td>\n</tr>\n<tr>\n<td>Quantity</td>\n<td>2</td>\n</tr>\n<tr>\n<td>Estimated cost</td>\n<td>$1,180.00</td>\n</tr>\n<tr>\n<td>Needed by</td>\n<td>September 15, 2026</td>\n</tr>\n<tr>\n<td>Business reason</td>\n<td>Design review and accessibility testing</td>\n</tr>\n<tr>\n<td>Approval status</td>\n<td>Pending manager review</td>\n</tr>\n</table>\n\n\n<!-- PageFooter: FICTIONAL DEMO DATA -->\n",
+      "fields": {
+        "RequestId": {
+          "type": "string",
+          "valueString": "REQ-2026-0148",
+          "spans": [
+            {
+              "offset": 102,
+              "length": 13
+            }
+          ],
+          "confidence": 0.792,
+          "source": "D(1,3.0192,1.7966,4.0964,1.7954,4.0966,1.9545,3.0194,1.9557)"
+        },
+        "EmployeeName": {
+          "type": "string",
+          "valueString": "Taylor Sample",
+          "spans": [
+            {
+              "offset": 159,
+              "length": 13
+            }
+          ],
+          "confidence": 0.856,
+          "source": "D(1,3.0132,2.4300,3.9777,2.4395,3.9760,2.6107,3.0115,2.6012)"
+        },
+        "Department": {
+          "type": "string",
+          "valueString": "Product Design",
+          "spans": [
+            {
+              "offset": 213,
+              "length": 14
+            }
+          ],
+          "confidence": 0.796,
+          "source": "D(1,3.0154,3.0628,4.0364,3.0763,4.0342,3.2429,3.0131,3.2294)"
+        },
+        "Manager": {
+          "type": "string",
+          "valueString": "Morgan Example",
+          "spans": [
+            {
+              "offset": 265,
+              "length": 14
+            }
+          ],
+          "confidence": 0.789,
+          "source": "D(1,3.0133,3.6860,4.1317,3.6997,4.1294,3.8830,3.0111,3.8693)"
+        },
+        "RequestedItem": {
+          "type": "string",
+          "valueString": "27-inch color-accurate monitor",
+          "spans": [
+            {
+              "offset": 324,
+              "length": 30
+            }
+          ],
+          "confidence": 0.722,
+          "source": "D(1,3.0133,4.3141,4.9903,4.3325,4.9887,4.5044,3.0117,4.4860)"
+        },
+        "Quantity": {
+          "type": "integer",
+          "valueInteger": 2,
+          "spans": [
+            {
+              "offset": 393,
+              "length": 1
+            }
+          ],
+          "confidence": 0.958,
+          "source": "D(1,3.0236,4.9786,3.1211,4.9760,3.1211,5.1173,3.0236,5.1183)"
+        },
+        "EstimatedCost": {
+          "type": "number",
+          "valueNumber": 1180,
+          "spans": [
+            {
+              "offset": 439,
+              "length": 9
+            }
+          ],
+          "confidence": 0.846,
+          "source": "D(1,3.0144,5.5999,3.6772,5.5963,3.6781,5.7649,3.0153,5.7686)"
+        },
+        "NeededByDate": {
+          "type": "date",
+          "valueDate": "2026-09-15",
+          "spans": [
+            {
+              "offset": 488,
+              "length": 18
+            }
+          ],
+          "confidence": 0.731,
+          "source": "D(1,3.0173,6.2305,4.3455,6.2305,4.3455,6.4023,3.0173,6.4023)"
+        },
+        "BusinessReason": {
+          "type": "string",
+          "valueString": "Design review and accessibility testing",
+          "spans": [
+            {
+              "offset": 552,
+              "length": 39
+            }
+          ],
+          "confidence": 0.66,
+          "source": "D(1,3.0194,6.8614,5.5246,6.8666,5.5242,7.0430,3.0190,7.0378)"
+        },
+        "ApprovalStatus": {
+          "type": "string",
+          "valueString": "Pending manager review",
+          "spans": [
+            {
+              "offset": 637,
+              "length": 22
+            }
+          ],
+          "confidence": 0.699,
+          "source": "D(1,3.0173,7.4961,4.6443,7.4957,4.6443,7.6726,3.0173,7.6731)"
+        }
+      },
+      "kind": "document",
+      "startPageNumber": 1,
+      "endPageNumber": 1,
+      "unit": "inch",
+      "pages": [
+        {
+          "pageNumber": 1,
+          "angle": 0,
+          "width": 8.5,
+          "height": 11,
+          "spans": [
+            {
+              "offset": 0,
+              "length": 723
+            }
+          ],
+          "words": [
+            {
+              "content": "Equipment",
+              "span": {
+                "offset": 2,
+                "length": 9
+              },
+              "confidence": 0.994,
+              "source": "D(1,0.4571,0.3435,1.9759,0.3422,1.9761,0.6652,0.4573,0.6683)"
+            },
+            {
+              "content": "Request",
+              "span": {
+                "offset": 12,
+                "length": 7
+              },
+              "confidence": 0.994,
+              "source": "D(1,2.0556,0.3422,3.2133,0.3423,3.2134,0.6577,2.0558,0.6649)"
+            },
+            {
+              "content": "Form",
+              "span": {
+                "offset": 20,
+                "length": 4
+              },
+              "confidence": 0.995,
+              "source": "D(1,3.293,0.3423,4.0259,0.3428,4.0259,0.6507,3.2931,0.6571)"
+            },
+            {
+              "content": "General",
+              "span": {
+                "offset": 25,
+                "length": 7
+              },
+              "confidence": 0.997,
+              "source": "D(1,0.468,0.7476,1.0194,0.7472,1.0202,0.9129,0.469,0.91)"
+            },
+            {
+              "content": "document",
+              "span": {
+                "offset": 33,
+                "length": 8
+              },
+              "confidence": 0.997,
+              "source": "D(1,1.0578,0.7472,1.7547,0.7467,1.7552,0.9148,1.0586,0.9131)"
+            },
+            {
+              "content": "-",
+              "span": {
+                "offset": 41,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,1.7492,0.7467,1.7958,0.7466,1.7964,0.9148,1.7498,0.9148)"
+            },
+            {
+              "content": "fields",
+              "span": {
+                "offset": 42,
+                "length": 6
+              },
+              "confidence": 0.993,
+              "source": "D(1,1.7931,0.7466,2.1525,0.7464,2.1529,0.9149,1.7936,0.9148)"
+            },
+            {
+              "content": "demonstration",
+              "span": {
+                "offset": 49,
+                "length": 13
+              },
+              "confidence": 0.998,
+              "source": "D(1,2.1964,0.7463,3.1896,0.7455,3.1896,0.9103,2.1968,0.9149)"
+            },
+            {
+              "content": "Request",
+              "span": {
+                "offset": 82,
+                "length": 7
+              },
+              "confidence": 0.998,
+              "source": "D(1,0.6179,1.8015,1.1957,1.7997,1.196,1.9636,0.6189,1.963)"
+            },
+            {
+              "content": "ID",
+              "span": {
+                "offset": 90,
+                "length": 2
+              },
+              "confidence": 0.993,
+              "source": "D(1,1.2358,1.7997,1.3883,1.7996,1.3883,1.9645,1.236,1.9638)"
+            },
+            {
+              "content": "REQ",
+              "span": {
+                "offset": 102,
+                "length": 3
+              },
+              "confidence": 0.988,
+              "source": "D(1,3.0194,1.7979,3.3353,1.7978,3.3353,1.954,3.0194,1.9546)"
+            },
+            {
+              "content": "-",
+              "span": {
+                "offset": 105,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,3.3353,1.7978,3.3845,1.7978,3.3845,1.9539,3.3353,1.954)"
+            },
+            {
+              "content": "2026-0148",
+              "span": {
+                "offset": 106,
+                "length": 9
+              },
+              "confidence": 0.983,
+              "source": "D(1,3.3819,1.7978,4.0964,1.7954,4.0964,1.9545,3.3819,1.9539)"
+            },
+            {
+              "content": "Employee",
+              "span": {
+                "offset": 136,
+                "length": 8
+              },
+              "confidence": 0.997,
+              "source": "D(1,0.6194,2.4409,1.3156,2.442,1.3156,2.6036,0.6194,2.605)"
+            },
+            {
+              "content": "name",
+              "span": {
+                "offset": 145,
+                "length": 4
+              },
+              "confidence": 0.999,
+              "source": "D(1,1.3589,2.442,1.7463,2.4428,1.7463,2.6019,1.3589,2.6035)"
+            },
+            {
+              "content": "Taylor",
+              "span": {
+                "offset": 159,
+                "length": 6
+              },
+              "confidence": 0.997,
+              "source": "D(1,3.0132,2.4345,3.4317,2.4389,3.4317,2.6051,3.0132,2.6012)"
+            },
+            {
+              "content": "Sample",
+              "span": {
+                "offset": 166,
+                "length": 6
+              },
+              "confidence": 0.997,
+              "source": "D(1,3.4673,2.4391,3.9761,2.4395,3.9761,2.6048,3.4673,2.6052)"
+            },
+            {
+              "content": "Department",
+              "span": {
+                "offset": 193,
+                "length": 10
+              },
+              "confidence": 0.998,
+              "source": "D(1,0.6189,3.0739,1.4537,3.0751,1.4537,3.2364,0.6194,3.2367)"
+            },
+            {
+              "content": "Product",
+              "span": {
+                "offset": 213,
+                "length": 7
+              },
+              "confidence": 0.998,
+              "source": "D(1,3.0153,3.0667,3.5358,3.0707,3.5358,3.2329,3.0153,3.2294)"
+            },
+            {
+              "content": "Design",
+              "span": {
+                "offset": 221,
+                "length": 6
+              },
+              "confidence": 0.999,
+              "source": "D(1,3.569,3.071,4.0342,3.0763,4.0342,3.2403,3.569,3.2333)"
+            },
+            {
+              "content": "Manager",
+              "span": {
+                "offset": 248,
+                "length": 7
+              },
+              "confidence": 0.996,
+              "source": "D(1,0.6194,3.7022,1.2316,3.704,1.2316,3.8672,0.6194,3.8647)"
+            },
+            {
+              "content": "Morgan",
+              "span": {
+                "offset": 265,
+                "length": 6
+              },
+              "confidence": 0.995,
+              "source": "D(1,3.0132,3.6969,3.5045,3.7031,3.5045,3.8752,3.0132,3.8693)"
+            },
+            {
+              "content": "Example",
+              "span": {
+                "offset": 272,
+                "length": 7
+              },
+              "confidence": 0.994,
+              "source": "D(1,3.554,3.7032,4.1296,3.6997,4.1296,3.8706,3.554,3.8752)"
+            },
+            {
+              "content": "Requested",
+              "span": {
+                "offset": 300,
+                "length": 9
+              },
+              "confidence": 0.997,
+              "source": "D(1,0.6179,4.3354,1.3578,4.3343,1.3581,4.4986,0.6189,4.5019)"
+            },
+            {
+              "content": "item",
+              "span": {
+                "offset": 310,
+                "length": 4
+              },
+              "confidence": 0.999,
+              "source": "D(1,1.4042,4.3346,1.71,4.3364,1.71,4.5022,1.4045,4.4991)"
+            },
+            {
+              "content": "27",
+              "span": {
+                "offset": 324,
+                "length": 2
+              },
+              "confidence": 0.994,
+              "source": "D(1,3.0132,4.3226,3.1823,4.3249,3.1823,4.4851,3.0132,4.4825)"
+            },
+            {
+              "content": "-",
+              "span": {
+                "offset": 326,
+                "length": 1
+              },
+              "confidence": 0.997,
+              "source": "D(1,3.1823,4.3249,3.2252,4.3255,3.2252,4.4858,3.1823,4.4851)"
+            },
+            {
+              "content": "inch",
+              "span": {
+                "offset": 327,
+                "length": 4
+              },
+              "confidence": 0.995,
+              "source": "D(1,3.2306,4.3256,3.4963,4.3293,3.4963,4.49,3.2306,4.4859)"
+            },
+            {
+              "content": "color",
+              "span": {
+                "offset": 332,
+                "length": 5
+              },
+              "confidence": 0.997,
+              "source": "D(1,3.5366,4.3298,3.8587,4.3327,3.8587,4.4938,3.5366,4.4907)"
+            },
+            {
+              "content": "-",
+              "span": {
+                "offset": 337,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,3.8533,4.3326,3.9016,4.3329,3.9016,4.494,3.8533,4.4938)"
+            },
+            {
+              "content": "accurate",
+              "span": {
+                "offset": 338,
+                "length": 8
+              },
+              "confidence": 0.995,
+              "source": "D(1,3.8989,4.3329,4.4573,4.3346,4.4573,4.4958,3.8989,4.494)"
+            },
+            {
+              "content": "monitor",
+              "span": {
+                "offset": 347,
+                "length": 7
+              },
+              "confidence": 0.995,
+              "source": "D(1,4.4895,4.3344,4.9888,4.3325,4.9888,4.4934,4.4895,4.4957)"
+            },
+            {
+              "content": "Quantity",
+              "span": {
+                "offset": 375,
+                "length": 8
+              },
+              "confidence": 0.994,
+              "source": "D(1,0.6231,4.9704,1.2202,4.9696,1.2192,5.131,0.6231,5.129)"
+            },
+            {
+              "content": "2",
+              "span": {
+                "offset": 393,
+                "length": 1
+              },
+              "confidence": 0.998,
+              "source": "D(1,3.0236,4.9786,3.1211,4.976,3.1211,5.1173,3.0236,5.1183)"
+            },
+            {
+              "content": "Estimated",
+              "span": {
+                "offset": 415,
+                "length": 9
+              },
+              "confidence": 0.988,
+              "source": "D(1,0.6205,5.5967,1.3176,5.5967,1.3178,5.7578,0.621,5.7578)"
+            },
+            {
+              "content": "cost",
+              "span": {
+                "offset": 425,
+                "length": 4
+              },
+              "confidence": 0.996,
+              "source": "D(1,1.3625,5.5967,1.6768,5.5967,1.6768,5.7578,1.3627,5.7578)"
+            },
+            {
+              "content": "$",
+              "span": {
+                "offset": 439,
+                "length": 1
+              },
+              "confidence": 0.998,
+              "source": "D(1,3.0153,5.601,3.0925,5.5997,3.0925,5.7655,3.0153,5.7686)"
+            },
+            {
+              "content": "1,180.00",
+              "span": {
+                "offset": 440,
+                "length": 8
+              },
+              "confidence": 0.962,
+              "source": "D(1,3.109,5.5994,3.6772,5.5975,3.6772,5.7605,3.109,5.7649)"
+            },
+            {
+              "content": "Needed",
+              "span": {
+                "offset": 469,
+                "length": 6
+              },
+              "confidence": 0.995,
+              "source": "D(1,0.6194,6.2293,1.144,6.2323,1.1425,6.4042,0.6194,6.4012)"
+            },
+            {
+              "content": "by",
+              "span": {
+                "offset": 476,
+                "length": 2
+              },
+              "confidence": 0.997,
+              "source": "D(1,1.185,6.2322,1.3696,6.2314,1.3676,6.4033,1.1834,6.404)"
+            },
+            {
+              "content": "September",
+              "span": {
+                "offset": 488,
+                "length": 9
+              },
+              "confidence": 0.98,
+              "source": "D(1,3.0173,6.2305,3.7444,6.2305,3.7444,6.4023,3.0173,6.4023)"
+            },
+            {
+              "content": "15",
+              "span": {
+                "offset": 498,
+                "length": 2
+              },
+              "confidence": 0.952,
+              "source": "D(1,3.7844,6.2305,3.9333,6.2305,3.9333,6.4023,3.7844,6.4023)"
+            },
+            {
+              "content": ",",
+              "span": {
+                "offset": 500,
+                "length": 1
+              },
+              "confidence": 0.947,
+              "source": "D(1,3.9361,6.2305,3.9676,6.2305,3.9676,6.4023,3.9361,6.4023)"
+            },
+            {
+              "content": "2026",
+              "span": {
+                "offset": 502,
+                "length": 4
+              },
+              "confidence": 0.951,
+              "source": "D(1,4.0106,6.2305,4.3455,6.2305,4.3455,6.4023,4.0106,6.4023)"
+            },
+            {
+              "content": "Business",
+              "span": {
+                "offset": 527,
+                "length": 8
+              },
+              "confidence": 0.998,
+              "source": "D(1,0.6194,6.8752,1.2624,6.8732,1.2624,7.0236,0.6194,7.0256)"
+            },
+            {
+              "content": "reason",
+              "span": {
+                "offset": 536,
+                "length": 6
+              },
+              "confidence": 0.998,
+              "source": "D(1,1.3055,6.8732,1.794,6.8763,1.794,7.0267,1.3055,7.0236)"
+            },
+            {
+              "content": "Design",
+              "span": {
+                "offset": 552,
+                "length": 6
+              },
+              "confidence": 0.989,
+              "source": "D(1,3.0194,6.8657,3.4748,6.8643,3.4748,7.0362,3.0194,7.0376)"
+            },
+            {
+              "content": "review",
+              "span": {
+                "offset": 559,
+                "length": 6
+              },
+              "confidence": 0.977,
+              "source": "D(1,3.5204,6.8641,3.9388,6.8633,3.9388,7.0351,3.5204,7.036)"
+            },
+            {
+              "content": "and",
+              "span": {
+                "offset": 566,
+                "length": 3
+              },
+              "confidence": 0.996,
+              "source": "D(1,3.9786,6.8634,4.2177,6.8639,4.2177,7.0357,3.9786,7.0352)"
+            },
+            {
+              "content": "accessibility",
+              "span": {
+                "offset": 570,
+                "length": 13
+              },
+              "confidence": 0.969,
+              "source": "D(1,4.2661,6.864,5.046,6.8676,5.046,7.0394,4.2661,7.0358)"
+            },
+            {
+              "content": "testing",
+              "span": {
+                "offset": 584,
+                "length": 7
+              },
+              "confidence": 0.985,
+              "source": "D(1,5.0802,6.8678,5.5242,6.8712,5.5242,7.043,5.0802,7.0397)"
+            },
+            {
+              "content": "Approval",
+              "span": {
+                "offset": 612,
+                "length": 8
+              },
+              "confidence": 0.997,
+              "source": "D(1,0.6137,7.5034,1.2518,7.5014,1.252,7.6695,0.6143,7.6755)"
+            },
+            {
+              "content": "status",
+              "span": {
+                "offset": 621,
+                "length": 6
+              },
+              "confidence": 0.993,
+              "source": "D(1,1.2934,7.5014,1.7234,7.5035,1.7234,7.6648,1.2936,7.6691)"
+            },
+            {
+              "content": "Pending",
+              "span": {
+                "offset": 637,
+                "length": 7
+              },
+              "confidence": 0.994,
+              "source": "D(1,3.0173,7.4961,3.554,7.5009,3.554,7.6728,3.0173,7.668)"
+            },
+            {
+              "content": "manager",
+              "span": {
+                "offset": 645,
+                "length": 7
+              },
+              "confidence": 0.993,
+              "source": "D(1,3.5992,7.501,4.1754,7.5009,4.1754,7.6727,3.5992,7.6729)"
+            },
+            {
+              "content": "review",
+              "span": {
+                "offset": 653,
+                "length": 6
+              },
+              "confidence": 0.983,
+              "source": "D(1,4.2093,7.5006,4.6443,7.4974,4.6443,7.6693,4.2093,7.6725)"
+            },
+            {
+              "content": "FICTIONAL",
+              "span": {
+                "offset": 699,
+                "length": 9
+              },
+              "confidence": 0.997,
+              "source": "D(1,5.9766,10.5596,6.6999,10.5596,6.6999,10.71,5.9766,10.71)"
+            },
+            {
+              "content": "DEMO",
+              "span": {
+                "offset": 709,
+                "length": 4
+              },
+              "confidence": 0.997,
+              "source": "D(1,6.742,10.5596,7.1359,10.5596,7.1359,10.71,6.742,10.71)"
+            },
+            {
+              "content": "DATA",
+              "span": {
+                "offset": 714,
+                "length": 4
+              },
+              "confidence": 0.996,
+              "source": "D(1,7.183,10.5596,7.562,10.5596,7.562,10.71,7.183,10.71)"
+            }
+          ],
+          "lines": [
+            {
+              "content": "Equipment Request Form",
+              "source": "D(1,0.457,0.3435,4.0259,0.3398,4.0262,0.6646,0.4573,0.6683)",
+              "span": {
+                "offset": 2,
+                "length": 22
+              }
+            },
+            {
+              "content": "General document-fields demonstration",
+              "source": "D(1,0.468,0.7476,3.1896,0.7455,3.1897,0.9142,0.4681,0.9163)",
+              "span": {
+                "offset": 25,
+                "length": 37
+              }
+            },
+            {
+              "content": "Request ID",
+              "source": "D(1,0.6179,1.7996,1.3883,1.7996,1.3883,1.9645,0.6179,1.9645)",
+              "span": {
+                "offset": 82,
+                "length": 10
+              }
+            },
+            {
+              "content": "REQ-2026-0148",
+              "source": "D(1,3.0194,1.7954,4.0964,1.7954,4.0964,1.9545,3.0194,1.9546)",
+              "span": {
+                "offset": 102,
+                "length": 13
+              }
+            },
+            {
+              "content": "Employee name",
+              "source": "D(1,0.6194,2.4409,1.7463,2.4409,1.7463,2.605,0.6194,2.605)",
+              "span": {
+                "offset": 136,
+                "length": 13
+              }
+            },
+            {
+              "content": "Taylor Sample",
+              "source": "D(1,3.0132,2.4345,3.9769,2.4395,3.9761,2.6074,3.0123,2.603)",
+              "span": {
+                "offset": 159,
+                "length": 13
+              }
+            },
+            {
+              "content": "Department",
+              "source": "D(1,0.6189,3.0739,1.4537,3.0739,1.4537,3.2367,0.6189,3.2367)",
+              "span": {
+                "offset": 193,
+                "length": 10
+              }
+            },
+            {
+              "content": "Product Design",
+              "source": "D(1,3.0153,3.0649,4.0342,3.0758,4.0342,3.2403,3.0135,3.2293)",
+              "span": {
+                "offset": 213,
+                "length": 14
+              }
+            },
+            {
+              "content": "Manager",
+              "source": "D(1,0.6194,3.7022,1.2321,3.704,1.2316,3.8724,0.6189,3.8705)",
+              "span": {
+                "offset": 248,
+                "length": 7
+              }
+            },
+            {
+              "content": "Morgan Example",
+              "source": "D(1,3.0132,3.6969,4.1301,3.6997,4.1296,3.8769,3.0127,3.8741)",
+              "span": {
+                "offset": 265,
+                "length": 14
+              }
+            },
+            {
+              "content": "Requested item",
+              "source": "D(1,0.6179,4.3339,1.71,4.3342,1.71,4.5022,0.6178,4.5019)",
+              "span": {
+                "offset": 300,
+                "length": 14
+              }
+            },
+            {
+              "content": "27-inch color-accurate monitor",
+              "source": "D(1,3.0132,4.3226,4.9896,4.3325,4.9887,4.4997,3.0123,4.4898)",
+              "span": {
+                "offset": 324,
+                "length": 30
+              }
+            },
+            {
+              "content": "Quantity",
+              "source": "D(1,0.6229,4.9704,1.2202,4.9696,1.2204,5.132,0.6231,5.1328)",
+              "span": {
+                "offset": 375,
+                "length": 8
+              }
+            },
+            {
+              "content": "2",
+              "source": "D(1,3.0236,4.976,3.1211,4.976,3.1211,5.1189,3.0236,5.1189)",
+              "span": {
+                "offset": 393,
+                "length": 1
+              }
+            },
+            {
+              "content": "Estimated cost",
+              "source": "D(1,0.6205,5.5967,1.6768,5.5967,1.6768,5.7578,0.6205,5.7578)",
+              "span": {
+                "offset": 415,
+                "length": 14
+              }
+            },
+            {
+              "content": "$1,180.00",
+              "source": "D(1,3.0132,5.5999,3.6772,5.5918,3.6792,5.7604,3.0153,5.7686)",
+              "span": {
+                "offset": 439,
+                "length": 9
+              }
+            },
+            {
+              "content": "Needed by",
+              "source": "D(1,0.6194,6.2293,1.3696,6.2314,1.3691,6.405,0.619,6.4029)",
+              "span": {
+                "offset": 469,
+                "length": 9
+              }
+            },
+            {
+              "content": "September 15, 2026",
+              "source": "D(1,3.0173,6.2305,4.3455,6.2305,4.3455,6.4023,3.0173,6.4023)",
+              "span": {
+                "offset": 488,
+                "length": 18
+              }
+            },
+            {
+              "content": "Business reason",
+              "source": "D(1,0.6194,6.8726,1.7941,6.8737,1.794,7.0267,0.6193,7.0256)",
+              "span": {
+                "offset": 527,
+                "length": 15
+              }
+            },
+            {
+              "content": "Design review and accessibility testing",
+              "source": "D(1,3.0194,6.8613,5.5246,6.8667,5.5242,7.043,3.019,7.0376)",
+              "span": {
+                "offset": 552,
+                "length": 39
+              }
+            },
+            {
+              "content": "Approval status",
+              "source": "D(1,0.6133,7.5034,1.7234,7.5013,1.7244,7.6693,0.6143,7.6755)",
+              "span": {
+                "offset": 612,
+                "length": 15
+              }
+            },
+            {
+              "content": "Pending manager review",
+              "source": "D(1,3.0173,7.4961,4.6444,7.4974,4.6443,7.6737,3.0172,7.6724)",
+              "span": {
+                "offset": 637,
+                "length": 22
+              }
+            },
+            {
+              "content": "FICTIONAL DEMO DATA",
+              "source": "D(1,5.9766,10.5596,7.562,10.5596,7.562,10.71,5.9766,10.71)",
+              "span": {
+                "offset": 699,
+                "length": 19
+              }
+            }
+          ]
+        }
+      ],
+      "paragraphs": [
+        {
+          "role": "title",
+          "content": "Equipment Request Form General document-fields demonstration",
+          "source": "D(1,0.457,0.3435,4.0259,0.3398,4.0265,0.9133,0.4576,0.917)",
+          "span": {
+            "offset": 0,
+            "length": 62
+          }
+        },
+        {
+          "content": "Request ID",
+          "source": "D(1,0.6179,1.7979,1.3887,1.7996,1.3883,1.9647,0.6175,1.963)",
+          "span": {
+            "offset": 82,
+            "length": 10
+          }
+        },
+        {
+          "content": "REQ-2026-0148",
+          "source": "D(1,3.0192,1.7966,4.0964,1.7954,4.0966,1.9545,3.0194,1.9558)",
+          "span": {
+            "offset": 102,
+            "length": 13
+          }
+        },
+        {
+          "content": "Employee name",
+          "source": "D(1,0.6194,2.4409,1.7463,2.4406,1.7463,2.6047,0.6194,2.605)",
+          "span": {
+            "offset": 136,
+            "length": 13
+          }
+        },
+        {
+          "content": "Taylor Sample",
+          "source": "D(1,3.0132,2.4299,3.9777,2.4395,3.976,2.6107,3.0115,2.6011)",
+          "span": {
+            "offset": 159,
+            "length": 13
+          }
+        },
+        {
+          "content": "Department",
+          "source": "D(1,0.6189,3.0739,1.4538,3.0744,1.4537,3.2372,0.6188,3.2367)",
+          "span": {
+            "offset": 193,
+            "length": 10
+          }
+        },
+        {
+          "content": "Product Design",
+          "source": "D(1,3.0153,3.0628,4.0363,3.0763,4.0341,3.2428,3.0131,3.2293)",
+          "span": {
+            "offset": 213,
+            "length": 14
+          }
+        },
+        {
+          "content": "Manager",
+          "source": "D(1,0.6194,3.7018,1.2322,3.704,1.2316,3.8672,0.6189,3.865)",
+          "span": {
+            "offset": 248,
+            "length": 7
+          }
+        },
+        {
+          "content": "Morgan Example",
+          "source": "D(1,3.0133,3.6859,4.1317,3.6997,4.1295,3.883,3.0111,3.8692)",
+          "span": {
+            "offset": 265,
+            "length": 14
+          }
+        },
+        {
+          "content": "Requested item",
+          "source": "D(1,0.6179,4.3278,1.7113,4.3364,1.7099,4.5104,0.6166,4.5019)",
+          "span": {
+            "offset": 300,
+            "length": 14
+          }
+        },
+        {
+          "content": "27-inch color-accurate monitor",
+          "source": "D(1,3.0133,4.3143,4.9903,4.3326,4.9887,4.5043,3.0117,4.486)",
+          "span": {
+            "offset": 324,
+            "length": 30
+          }
+        },
+        {
+          "content": "Quantity",
+          "source": "D(1,0.6231,4.969,1.2202,4.9696,1.2201,5.131,0.6229,5.1304)",
+          "span": {
+            "offset": 375,
+            "length": 8
+          }
+        },
+        {
+          "content": "2",
+          "source": "D(1,3.0209,4.9779,3.1211,4.976,3.1238,5.1172,3.0236,5.1191)",
+          "span": {
+            "offset": 393,
+            "length": 1
+          }
+        },
+        {
+          "content": "Estimated cost",
+          "source": "D(1,0.6205,5.5967,1.6768,5.5967,1.6768,5.7578,0.6205,5.7578)",
+          "span": {
+            "offset": 415,
+            "length": 14
+          }
+        },
+        {
+          "content": "$1,180.00",
+          "source": "D(1,3.0143,5.5999,3.6772,5.5963,3.6782,5.7649,3.0153,5.7686)",
+          "span": {
+            "offset": 439,
+            "length": 9
+          }
+        },
+        {
+          "content": "Needed by",
+          "source": "D(1,0.6195,6.2271,1.3696,6.2314,1.3686,6.4055,0.6185,6.4012)",
+          "span": {
+            "offset": 469,
+            "length": 9
+          }
+        },
+        {
+          "content": "September 15, 2026",
+          "source": "D(1,3.0173,6.2305,4.3455,6.2305,4.3455,6.4023,3.0173,6.4023)",
+          "span": {
+            "offset": 488,
+            "length": 18
+          }
+        },
+        {
+          "content": "Business reason",
+          "source": "D(1,0.6195,6.8689,1.7949,6.8763,1.794,7.0329,0.6185,7.0256)",
+          "span": {
+            "offset": 527,
+            "length": 15
+          }
+        },
+        {
+          "content": "Design review and accessibility testing",
+          "source": "D(1,3.0194,6.8613,5.5246,6.8667,5.5242,7.043,3.019,7.0376)",
+          "span": {
+            "offset": 552,
+            "length": 39
+          }
+        },
+        {
+          "content": "Approval status",
+          "source": "D(1,0.6137,7.503,1.7234,7.5001,1.7239,7.6727,0.6142,7.6755)",
+          "span": {
+            "offset": 612,
+            "length": 15
+          }
+        },
+        {
+          "content": "Pending manager review",
+          "source": "D(1,3.0173,7.4961,4.6443,7.4957,4.6443,7.6726,3.0173,7.673)",
+          "span": {
+            "offset": 637,
+            "length": 22
+          }
+        },
+        {
+          "role": "pageFooter",
+          "content": "FICTIONAL DEMO DATA",
+          "source": "D(1,5.9766,10.5596,7.562,10.5596,7.562,10.71,5.9766,10.71)",
+          "span": {
+            "offset": 682,
+            "length": 40
+          }
+        }
+      ],
+      "sections": [
+        {
+          "span": {
+            "offset": 0,
+            "length": 679
+          },
+          "elements": [
+            "/paragraphs/0",
+            "/tables/0"
+          ]
+        }
+      ],
+      "tables": [
+        {
+          "rowCount": 10,
+          "columnCount": 2,
+          "cells": [
+            {
+              "kind": "rowHeader",
+              "rowIndex": 0,
+              "columnIndex": 0,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Request ID",
+              "source": "D(1,0.4774,1.6095,2.8684,1.6091,2.8677,2.2335,0.477,2.2338)",
+              "span": {
+                "offset": 82,
+                "length": 10
+              },
+              "elements": [
+                "/paragraphs/1"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 0,
+              "columnIndex": 1,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "REQ-2026-0148",
+              "source": "D(1,2.8684,1.6091,7.9891,1.6101,7.9892,2.2344,2.8677,2.2335)",
+              "span": {
+                "offset": 102,
+                "length": 13
+              },
+              "elements": [
+                "/paragraphs/2"
+              ]
+            },
+            {
+              "kind": "rowHeader",
+              "rowIndex": 1,
+              "columnIndex": 0,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Employee name",
+              "source": "D(1,0.477,2.2338,2.8677,2.2335,2.8673,2.8666,0.4768,2.8669)",
+              "span": {
+                "offset": 136,
+                "length": 13
+              },
+              "elements": [
+                "/paragraphs/3"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 1,
+              "columnIndex": 1,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Taylor Sample",
+              "source": "D(1,2.8677,2.2335,7.9892,2.2344,7.9891,2.8675,2.8673,2.8666)",
+              "span": {
+                "offset": 159,
+                "length": 13
+              },
+              "elements": [
+                "/paragraphs/4"
+              ]
+            },
+            {
+              "kind": "rowHeader",
+              "rowIndex": 2,
+              "columnIndex": 0,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Department",
+              "source": "D(1,0.4768,2.8669,2.8673,2.8666,2.8672,3.5037,0.4766,3.5038)",
+              "span": {
+                "offset": 193,
+                "length": 10
+              },
+              "elements": [
+                "/paragraphs/5"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 2,
+              "columnIndex": 1,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Product Design",
+              "source": "D(1,2.8673,2.8666,7.9891,2.8675,7.9891,3.5045,2.8672,3.5037)",
+              "span": {
+                "offset": 213,
+                "length": 14
+              },
+              "elements": [
+                "/paragraphs/6"
+              ]
+            },
+            {
+              "kind": "rowHeader",
+              "rowIndex": 3,
+              "columnIndex": 0,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Manager",
+              "source": "D(1,0.4766,3.5038,2.8672,3.5037,2.8672,4.1363,0.4764,4.1366)",
+              "span": {
+                "offset": 248,
+                "length": 7
+              },
+              "elements": [
+                "/paragraphs/7"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 3,
+              "columnIndex": 1,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Morgan Example",
+              "source": "D(1,2.8672,3.5037,7.9891,3.5045,7.9891,4.137,2.8672,4.1363)",
+              "span": {
+                "offset": 265,
+                "length": 14
+              },
+              "elements": [
+                "/paragraphs/8"
+              ]
+            },
+            {
+              "kind": "rowHeader",
+              "rowIndex": 4,
+              "columnIndex": 0,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Requested item",
+              "source": "D(1,0.4764,4.1366,2.8672,4.1363,2.8669,4.7674,0.4759,4.7676)",
+              "span": {
+                "offset": 300,
+                "length": 14
+              },
+              "elements": [
+                "/paragraphs/9"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 4,
+              "columnIndex": 1,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "27-inch color-accurate monitor",
+              "source": "D(1,2.8672,4.1363,7.9891,4.137,7.9891,4.7684,2.8669,4.7674)",
+              "span": {
+                "offset": 324,
+                "length": 30
+              },
+              "elements": [
+                "/paragraphs/10"
+              ]
+            },
+            {
+              "kind": "rowHeader",
+              "rowIndex": 5,
+              "columnIndex": 0,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Quantity",
+              "source": "D(1,0.4759,4.7676,2.8669,4.7674,2.8668,5.3993,0.4759,5.3993)",
+              "span": {
+                "offset": 375,
+                "length": 8
+              },
+              "elements": [
+                "/paragraphs/11"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 5,
+              "columnIndex": 1,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "2",
+              "source": "D(1,2.8669,4.7674,7.9891,4.7684,7.9893,5.4001,2.8668,5.3993)",
+              "span": {
+                "offset": 393,
+                "length": 1
+              },
+              "elements": [
+                "/paragraphs/12"
+              ]
+            },
+            {
+              "kind": "rowHeader",
+              "rowIndex": 6,
+              "columnIndex": 0,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Estimated cost",
+              "source": "D(1,0.4759,5.3993,2.8668,5.3993,2.867,6.0334,0.4754,6.0339)",
+              "span": {
+                "offset": 415,
+                "length": 14
+              },
+              "elements": [
+                "/paragraphs/13"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 6,
+              "columnIndex": 1,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "$1,180.00",
+              "source": "D(1,2.8668,5.3993,7.9893,5.4001,7.9893,6.0339,2.867,6.0334)",
+              "span": {
+                "offset": 439,
+                "length": 9
+              },
+              "elements": [
+                "/paragraphs/14"
+              ]
+            },
+            {
+              "kind": "rowHeader",
+              "rowIndex": 7,
+              "columnIndex": 0,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Needed by",
+              "source": "D(1,0.4754,6.0339,2.867,6.0334,2.8664,6.6695,0.4752,6.6699)",
+              "span": {
+                "offset": 469,
+                "length": 9
+              },
+              "elements": [
+                "/paragraphs/15"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 7,
+              "columnIndex": 1,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "September 15, 2026",
+              "source": "D(1,2.867,6.0334,7.9893,6.0339,7.9892,6.6698,2.8664,6.6695)",
+              "span": {
+                "offset": 488,
+                "length": 18
+              },
+              "elements": [
+                "/paragraphs/16"
+              ]
+            },
+            {
+              "kind": "rowHeader",
+              "rowIndex": 8,
+              "columnIndex": 0,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Business reason",
+              "source": "D(1,0.4752,6.6699,2.8664,6.6695,2.866,7.3002,0.4753,7.3005)",
+              "span": {
+                "offset": 527,
+                "length": 15
+              },
+              "elements": [
+                "/paragraphs/17"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 8,
+              "columnIndex": 1,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Design review and accessibility testing",
+              "source": "D(1,2.8664,6.6695,7.9892,6.6698,7.9893,7.3018,2.866,7.3002)",
+              "span": {
+                "offset": 552,
+                "length": 39
+              },
+              "elements": [
+                "/paragraphs/18"
+              ]
+            },
+            {
+              "kind": "rowHeader",
+              "rowIndex": 9,
+              "columnIndex": 0,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Approval status",
+              "source": "D(1,0.4753,7.3005,2.866,7.3002,2.8668,7.9317,0.4763,7.932)",
+              "span": {
+                "offset": 612,
+                "length": 15
+              },
+              "elements": [
+                "/paragraphs/19"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 9,
+              "columnIndex": 1,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Pending manager review",
+              "source": "D(1,2.866,7.3002,7.9893,7.3018,7.9892,7.9317,2.8668,7.9317)",
+              "span": {
+                "offset": 637,
+                "length": 22
+              },
+              "elements": [
+                "/paragraphs/20"
+              ]
+            }
+          ],
+          "source": "D(1,0.4799,1.5845,7.9895,1.5845,7.9895,7.9331,0.4879,7.9224)",
+          "span": {
+            "offset": 65,
+            "length": 614
+          }
+        }
+      ],
+      "analyzerId": "prebuilt-documentFields",
+      "mimeType": "application/pdf"
+    }
+  ]
+}

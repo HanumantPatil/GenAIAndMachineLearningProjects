@@ -1,0 +1,104 @@
+{
+  "analyzerId": "prebuilt-callCenter",
+  "apiVersion": "2025-11-01",
+  "createdAt": "2026-08-24T15:14:04Z",
+  "stringEncoding": "codePoint",
+  "warnings": [],
+  "contents": [
+    {
+      "markdown": "# Audio: 00:00.000 => 00:40.734\n\nTranscript\n```\nWEBVTT\n\n00:00.910 --> 00:03.550\n<v Customer 1>Thank you for calling Contoso Support.\n\n00:04.350 --> 00:05.710\n<v Agent 1>How can I help?\n\n00:07.390 --> 00:13.070\n<v Customer 1>My fictional order 10042 arrived, but one keyboard is missing.\n\n00:14.670 --> 00:16.270\n<v Agent 2>I am sorry about that.\n\n00:17.070 --> 00:20.510\n<v Customer 1>I confirmed the shipment and will send a replacement today.\n\n00:22.190 --> 00:22.870\n<v Unknown 4>Thank you.\n\n00:23.870 --> 00:28.110\n<v Customer 1>Please send confirmation to the e-mail already on the sample account.\n\n00:28.910 --> 00:34.110\n<v Customer 1>Agent: The replacement case number is CASE-7781.\n\n00:34.830 --> 00:36.270\n<v Agent 3>Is there anything else?\n\n00:37.950 --> 00:40.110\n<v Customer 1>No, that resolves my issue.\n```",
+      "fields": {
+        "Summary": {
+          "type": "string",
+          "valueString": "A customer called Contoso Support about fictional order 10042, reporting a missing keyboard. The agent apologized and arranged a replacement, providing case number CASE-7781. The customer requested confirmation be sent to the email on the sample account and confirmed the issue was resolved."
+        },
+        "Topics": {
+          "type": "array",
+          "valueArray": [
+            {
+              "type": "string",
+              "valueString": "Order issue"
+            },
+            {
+              "type": "string",
+              "valueString": "Missing keyboard"
+            },
+            {
+              "type": "string",
+              "valueString": "Replacement shipment"
+            },
+            {
+              "type": "string",
+              "valueString": "Case number CASE-7781"
+            },
+            {
+              "type": "string",
+              "valueString": "Email confirmation"
+            }
+          ]
+        },
+        "Companies": {
+          "type": "array",
+          "valueArray": [
+            {
+              "type": "string",
+              "valueString": "Contoso Support"
+            }
+          ]
+        },
+        "People": {
+          "type": "array",
+          "valueArray": [
+            {
+              "type": "object",
+              "valueObject": {
+                "Name": {
+                  "type": "string",
+                  "valueString": "Customer"
+                },
+                "Role": {
+                  "type": "string",
+                  "valueString": "Customer"
+                }
+              }
+            },
+            {
+              "type": "object",
+              "valueObject": {
+                "Name": {
+                  "type": "string",
+                  "valueString": "Agent"
+                },
+                "Role": {
+                  "type": "string",
+                  "valueString": "Support agent"
+                }
+              }
+            }
+          ]
+        },
+        "Sentiment": {
+          "type": "string",
+          "valueString": "Positive"
+        },
+        "Categories": {
+          "type": "array",
+          "valueArray": [
+            {
+              "type": "string",
+              "valueString": "Retail"
+            },
+            {
+              "type": "string",
+              "valueString": "Business"
+            }
+          ]
+        }
+      },
+      "kind": "audioVisual",
+      "startTimeMs": 0,
+      "endTimeMs": 40734,
+      "mimeType": "audio/wav"
+    }
+  ]
+}
