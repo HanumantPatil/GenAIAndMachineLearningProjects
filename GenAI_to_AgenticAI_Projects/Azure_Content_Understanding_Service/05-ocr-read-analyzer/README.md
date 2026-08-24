@@ -30,7 +30,7 @@ business fields are required.
 | Azure service | Azure Content Understanding in a Microsoft Foundry resource |
 | Foundry project | Not required. The script calls the Foundry resource endpoint directly. |
 | Analyzer | `prebuilt-read` |
-| Example input | `assets/sample-field-notes.png`, submitted as image bytes |
+| Example input | `assets/sample-field-notes.png` or `assets/sample-maintenance-log.png`, submitted as image bytes |
 | Model deployment | Not required for this content-extraction analyzer |
 | Access | API key, or `Cognitive Services Content Understanding Reader` for analysis with Microsoft Entra ID |
 | Verify | Printed and handwritten text in markdown, with page, word, line, and location details in JSON |
@@ -115,6 +115,14 @@ another local PDF or image, or with a public HTTPS URL.
 
 A successful test prints the recognized site-visit notes and creates
 `output/ocr-read-test-result.json`. No generative model deployment is required.
+
+Test the additional maintenance shift log, which includes timestamps,
+equipment identifiers, measurements, and a follow-up action:
+
+```powershell
+python analyze.py "assets/sample-maintenance-log.png" `
+  --output "output/ocr-maintenance-log-result.json"
+```
 
 ## 2B. Test with Microsoft Entra Authentication
 

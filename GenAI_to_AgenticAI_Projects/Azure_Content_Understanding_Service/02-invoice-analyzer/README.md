@@ -28,7 +28,7 @@ low-confidence fields before posting data to a financial system.
 | Azure service | Azure Content Understanding in a Microsoft Foundry resource |
 | Foundry project | Not required. Model defaults and analyzer calls use the Foundry resource. |
 | Analyzer | `prebuilt-invoice` |
-| Example input | `assets/sample-invoice.pdf`, submitted as document bytes |
+| Example input | `assets/sample-invoice.pdf` or `assets/sample-catering-invoice.pdf`, submitted as document bytes |
 | Model deployment | Required. In Content Understanding Studio, enable automatic deployment and save the supported completion and embedding mappings as resource defaults. |
 | Access | `Cognitive Services User` to configure defaults; API key or `Cognitive Services Content Understanding Reader` to run analysis |
 | Verify | Vendor and customer data, invoice identifiers, dates, totals, taxes, confidence scores, and nested line items |
@@ -125,6 +125,14 @@ or `https` URL.
 
 A successful test prints invoice fields and confidence scores and creates
 `output/invoice-test-result.json`.
+
+Test the additional catering invoice, which has different vendor, customer,
+line-item, tax, and total values:
+
+```powershell
+python analyze.py "assets/sample-catering-invoice.pdf" `
+  --output "output/invoice-catering-test-result.json"
+```
 
 ## 3B. Test with Microsoft Entra ID
 

@@ -1,0 +1,1336 @@
+{
+  "analyzerId": "prebuilt-documentFields",
+  "apiVersion": "2025-11-01",
+  "createdAt": "2026-08-24T15:34:58Z",
+  "stringEncoding": "codePoint",
+  "warnings": [],
+  "contents": [
+    {
+      "path": "input1",
+      "markdown": "# TRAINING REQUEST FORM\n\nFictional employee development request\n\n\n<table>\n<tr>\n<td>Request ID</td>\n<td>TR-2026-031</td>\n</tr>\n<tr>\n<td>Employee</td>\n<td>Riley Example</td>\n</tr>\n<tr>\n<td>Department</td>\n<td>Customer Success</td>\n</tr>\n<tr>\n<td>Course</td>\n<td>Accessible Presentation Design</td>\n</tr>\n<tr>\n<td>Provider</td>\n<td>Fabrikam Learning</td>\n</tr>\n<tr>\n<td>Course date</td>\n<td>October 12, 2026</td>\n</tr>\n<tr>\n<td>Estimated cost</td>\n<td>$745.00 USD</td>\n</tr>\n<tr>\n<td>Business purpose</td>\n<td>Improve accessible customer workshops</td>\n</tr>\n<tr>\n<td>Manager</td>\n<td>Avery Sample</td>\n</tr>\n<tr>\n<td>Approval status</td>\n<td>Approved</td>\n</tr>\n</table>\n\n\n<!-- PageFooter: FICTIONAL DEMO DATA -->\n",
+      "fields": {
+        "RequestId": {
+          "type": "string",
+          "valueString": "TR-2026-031",
+          "spans": [
+            {
+              "offset": 103,
+              "length": 11
+            }
+          ],
+          "confidence": 0.786,
+          "source": "D(1,2.7164,1.4005,3.7955,1.4005,3.7955,1.5878,2.7164,1.5878)"
+        },
+        "Employee": {
+          "type": "string",
+          "valueString": "Riley Example",
+          "spans": [
+            {
+              "offset": 153,
+              "length": 13
+            }
+          ],
+          "confidence": 0.886,
+          "source": "D(1,2.7185,2.0173,3.9003,2.0230,3.8993,2.2247,2.7175,2.2190)"
+        },
+        "Department": {
+          "type": "string",
+          "valueString": "Customer Success",
+          "spans": [
+            {
+              "offset": 207,
+              "length": 16
+            }
+          ],
+          "confidence": 0.783,
+          "source": "D(1,2.7227,2.6340,4.2671,2.6383,4.2666,2.8189,2.7222,2.8146)"
+        },
+        "Course": {
+          "type": "string",
+          "valueString": "Accessible Presentation Design",
+          "spans": [
+            {
+              "offset": 260,
+              "length": 30
+            }
+          ],
+          "confidence": 0.7,
+          "source": "D(1,2.7144,3.2403,5.3049,3.2495,5.3042,3.4494,2.7137,3.4402)"
+        },
+        "Provider": {
+          "type": "string",
+          "valueString": "Fabrikam Learning",
+          "spans": [
+            {
+              "offset": 329,
+              "length": 17
+            }
+          ],
+          "confidence": 0.748,
+          "source": "D(1,2.7186,3.8454,4.2456,3.8588,4.2438,4.0657,2.7167,4.0522)"
+        },
+        "CourseDate": {
+          "type": "date",
+          "valueDate": "2026-10-12",
+          "spans": [
+            {
+              "offset": 388,
+              "length": 16
+            }
+          ],
+          "confidence": 0.784,
+          "source": "D(1,2.7206,4.4635,4.1444,4.4653,4.1442,4.6645,2.7204,4.6627)"
+        },
+        "EstimatedCost": {
+          "type": "number",
+          "valueNumber": 745,
+          "spans": [
+            {
+              "offset": 449,
+              "length": 11
+            }
+          ],
+          "confidence": 0.795,
+          "source": "D(1,2.7144,5.0788,3.8291,5.0812,3.8287,5.2728,2.7140,5.2704)"
+        },
+        "BusinessPurpose": {
+          "type": "string",
+          "valueString": "Improve accessible customer workshops",
+          "spans": [
+            {
+              "offset": 507,
+              "length": 37
+            }
+          ],
+          "confidence": 0.639,
+          "source": "D(1,2.7185,5.6965,6.0222,5.6961,6.0222,5.9010,2.7185,5.9014)"
+        },
+        "Manager": {
+          "type": "string",
+          "valueString": "Avery Sample",
+          "spans": [
+            {
+              "offset": 582,
+              "length": 12
+            }
+          ],
+          "confidence": 0.724,
+          "source": "D(1,2.7123,6.3164,3.8640,6.3164,3.8640,6.5205,2.7123,6.5205)"
+        },
+        "ApprovalStatus": {
+          "type": "string",
+          "valueString": "Approved",
+          "spans": [
+            {
+              "offset": 640,
+              "length": 8
+            }
+          ],
+          "confidence": 0.851,
+          "source": "D(1,2.7102,6.9284,3.5175,6.9333,3.5175,7.1282,2.7102,7.1331)"
+        }
+      },
+      "kind": "document",
+      "startPageNumber": 1,
+      "endPageNumber": 1,
+      "unit": "inch",
+      "pages": [
+        {
+          "pageNumber": 1,
+          "angle": 0.02748009,
+          "width": 8.5,
+          "height": 11,
+          "spans": [
+            {
+              "offset": 0,
+              "length": 712
+            }
+          ],
+          "words": [
+            {
+              "content": "TRAINING",
+              "span": {
+                "offset": 2,
+                "length": 8
+              },
+              "confidence": 0.998,
+              "source": "D(1,0.5868,0.2767,1.9251,0.2763,1.9251,0.5376,0.5868,0.535)"
+            },
+            {
+              "content": "REQUEST",
+              "span": {
+                "offset": 11,
+                "length": 7
+              },
+              "confidence": 0.998,
+              "source": "D(1,2.0257,0.2763,3.3859,0.2767,3.3859,0.5392,2.0257,0.5377)"
+            },
+            {
+              "content": "FORM",
+              "span": {
+                "offset": 19,
+                "length": 4
+              },
+              "confidence": 0.997,
+              "source": "D(1,3.469,0.2768,4.2957,0.2773,4.2957,0.5396,3.469,0.5392)"
+            },
+            {
+              "content": "Fictional",
+              "span": {
+                "offset": 25,
+                "length": 9
+              },
+              "confidence": 0.997,
+              "source": "D(1,0.5868,0.695,1.0725,0.6963,1.0725,0.8642,0.5868,0.8618)"
+            },
+            {
+              "content": "employee",
+              "span": {
+                "offset": 35,
+                "length": 8
+              },
+              "confidence": 0.997,
+              "source": "D(1,1.1116,0.6964,1.6894,0.6974,1.6894,0.8661,1.1116,0.8644)"
+            },
+            {
+              "content": "development",
+              "span": {
+                "offset": 44,
+                "length": 11
+              },
+              "confidence": 0.995,
+              "source": "D(1,1.7285,0.6974,2.499,0.6978,2.499,0.8656,1.7285,0.8661)"
+            },
+            {
+              "content": "request",
+              "span": {
+                "offset": 56,
+                "length": 7
+              },
+              "confidence": 0.996,
+              "source": "D(1,2.5353,0.6977,2.9987,0.6975,2.9987,0.8641,2.5353,0.8655)"
+            },
+            {
+              "content": "Request",
+              "span": {
+                "offset": 83,
+                "length": 7
+              },
+              "confidence": 0.996,
+              "source": "D(1,0.5873,1.4031,1.2057,1.401,1.2059,1.5742,0.5883,1.5777)"
+            },
+            {
+              "content": "ID",
+              "span": {
+                "offset": 91,
+                "length": 2
+              },
+              "confidence": 0.988,
+              "source": "D(1,1.2484,1.4006,1.408,1.3993,1.408,1.5734,1.2486,1.574)"
+            },
+            {
+              "content": "TR",
+              "span": {
+                "offset": 103,
+                "length": 2
+              },
+              "confidence": 0.982,
+              "source": "D(1,2.7164,1.4011,2.9555,1.4014,2.9555,1.5875,2.7164,1.5878)"
+            },
+            {
+              "content": "-",
+              "span": {
+                "offset": 105,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,2.9586,1.4014,3.0169,1.4015,3.0169,1.5874,2.9586,1.5875)"
+            },
+            {
+              "content": "2026-031",
+              "span": {
+                "offset": 106,
+                "length": 8
+              },
+              "confidence": 0.963,
+              "source": "D(1,3.0169,1.4015,3.7955,1.4005,3.7955,1.5872,3.0169,1.5874)"
+            },
+            {
+              "content": "Employee",
+              "span": {
+                "offset": 135,
+                "length": 8
+              },
+              "confidence": 0.998,
+              "source": "D(1,0.5899,2.0171,1.3229,2.0211,1.3229,2.1929,0.5899,2.1875)"
+            },
+            {
+              "content": "Riley",
+              "span": {
+                "offset": 153,
+                "length": 5
+              },
+              "confidence": 0.997,
+              "source": "D(1,2.7185,2.0173,3.1345,2.0198,3.1345,2.2201,2.7185,2.219)"
+            },
+            {
+              "content": "Example",
+              "span": {
+                "offset": 159,
+                "length": 7
+              },
+              "confidence": 0.997,
+              "source": "D(1,3.1915,2.0201,3.8993,2.0234,3.8993,2.2239,3.1915,2.2204)"
+            },
+            {
+              "content": "Department",
+              "span": {
+                "offset": 187,
+                "length": 10
+              },
+              "confidence": 0.998,
+              "source": "D(1,0.5873,2.6343,1.4703,2.638,1.4703,2.8057,0.5883,2.8069)"
+            },
+            {
+              "content": "Customer",
+              "span": {
+                "offset": 207,
+                "length": 8
+              },
+              "confidence": 0.998,
+              "source": "D(1,2.7227,2.6346,3.5188,2.6367,3.5188,2.8149,2.7227,2.8146)"
+            },
+            {
+              "content": "Success",
+              "span": {
+                "offset": 216,
+                "length": 7
+              },
+              "confidence": 0.999,
+              "source": "D(1,3.564,2.6368,4.2666,2.6383,4.2666,2.8173,3.564,2.8149)"
+            },
+            {
+              "content": "Course",
+              "span": {
+                "offset": 244,
+                "length": 6
+              },
+              "confidence": 0.996,
+              "source": "D(1,0.5883,3.2472,1.1351,3.2466,1.1351,3.3976,0.5894,3.3908)"
+            },
+            {
+              "content": "Accessible",
+              "span": {
+                "offset": 260,
+                "length": 10
+              },
+              "confidence": 0.998,
+              "source": "D(1,2.7144,3.2459,3.5981,3.2453,3.5981,3.4403,2.7144,3.4363)"
+            },
+            {
+              "content": "Presentation",
+              "span": {
+                "offset": 271,
+                "length": 12
+              },
+              "confidence": 0.997,
+              "source": "D(1,3.6564,3.2454,4.6697,3.2473,4.6697,3.4459,3.6564,3.4406)"
+            },
+            {
+              "content": "Design",
+              "span": {
+                "offset": 284,
+                "length": 6
+              },
+              "confidence": 0.998,
+              "source": "D(1,4.7312,3.2475,5.3042,3.2496,5.3042,3.4494,4.7312,3.4462)"
+            },
+            {
+              "content": "Provider",
+              "span": {
+                "offset": 311,
+                "length": 8
+              },
+              "confidence": 0.995,
+              "source": "D(1,0.5873,3.8523,1.2296,3.8549,1.2296,4.0107,0.5883,4.008)"
+            },
+            {
+              "content": "Fabrikam",
+              "span": {
+                "offset": 329,
+                "length": 8
+              },
+              "confidence": 0.994,
+              "source": "D(1,2.7185,3.8533,3.4743,3.8582,3.4743,4.0589,2.7185,4.0505)"
+            },
+            {
+              "content": "Learning",
+              "span": {
+                "offset": 338,
+                "length": 8
+              },
+              "confidence": 0.996,
+              "source": "D(1,3.5356,3.8584,4.2438,3.8588,4.2438,4.065,3.5356,4.0594)"
+            },
+            {
+              "content": "Course",
+              "span": {
+                "offset": 367,
+                "length": 6
+              },
+              "confidence": 0.997,
+              "source": "D(1,0.5883,4.4669,1.1216,4.4656,1.122,4.621,0.5894,4.622)"
+            },
+            {
+              "content": "date",
+              "span": {
+                "offset": 374,
+                "length": 4
+              },
+              "confidence": 0.999,
+              "source": "D(1,1.1628,4.4656,1.4952,4.4678,1.4952,4.6239,1.1632,4.6211)"
+            },
+            {
+              "content": "October",
+              "span": {
+                "offset": 388,
+                "length": 7
+              },
+              "confidence": 0.988,
+              "source": "D(1,2.7206,4.4684,3.3797,4.4687,3.3796,4.6635,2.7206,4.662)"
+            },
+            {
+              "content": "12",
+              "span": {
+                "offset": 396,
+                "length": 2
+              },
+              "confidence": 0.968,
+              "source": "D(1,3.439,4.4686,3.6268,4.4681,3.6268,4.6636,3.439,4.6635)"
+            },
+            {
+              "content": ",",
+              "span": {
+                "offset": 398,
+                "length": 1
+              },
+              "confidence": 0.964,
+              "source": "D(1,3.6301,4.4681,3.6696,4.4681,3.6696,4.6637,3.6301,4.6636)"
+            },
+            {
+              "content": "2026",
+              "span": {
+                "offset": 400,
+                "length": 4
+              },
+              "confidence": 0.97,
+              "source": "D(1,3.7257,4.4677,4.1442,4.4653,4.1442,4.6628,3.7257,4.6636)"
+            },
+            {
+              "content": "Estimated",
+              "span": {
+                "offset": 425,
+                "length": 9
+              },
+              "confidence": 0.997,
+              "source": "D(1,0.5894,5.0834,1.316,5.0864,1.3163,5.2461,0.5904,5.2449)"
+            },
+            {
+              "content": "cost",
+              "span": {
+                "offset": 435,
+                "length": 4
+              },
+              "confidence": 0.998,
+              "source": "D(1,1.3616,5.0862,1.7048,5.084,1.7048,5.2451,1.3619,5.246)"
+            },
+            {
+              "content": "$",
+              "span": {
+                "offset": 449,
+                "length": 1
+              },
+              "confidence": 0.996,
+              "source": "D(1,2.7144,5.0821,2.8093,5.0826,2.8093,5.2705,2.7144,5.27)"
+            },
+            {
+              "content": "745.00",
+              "span": {
+                "offset": 450,
+                "length": 6
+              },
+              "confidence": 0.98,
+              "source": "D(1,2.8157,5.0826,3.376,5.0838,3.376,5.2718,2.8157,5.2706)"
+            },
+            {
+              "content": "USD",
+              "span": {
+                "offset": 457,
+                "length": 3
+              },
+              "confidence": 0.984,
+              "source": "D(1,3.4393,5.0838,3.8287,5.0812,3.8287,5.2692,3.4393,5.2717)"
+            },
+            {
+              "content": "Business",
+              "span": {
+                "offset": 481,
+                "length": 8
+              },
+              "confidence": 0.998,
+              "source": "D(1,0.5899,5.6975,1.2699,5.7018,1.2699,5.8731,0.5899,5.8693)"
+            },
+            {
+              "content": "purpose",
+              "span": {
+                "offset": 490,
+                "length": 7
+              },
+              "confidence": 0.998,
+              "source": "D(1,1.3222,5.7021,1.9382,5.705,1.9382,5.8773,1.3222,5.8734)"
+            },
+            {
+              "content": "Improve",
+              "span": {
+                "offset": 507,
+                "length": 7
+              },
+              "confidence": 0.985,
+              "source": "D(1,2.7185,5.6972,3.3718,5.6972,3.3718,5.9013,2.7185,5.9013)"
+            },
+            {
+              "content": "accessible",
+              "span": {
+                "offset": 515,
+                "length": 10
+              },
+              "confidence": 0.998,
+              "source": "D(1,3.426,5.6972,4.279,5.6971,4.279,5.9012,3.426,5.9013)"
+            },
+            {
+              "content": "customer",
+              "span": {
+                "offset": 526,
+                "length": 8
+              },
+              "confidence": 0.995,
+              "source": "D(1,4.3331,5.6971,5.1015,5.6968,5.1015,5.9009,4.3331,5.9012)"
+            },
+            {
+              "content": "workshops",
+              "span": {
+                "offset": 535,
+                "length": 9
+              },
+              "confidence": 0.995,
+              "source": "D(1,5.1354,5.6967,6.0222,5.6961,6.0222,5.9002,5.1354,5.9008)"
+            },
+            {
+              "content": "Manager",
+              "span": {
+                "offset": 565,
+                "length": 7
+              },
+              "confidence": 0.998,
+              "source": "D(1,0.5894,6.3162,1.243,6.3178,1.241,6.4897,0.5883,6.4881)"
+            },
+            {
+              "content": "Avery",
+              "span": {
+                "offset": 582,
+                "length": 5
+              },
+              "confidence": 0.997,
+              "source": "D(1,2.7123,6.3164,3.1922,6.3164,3.1922,6.5205,2.7123,6.5205)"
+            },
+            {
+              "content": "Sample",
+              "span": {
+                "offset": 588,
+                "length": 6
+              },
+              "confidence": 0.998,
+              "source": "D(1,3.247,6.3164,3.864,6.3164,3.864,6.5205,3.247,6.5205)"
+            },
+            {
+              "content": "Approval",
+              "span": {
+                "offset": 615,
+                "length": 8
+              },
+              "confidence": 0.998,
+              "source": "D(1,0.5842,6.9239,1.2619,6.9266,1.2622,7.1003,0.5847,7.1043)"
+            },
+            {
+              "content": "status",
+              "span": {
+                "offset": 624,
+                "length": 6
+              },
+              "confidence": 0.996,
+              "source": "D(1,1.3004,6.9268,1.7681,6.9277,1.7681,7.0989,1.3006,7.1001)"
+            },
+            {
+              "content": "Approved",
+              "span": {
+                "offset": 640,
+                "length": 8
+              },
+              "confidence": 0.997,
+              "source": "D(1,2.7102,6.9284,3.5175,6.9333,3.5175,7.1282,2.7102,7.1331)"
+            },
+            {
+              "content": "FICTIONAL",
+              "span": {
+                "offset": 688,
+                "length": 9
+              },
+              "confidence": 0.993,
+              "source": "D(1,0.5821,10.3931,1.233,10.3931,1.2336,10.5327,0.5831,10.5327)"
+            },
+            {
+              "content": "DEMO",
+              "span": {
+                "offset": 698,
+                "length": 4
+              },
+              "confidence": 0.996,
+              "source": "D(1,1.2706,10.3931,1.6278,10.3931,1.6281,10.5327,1.2712,10.5327)"
+            },
+            {
+              "content": "DATA",
+              "span": {
+                "offset": 703,
+                "length": 4
+              },
+              "confidence": 0.992,
+              "source": "D(1,1.6654,10.3931,2.0109,10.3931,2.0109,10.5327,1.6657,10.5327)"
+            }
+          ],
+          "lines": [
+            {
+              "content": "TRAINING REQUEST FORM",
+              "source": "D(1,0.5868,0.2753,4.2958,0.2771,4.2957,0.5396,0.5866,0.5378)",
+              "span": {
+                "offset": 2,
+                "length": 21
+              }
+            },
+            {
+              "content": "Fictional employee development request",
+              "source": "D(1,0.5868,0.695,2.9988,0.6975,2.9987,0.8674,0.5866,0.8649)",
+              "span": {
+                "offset": 25,
+                "length": 38
+              }
+            },
+            {
+              "content": "Request ID",
+              "source": "D(1,0.5873,1.4031,1.408,1.3993,1.4088,1.5738,0.5881,1.5777)",
+              "span": {
+                "offset": 83,
+                "length": 10
+              }
+            },
+            {
+              "content": "TR-2026-031",
+              "source": "D(1,2.7163,1.4011,3.7955,1.4005,3.7956,1.5873,2.7164,1.5878)",
+              "span": {
+                "offset": 103,
+                "length": 11
+              }
+            },
+            {
+              "content": "Employee",
+              "source": "D(1,0.5899,2.0171,1.3239,2.0211,1.3229,2.1936,0.589,2.1897)",
+              "span": {
+                "offset": 135,
+                "length": 8
+              }
+            },
+            {
+              "content": "Riley Example",
+              "source": "D(1,2.7185,2.0173,3.9001,2.0223,3.8993,2.2239,2.7177,2.219)",
+              "span": {
+                "offset": 153,
+                "length": 13
+              }
+            },
+            {
+              "content": "Department",
+              "source": "D(1,0.5873,2.6327,1.4703,2.6315,1.4705,2.8057,0.5875,2.8069)",
+              "span": {
+                "offset": 187,
+                "length": 10
+              }
+            },
+            {
+              "content": "Customer Success",
+              "source": "D(1,2.7227,2.6346,4.2666,2.6373,4.2666,2.8173,2.7227,2.8146)",
+              "span": {
+                "offset": 207,
+                "length": 16
+              }
+            },
+            {
+              "content": "Course",
+              "source": "D(1,0.5883,3.2454,1.1355,3.2466,1.1351,3.3976,0.588,3.3964)",
+              "span": {
+                "offset": 244,
+                "length": 6
+              }
+            },
+            {
+              "content": "Accessible Presentation Design",
+              "source": "D(1,2.7144,3.2441,5.3049,3.2496,5.3042,3.4494,2.7137,3.4403)",
+              "span": {
+                "offset": 260,
+                "length": 30
+              }
+            },
+            {
+              "content": "Provider",
+              "source": "D(1,0.5873,3.8523,1.2302,3.8549,1.2295,4.0156,0.5866,4.0129)",
+              "span": {
+                "offset": 311,
+                "length": 8
+              }
+            },
+            {
+              "content": "Fabrikam Learning",
+              "source": "D(1,2.7185,3.8533,4.2445,3.8588,4.2438,4.065,2.7178,4.0595)",
+              "span": {
+                "offset": 329,
+                "length": 17
+              }
+            },
+            {
+              "content": "Course date",
+              "source": "D(1,0.5883,4.4644,1.4955,4.4663,1.4952,4.6239,0.588,4.622)",
+              "span": {
+                "offset": 367,
+                "length": 11
+              }
+            },
+            {
+              "content": "October 12, 2026",
+              "source": "D(1,2.7202,4.4678,4.1442,4.4653,4.1445,4.6628,2.7206,4.6654)",
+              "span": {
+                "offset": 388,
+                "length": 16
+              }
+            },
+            {
+              "content": "Estimated cost",
+              "source": "D(1,0.5894,5.0834,1.7048,5.084,1.7048,5.2464,0.5893,5.2459)",
+              "span": {
+                "offset": 425,
+                "length": 14
+              }
+            },
+            {
+              "content": "$745.00 USD",
+              "source": "D(1,2.7142,5.0821,3.8287,5.0812,3.8289,5.2715,2.7144,5.2723)",
+              "span": {
+                "offset": 449,
+                "length": 11
+              }
+            },
+            {
+              "content": "Business purpose",
+              "source": "D(1,0.5899,5.6975,1.9392,5.705,1.9382,5.8773,0.5889,5.8698)",
+              "span": {
+                "offset": 481,
+                "length": 16
+              }
+            },
+            {
+              "content": "Improve accessible customer workshops",
+              "source": "D(1,2.7184,5.6972,6.0222,5.6961,6.0223,5.9006,2.7185,5.9014)",
+              "span": {
+                "offset": 507,
+                "length": 37
+              }
+            },
+            {
+              "content": "Manager",
+              "source": "D(1,0.5887,6.3138,1.243,6.3154,1.2426,6.4897,0.5883,6.4881)",
+              "span": {
+                "offset": 565,
+                "length": 7
+              }
+            },
+            {
+              "content": "Avery Sample",
+              "source": "D(1,2.7123,6.3164,3.864,6.3164,3.864,6.5205,2.7123,6.5205)",
+              "span": {
+                "offset": 582,
+                "length": 12
+              }
+            },
+            {
+              "content": "Approval status",
+              "source": "D(1,0.5842,6.9239,1.768,6.9205,1.7686,7.1009,0.5847,7.1043)",
+              "span": {
+                "offset": 615,
+                "length": 15
+              }
+            },
+            {
+              "content": "Approved",
+              "source": "D(1,2.7102,6.9284,3.5175,6.9284,3.5175,7.1331,2.7102,7.1331)",
+              "span": {
+                "offset": 640,
+                "length": 8
+              }
+            },
+            {
+              "content": "FICTIONAL DEMO DATA",
+              "source": "D(1,0.5821,10.3931,2.0109,10.3931,2.0109,10.5327,0.5821,10.5327)",
+              "span": {
+                "offset": 688,
+                "length": 19
+              }
+            }
+          ]
+        }
+      ],
+      "paragraphs": [
+        {
+          "role": "title",
+          "content": "TRAINING REQUEST FORM",
+          "source": "D(1,0.5868,0.2753,4.2958,0.2771,4.2957,0.5396,0.5866,0.5378)",
+          "span": {
+            "offset": 0,
+            "length": 23
+          }
+        },
+        {
+          "content": "Fictional employee development request",
+          "source": "D(1,0.5868,0.695,2.9988,0.6975,2.9987,0.8674,0.5866,0.8649)",
+          "span": {
+            "offset": 25,
+            "length": 38
+          }
+        },
+        {
+          "content": "Request ID",
+          "source": "D(1,0.5873,1.403,1.408,1.3993,1.4088,1.5739,0.5881,1.5777)",
+          "span": {
+            "offset": 83,
+            "length": 10
+          }
+        },
+        {
+          "content": "TR-2026-031",
+          "source": "D(1,2.7164,1.4003,3.7956,1.4005,3.7955,1.588,2.7164,1.5878)",
+          "span": {
+            "offset": 103,
+            "length": 11
+          }
+        },
+        {
+          "content": "Employee",
+          "source": "D(1,0.5899,2.0164,1.324,2.0211,1.3229,2.1929,0.5888,2.1882)",
+          "span": {
+            "offset": 135,
+            "length": 8
+          }
+        },
+        {
+          "content": "Riley Example",
+          "source": "D(1,2.7185,2.0173,3.9003,2.0231,3.8993,2.2247,2.7175,2.219)",
+          "span": {
+            "offset": 153,
+            "length": 13
+          }
+        },
+        {
+          "content": "Department",
+          "source": "D(1,0.5873,2.6343,1.4705,2.6355,1.4703,2.8081,0.587,2.8069)",
+          "span": {
+            "offset": 187,
+            "length": 10
+          }
+        },
+        {
+          "content": "Customer Success",
+          "source": "D(1,2.7227,2.6341,4.2671,2.6383,4.2666,2.8188,2.7222,2.8146)",
+          "span": {
+            "offset": 207,
+            "length": 16
+          }
+        },
+        {
+          "content": "Course",
+          "source": "D(1,0.5883,3.2435,1.136,3.2466,1.1351,3.3976,0.5875,3.3945)",
+          "span": {
+            "offset": 244,
+            "length": 6
+          }
+        },
+        {
+          "content": "Accessible Presentation Design",
+          "source": "D(1,2.7144,3.2404,5.3049,3.2496,5.3042,3.4494,2.7137,3.4402)",
+          "span": {
+            "offset": 260,
+            "length": 30
+          }
+        },
+        {
+          "content": "Provider",
+          "source": "D(1,0.5873,3.8523,1.2302,3.8549,1.2296,4.0107,0.5866,4.008)",
+          "span": {
+            "offset": 311,
+            "length": 8
+          }
+        },
+        {
+          "content": "Fabrikam Learning",
+          "source": "D(1,2.7186,3.8454,4.2456,3.8588,4.2438,4.0656,2.7168,4.0523)",
+          "span": {
+            "offset": 329,
+            "length": 17
+          }
+        },
+        {
+          "content": "Course date",
+          "source": "D(1,0.5884,4.4609,1.4964,4.4678,1.4951,4.6289,0.5871,4.622)",
+          "span": {
+            "offset": 367,
+            "length": 11
+          }
+        },
+        {
+          "content": "October 12, 2026",
+          "source": "D(1,2.7204,4.4664,4.1442,4.4653,4.1443,4.6633,2.7206,4.6644)",
+          "span": {
+            "offset": 388,
+            "length": 16
+          }
+        },
+        {
+          "content": "Estimated cost",
+          "source": "D(1,0.5894,5.0808,1.7052,5.084,1.7048,5.2481,0.5889,5.2449)",
+          "span": {
+            "offset": 425,
+            "length": 14
+          }
+        },
+        {
+          "content": "$745.00 USD",
+          "source": "D(1,2.7144,5.0788,3.8291,5.0812,3.8287,5.2728,2.7139,5.2704)",
+          "span": {
+            "offset": 449,
+            "length": 11
+          }
+        },
+        {
+          "content": "Business purpose",
+          "source": "D(1,0.5899,5.6969,1.9393,5.705,1.9382,5.8773,0.5889,5.8693)",
+          "span": {
+            "offset": 481,
+            "length": 16
+          }
+        },
+        {
+          "content": "Improve accessible customer workshops",
+          "source": "D(1,2.7185,5.6967,6.0222,5.6961,6.0222,5.9009,2.7185,5.9014)",
+          "span": {
+            "offset": 507,
+            "length": 37
+          }
+        },
+        {
+          "content": "Manager",
+          "source": "D(1,0.5887,6.3162,1.243,6.3178,1.2426,6.4897,0.5883,6.4881)",
+          "span": {
+            "offset": 565,
+            "length": 7
+          }
+        },
+        {
+          "content": "Avery Sample",
+          "source": "D(1,2.7123,6.3164,3.864,6.3164,3.864,6.5205,2.7123,6.5205)",
+          "span": {
+            "offset": 582,
+            "length": 12
+          }
+        },
+        {
+          "content": "Approval status",
+          "source": "D(1,0.5842,6.9239,1.7681,6.9237,1.7681,7.104,0.5842,7.1043)",
+          "span": {
+            "offset": 615,
+            "length": 15
+          }
+        },
+        {
+          "content": "Approved",
+          "source": "D(1,2.7102,6.9284,3.5175,6.9284,3.5175,7.1331,2.7102,7.1331)",
+          "span": {
+            "offset": 640,
+            "length": 8
+          }
+        },
+        {
+          "role": "pageFooter",
+          "content": "FICTIONAL DEMO DATA",
+          "source": "D(1,0.5821,10.3931,2.0109,10.3931,2.0109,10.5327,0.5821,10.5327)",
+          "span": {
+            "offset": 671,
+            "length": 40
+          }
+        }
+      ],
+      "sections": [
+        {
+          "span": {
+            "offset": 0,
+            "length": 668
+          },
+          "elements": [
+            "/paragraphs/0",
+            "/paragraphs/1",
+            "/tables/0"
+          ]
+        }
+      ],
+      "tables": [
+        {
+          "rowCount": 10,
+          "columnCount": 2,
+          "cells": [
+            {
+              "kind": "rowHeader",
+              "rowIndex": 0,
+              "columnIndex": 0,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Request ID",
+              "source": "D(1,0.5547,1.3267,2.348,1.3255,2.3496,1.6905,0.5546,1.6912)",
+              "span": {
+                "offset": 83,
+                "length": 10
+              },
+              "elements": [
+                "/paragraphs/2"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 0,
+              "columnIndex": 1,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "TR-2026-031",
+              "source": "D(1,2.348,1.3255,7.9153,1.3244,7.9157,1.6913,2.3496,1.6905)",
+              "span": {
+                "offset": 103,
+                "length": 11
+              },
+              "elements": [
+                "/paragraphs/3"
+              ]
+            },
+            {
+              "kind": "rowHeader",
+              "rowIndex": 1,
+              "columnIndex": 0,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Employee",
+              "source": "D(1,0.5546,1.6912,2.3496,1.6905,2.3497,2.3004,0.5543,2.3013)",
+              "span": {
+                "offset": 135,
+                "length": 8
+              },
+              "elements": [
+                "/paragraphs/4"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 1,
+              "columnIndex": 1,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Riley Example",
+              "source": "D(1,2.3496,1.6905,7.9157,1.6913,7.9158,2.3016,2.3497,2.3004)",
+              "span": {
+                "offset": 153,
+                "length": 13
+              },
+              "elements": [
+                "/paragraphs/5"
+              ]
+            },
+            {
+              "kind": "rowHeader",
+              "rowIndex": 2,
+              "columnIndex": 0,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Department",
+              "source": "D(1,0.5543,2.3013,2.3497,2.3004,2.349,2.9152,0.5532,2.9162)",
+              "span": {
+                "offset": 187,
+                "length": 10
+              },
+              "elements": [
+                "/paragraphs/6"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 2,
+              "columnIndex": 1,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Customer Success",
+              "source": "D(1,2.3497,2.3004,7.9158,2.3016,7.9159,2.9163,2.349,2.9152)",
+              "span": {
+                "offset": 207,
+                "length": 16
+              },
+              "elements": [
+                "/paragraphs/7"
+              ]
+            },
+            {
+              "kind": "rowHeader",
+              "rowIndex": 3,
+              "columnIndex": 0,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Course",
+              "source": "D(1,0.5532,2.9162,2.349,2.9152,2.3499,3.5305,0.553,3.5316)",
+              "span": {
+                "offset": 244,
+                "length": 6
+              },
+              "elements": [
+                "/paragraphs/8"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 3,
+              "columnIndex": 1,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Accessible Presentation Design",
+              "source": "D(1,2.349,2.9152,7.9159,2.9163,7.9165,3.5316,2.3499,3.5305)",
+              "span": {
+                "offset": 260,
+                "length": 30
+              },
+              "elements": [
+                "/paragraphs/9"
+              ]
+            },
+            {
+              "kind": "rowHeader",
+              "rowIndex": 4,
+              "columnIndex": 0,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Provider",
+              "source": "D(1,0.553,3.5316,2.3499,3.5305,2.3489,4.1424,0.5521,4.1436)",
+              "span": {
+                "offset": 311,
+                "length": 8
+              },
+              "elements": [
+                "/paragraphs/10"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 4,
+              "columnIndex": 1,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Fabrikam Learning",
+              "source": "D(1,2.3499,3.5305,7.9165,3.5316,7.9165,4.1434,2.3489,4.1424)",
+              "span": {
+                "offset": 329,
+                "length": 17
+              },
+              "elements": [
+                "/paragraphs/11"
+              ]
+            },
+            {
+              "kind": "rowHeader",
+              "rowIndex": 5,
+              "columnIndex": 0,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Course date",
+              "source": "D(1,0.5521,4.1436,2.3489,4.1424,2.3489,4.7544,0.552,4.7554)",
+              "span": {
+                "offset": 367,
+                "length": 11
+              },
+              "elements": [
+                "/paragraphs/12"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 5,
+              "columnIndex": 1,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "October 12, 2026",
+              "source": "D(1,2.3489,4.1424,7.9165,4.1434,7.9173,4.7549,2.3489,4.7544)",
+              "span": {
+                "offset": 388,
+                "length": 16
+              },
+              "elements": [
+                "/paragraphs/13"
+              ]
+            },
+            {
+              "kind": "rowHeader",
+              "rowIndex": 6,
+              "columnIndex": 0,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Estimated cost",
+              "source": "D(1,0.552,4.7554,2.3489,4.7544,2.3493,5.371,0.5515,5.3719)",
+              "span": {
+                "offset": 425,
+                "length": 14
+              },
+              "elements": [
+                "/paragraphs/14"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 6,
+              "columnIndex": 1,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "$745.00 USD",
+              "source": "D(1,2.3489,4.7544,7.9173,4.7549,7.9178,5.3715,2.3493,5.371)",
+              "span": {
+                "offset": 449,
+                "length": 11
+              },
+              "elements": [
+                "/paragraphs/15"
+              ]
+            },
+            {
+              "kind": "rowHeader",
+              "rowIndex": 7,
+              "columnIndex": 0,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Business purpose",
+              "source": "D(1,0.5515,5.3719,2.3493,5.371,2.3495,5.9849,0.5509,5.986)",
+              "span": {
+                "offset": 481,
+                "length": 16
+              },
+              "elements": [
+                "/paragraphs/16"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 7,
+              "columnIndex": 1,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Improve accessible customer workshops",
+              "source": "D(1,2.3493,5.371,7.9178,5.3715,7.9179,5.9855,2.3495,5.9849)",
+              "span": {
+                "offset": 507,
+                "length": 37
+              },
+              "elements": [
+                "/paragraphs/17"
+              ]
+            },
+            {
+              "kind": "rowHeader",
+              "rowIndex": 8,
+              "columnIndex": 0,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Manager",
+              "source": "D(1,0.5509,5.986,2.3495,5.9849,2.3486,6.596,0.5503,6.5973)",
+              "span": {
+                "offset": 565,
+                "length": 7
+              },
+              "elements": [
+                "/paragraphs/18"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 8,
+              "columnIndex": 1,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Avery Sample",
+              "source": "D(1,2.3495,5.9849,7.9179,5.9855,7.9185,6.5965,2.3486,6.596)",
+              "span": {
+                "offset": 582,
+                "length": 12
+              },
+              "elements": [
+                "/paragraphs/19"
+              ]
+            },
+            {
+              "kind": "rowHeader",
+              "rowIndex": 9,
+              "columnIndex": 0,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Approval status",
+              "source": "D(1,0.5503,6.5973,2.3486,6.596,2.3486,7.2127,0.5521,7.2134)",
+              "span": {
+                "offset": 615,
+                "length": 15
+              },
+              "elements": [
+                "/paragraphs/20"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 9,
+              "columnIndex": 1,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Approved",
+              "source": "D(1,2.3486,6.596,7.9185,6.5965,7.9191,7.2126,2.3486,7.2127)",
+              "span": {
+                "offset": 640,
+                "length": 8
+              },
+              "elements": [
+                "/paragraphs/21"
+              ]
+            }
+          ],
+          "source": "D(1,0.5546,1.3394,7.9355,1.3468,7.9397,7.2241,0.5587,7.2188)",
+          "span": {
+            "offset": 66,
+            "length": 602
+          }
+        }
+      ],
+      "analyzerId": "prebuilt-documentFields",
+      "mimeType": "application/pdf"
+    }
+  ]
+}

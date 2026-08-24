@@ -28,7 +28,7 @@ automation requires consistent field names and validation rules.
 | Azure service | Azure Content Understanding in a Microsoft Foundry resource |
 | Foundry project | Not required. The analyzer and defaults are configured on the Foundry resource. |
 | Analyzer | `prebuilt-documentFields` |
-| Example input | `assets/sample-equipment-request.pdf`, submitted as document bytes |
+| Example input | `assets/sample-equipment-request.pdf` or `assets/sample-training-request.pdf`, submitted as document bytes |
 | Model deployment | Required. Enable automatic deployment in Content Understanding Studio and save the analyzer's supported model mappings as resource defaults. |
 | Access | `Cognitive Services User` to configure defaults; API key or `Cognitive Services Content Understanding Reader` to run analysis |
 | Verify | Inferred labels, values, and confidence scores for the equipment request fields |
@@ -122,6 +122,14 @@ its path with another local PDF or image, or with a public HTTPS URL.
 
 A successful test prints inferred fields and confidence scores and creates
 `output/document-fields-test-result.json`.
+
+Test the additional employee training request, which uses a different set of
+labels and values for schema inference:
+
+```powershell
+python analyze.py "assets/sample-training-request.pdf" `
+  --output "output/document-fields-training-result.json"
+```
 
 ## 2B. Test with Microsoft Entra Authentication
 

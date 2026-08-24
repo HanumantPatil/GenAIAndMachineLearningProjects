@@ -1,0 +1,1260 @@
+{
+  "analyzerId": "prebuilt-layout",
+  "apiVersion": "2025-11-01",
+  "createdAt": "2026-08-24T15:34:05Z",
+  "stringEncoding": "codePoint",
+  "warnings": [],
+  "contents": [
+    {
+      "path": "input1",
+      "markdown": "# Contoso Travel Expense Policy Fictional training document | Revision 2.1\n\n\n## 1. Scope\n\nThis policy covers fictional employee travel and reimbursement requests.\n\n\n## 2. Spending Limits\n\n\n<table>\n<tr>\n<th>Category</th>\n<th>Daily limit</th>\n<th>Receipt required</th>\n</tr>\n<tr>\n<td>Hotel</td>\n<td>$220</td>\n<td>Yes</td>\n</tr>\n<tr>\n<td>Meals</td>\n<td>$75</td>\n<td>Above $25</td>\n</tr>\n<tr>\n<td>Ground transport</td>\n<td>$90</td>\n<td>Yes</td>\n</tr>\n</table>\n\n\n## 3. Submission Checklist\n\n[ ] Attach itemized receipts\n\n[ ] Include project code\n\n[ ] Obtain manager approval\n\n<!-- PageFooter: FICTIONAL DEMO DATA -->\n",
+      "kind": "document",
+      "startPageNumber": 1,
+      "endPageNumber": 1,
+      "unit": "inch",
+      "pages": [
+        {
+          "pageNumber": 1,
+          "angle": 0,
+          "width": 8.5,
+          "height": 11,
+          "spans": [
+            {
+              "offset": 0,
+              "length": 612
+            }
+          ],
+          "words": [
+            {
+              "content": "Contoso",
+              "span": {
+                "offset": 2,
+                "length": 7
+              },
+              "confidence": 0.998,
+              "source": "D(1,0.5914,0.2712,1.7022,0.2718,1.7014,0.5677,0.5904,0.5581)"
+            },
+            {
+              "content": "Travel",
+              "span": {
+                "offset": 10,
+                "length": 6
+              },
+              "confidence": 0.996,
+              "source": "D(1,1.7826,0.2719,2.6068,0.2742,2.6063,0.5753,1.7818,0.5684)"
+            },
+            {
+              "content": "Expense",
+              "span": {
+                "offset": 17,
+                "length": 7
+              },
+              "confidence": 0.995,
+              "source": "D(1,2.6973,0.2746,3.8381,0.28,3.8379,0.5854,2.6967,0.5761)"
+            },
+            {
+              "content": "Policy",
+              "span": {
+                "offset": 25,
+                "length": 6
+              },
+              "confidence": 0.996,
+              "source": "D(1,3.9286,0.2806,4.7729,0.2861,4.7729,0.5928,3.9284,0.5861)"
+            },
+            {
+              "content": "Fictional",
+              "span": {
+                "offset": 32,
+                "length": 9
+              },
+              "confidence": 0.984,
+              "source": "D(1,0.5836,0.6886,1.074,0.6896,1.074,0.8641,0.5836,0.8624)"
+            },
+            {
+              "content": "training",
+              "span": {
+                "offset": 42,
+                "length": 8
+              },
+              "confidence": 0.984,
+              "source": "D(1,1.1144,0.6897,1.5442,0.6901,1.5442,0.8651,1.1144,0.8643)"
+            },
+            {
+              "content": "document",
+              "span": {
+                "offset": 51,
+                "length": 8
+              },
+              "confidence": 0.977,
+              "source": "D(1,1.5904,0.6901,2.1788,0.6893,2.1788,0.8645,1.5904,0.8651)"
+            },
+            {
+              "content": "|",
+              "span": {
+                "offset": 60,
+                "length": 1
+              },
+              "confidence": 0.876,
+              "source": "D(1,2.2221,0.6892,2.2509,0.6891,2.251,0.8642,2.2221,0.8644)"
+            },
+            {
+              "content": "Revision",
+              "span": {
+                "offset": 62,
+                "length": 8
+              },
+              "confidence": 0.838,
+              "source": "D(1,2.2971,0.6889,2.7904,0.6865,2.7904,0.8612,2.2971,0.864)"
+            },
+            {
+              "content": "2.1",
+              "span": {
+                "offset": 71,
+                "length": 3
+              },
+              "confidence": 0.906,
+              "source": "D(1,2.8307,0.6863,3.0298,0.6854,3.0298,0.8599,2.8307,0.861)"
+            },
+            {
+              "content": "1",
+              "span": {
+                "offset": 80,
+                "length": 1
+              },
+              "confidence": 0.941,
+              "source": "D(1,0.5977,1.4087,0.6943,1.4099,0.6943,1.6563,0.5977,1.6556)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 81,
+                "length": 1
+              },
+              "confidence": 0.957,
+              "source": "D(1,0.7153,1.4102,0.7699,1.4108,0.7699,1.6568,0.7153,1.6564)"
+            },
+            {
+              "content": "Scope",
+              "span": {
+                "offset": 83,
+                "length": 5
+              },
+              "confidence": 0.938,
+              "source": "D(1,0.8287,1.4116,1.5388,1.4165,1.5388,1.6648,0.8287,1.6572)"
+            },
+            {
+              "content": "This",
+              "span": {
+                "offset": 90,
+                "length": 4
+              },
+              "confidence": 0.997,
+              "source": "D(1,0.5842,1.7427,0.9268,1.7428,0.9273,1.9644,0.5847,1.9647)"
+            },
+            {
+              "content": "policy",
+              "span": {
+                "offset": 95,
+                "length": 6
+              },
+              "confidence": 0.993,
+              "source": "D(1,0.9888,1.7428,1.459,1.7428,1.4594,1.9639,0.9893,1.9643)"
+            },
+            {
+              "content": "covers",
+              "span": {
+                "offset": 102,
+                "length": 6
+              },
+              "confidence": 0.996,
+              "source": "D(1,1.51,1.7428,2.0422,1.7428,2.0426,1.9635,1.5105,1.9639)"
+            },
+            {
+              "content": "fictional",
+              "span": {
+                "offset": 109,
+                "length": 9
+              },
+              "confidence": 0.991,
+              "source": "D(1,2.0969,1.7428,2.7202,1.743,2.7205,1.963,2.0973,1.9634)"
+            },
+            {
+              "content": "employee",
+              "span": {
+                "offset": 119,
+                "length": 8
+              },
+              "confidence": 0.99,
+              "source": "D(1,2.7749,1.743,3.5549,1.7436,3.5552,1.9627,2.7752,1.963)"
+            },
+            {
+              "content": "travel",
+              "span": {
+                "offset": 128,
+                "length": 6
+              },
+              "confidence": 0.943,
+              "source": "D(1,3.6059,1.7437,4.0543,1.744,4.0545,1.9626,3.6062,1.9627)"
+            },
+            {
+              "content": "and",
+              "span": {
+                "offset": 135,
+                "length": 3
+              },
+              "confidence": 0.984,
+              "source": "D(1,4.1126,1.744,4.4006,1.7442,4.4007,1.9625,4.1128,1.9626)"
+            },
+            {
+              "content": "reimbursement",
+              "span": {
+                "offset": 139,
+                "length": 13
+              },
+              "confidence": 0.953,
+              "source": "D(1,4.4662,1.7443,5.669,1.746,5.6691,1.9627,4.4663,1.9624)"
+            },
+            {
+              "content": "requests",
+              "span": {
+                "offset": 153,
+                "length": 8
+              },
+              "confidence": 0.952,
+              "source": "D(1,5.7201,1.746,6.4199,1.747,6.4199,1.9628,5.7201,1.9627)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 161,
+                "length": 1
+              },
+              "confidence": 0.991,
+              "source": "D(1,6.4272,1.747,6.4746,1.7471,6.4746,1.9628,6.4272,1.9628)"
+            },
+            {
+              "content": "2",
+              "span": {
+                "offset": 168,
+                "length": 1
+              },
+              "confidence": 0.899,
+              "source": "D(1,0.5836,2.2006,0.7101,2.2003,0.7101,2.4621,0.5836,2.4619)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 169,
+                "length": 1
+              },
+              "confidence": 0.921,
+              "source": "D(1,0.7144,2.2003,0.7667,2.2002,0.7667,2.4622,0.7144,2.4622)"
+            },
+            {
+              "content": "Spending",
+              "span": {
+                "offset": 171,
+                "length": 8
+              },
+              "confidence": 0.945,
+              "source": "D(1,0.8278,2.2001,1.8697,2.1978,1.8697,2.4611,0.8278,2.4623)"
+            },
+            {
+              "content": "Limits",
+              "span": {
+                "offset": 180,
+                "length": 6
+              },
+              "confidence": 0.995,
+              "source": "D(1,1.9438,2.1976,2.6064,2.196,2.6064,2.4557,1.9438,2.4609)"
+            },
+            {
+              "content": "Category",
+              "span": {
+                "offset": 206,
+                "length": 8
+              },
+              "confidence": 0.995,
+              "source": "D(1,0.6532,2.6411,1.3447,2.6452,1.3437,2.8322,0.6532,2.8263)"
+            },
+            {
+              "content": "Daily",
+              "span": {
+                "offset": 224,
+                "length": 5
+              },
+              "confidence": 0.994,
+              "source": "D(1,3.3203,2.6337,3.6968,2.6336,3.6968,2.8205,3.3203,2.8203)"
+            },
+            {
+              "content": "limit",
+              "span": {
+                "offset": 230,
+                "length": 5
+              },
+              "confidence": 0.992,
+              "source": "D(1,3.7366,2.6336,4.0549,2.6351,4.0549,2.8222,3.7366,2.8206)"
+            },
+            {
+              "content": "Receipt",
+              "span": {
+                "offset": 245,
+                "length": 7
+              },
+              "confidence": 0.996,
+              "source": "D(1,5.7151,2.6345,6.2871,2.6343,6.2871,2.8239,5.7151,2.8258)"
+            },
+            {
+              "content": "required",
+              "span": {
+                "offset": 253,
+                "length": 8
+              },
+              "confidence": 0.995,
+              "source": "D(1,6.3259,2.6342,6.9561,2.632,6.9561,2.825,6.3259,2.8238)"
+            },
+            {
+              "content": "Hotel",
+              "span": {
+                "offset": 282,
+                "length": 5
+              },
+              "confidence": 0.997,
+              "source": "D(1,0.6542,3.0522,1.036,3.0414,1.036,3.2079,0.6542,3.2187)"
+            },
+            {
+              "content": "$",
+              "span": {
+                "offset": 297,
+                "length": 1
+              },
+              "confidence": 0.998,
+              "source": "D(1,3.3203,3.0532,3.4059,3.0535,3.4059,3.2199,3.3203,3.2203)"
+            },
+            {
+              "content": "220",
+              "span": {
+                "offset": 298,
+                "length": 3
+              },
+              "confidence": 0.998,
+              "source": "D(1,3.4059,3.0535,3.6855,3.0522,3.6855,3.2212,3.4059,3.2199)"
+            },
+            {
+              "content": "Yes",
+              "span": {
+                "offset": 311,
+                "length": 3
+              },
+              "confidence": 0.987,
+              "source": "D(1,5.7068,3.0562,6.0015,3.0562,6.0015,3.2181,5.7068,3.2151)"
+            },
+            {
+              "content": "Meals",
+              "span": {
+                "offset": 335,
+                "length": 5
+              },
+              "confidence": 0.998,
+              "source": "D(1,0.6526,3.4678,1.0801,3.4654,1.0801,3.6273,0.6537,3.624)"
+            },
+            {
+              "content": "$",
+              "span": {
+                "offset": 350,
+                "length": 1
+              },
+              "confidence": 0.996,
+              "source": "D(1,3.3162,3.4628,3.3979,3.4643,3.3979,3.6308,3.3162,3.6293)"
+            },
+            {
+              "content": "75",
+              "span": {
+                "offset": 351,
+                "length": 2
+              },
+              "confidence": 0.995,
+              "source": "D(1,3.4066,3.4645,3.5963,3.4629,3.5963,3.6294,3.4066,3.631)"
+            },
+            {
+              "content": "Above",
+              "span": {
+                "offset": 363,
+                "length": 5
+              },
+              "confidence": 0.99,
+              "source": "D(1,5.7109,3.461,6.1658,3.461,6.1658,3.6336,5.7109,3.6325)"
+            },
+            {
+              "content": "$",
+              "span": {
+                "offset": 369,
+                "length": 1
+              },
+              "confidence": 0.998,
+              "source": "D(1,6.2051,3.461,6.2809,3.4608,6.2809,3.6337,6.2051,3.6337)"
+            },
+            {
+              "content": "25",
+              "span": {
+                "offset": 370,
+                "length": 2
+              },
+              "confidence": 0.998,
+              "source": "D(1,6.2893,3.4608,6.4746,3.4604,6.4746,3.6335,6.2893,3.6337)"
+            },
+            {
+              "content": "Ground",
+              "span": {
+                "offset": 393,
+                "length": 6
+              },
+              "confidence": 0.997,
+              "source": "D(1,0.6547,3.8738,1.1683,3.8726,1.1689,4.0605,0.6558,4.0596)"
+            },
+            {
+              "content": "transport",
+              "span": {
+                "offset": 400,
+                "length": 9
+              },
+              "confidence": 0.994,
+              "source": "D(1,1.2122,3.8726,1.8573,3.8735,1.8573,4.0621,1.2127,4.0606)"
+            },
+            {
+              "content": "$",
+              "span": {
+                "offset": 419,
+                "length": 1
+              },
+              "confidence": 0.997,
+              "source": "D(1,3.3162,3.8824,3.4037,3.8813,3.4037,4.0489,3.3162,4.0521)"
+            },
+            {
+              "content": "90",
+              "span": {
+                "offset": 420,
+                "length": 2
+              },
+              "confidence": 0.997,
+              "source": "D(1,3.4037,3.8813,3.5963,3.8782,3.5963,4.0505,3.4037,4.0489)"
+            },
+            {
+              "content": "Yes",
+              "span": {
+                "offset": 432,
+                "length": 3
+              },
+              "confidence": 0.987,
+              "source": "D(1,5.7068,3.8836,6.0015,3.8848,6.0015,4.0459,5.7068,4.0447)"
+            },
+            {
+              "content": "3",
+              "span": {
+                "offset": 461,
+                "length": 1
+              },
+              "confidence": 0.926,
+              "source": "D(1,0.5852,4.481,0.7026,4.4812,0.7036,4.7149,0.5862,4.7145)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 462,
+                "length": 1
+              },
+              "confidence": 0.953,
+              "source": "D(1,0.7143,4.4812,0.7574,4.4812,0.7583,4.7151,0.7153,4.7149)"
+            },
+            {
+              "content": "Submission",
+              "span": {
+                "offset": 464,
+                "length": 10
+              },
+              "confidence": 0.975,
+              "source": "D(1,0.8278,4.4813,2.0994,4.4817,2.0998,4.7171,0.8287,4.7153)"
+            },
+            {
+              "content": "Checklist",
+              "span": {
+                "offset": 475,
+                "length": 9
+              },
+              "confidence": 0.994,
+              "source": "D(1,2.1698,4.4817,3.2145,4.4789,3.2145,4.7132,2.1702,4.7171)"
+            },
+            {
+              "content": "[",
+              "span": {
+                "offset": 486,
+                "length": 1
+              },
+              "confidence": 0.997,
+              "source": "D(1,0.5873,4.8144,0.6443,4.8145,0.6453,5.0282,0.5883,5.0279)"
+            },
+            {
+              "content": "]",
+              "span": {
+                "offset": 488,
+                "length": 1
+              },
+              "confidence": 0.993,
+              "source": "D(1,0.6728,4.8146,0.7334,4.8148,0.7343,5.0287,0.6738,5.0284)"
+            },
+            {
+              "content": "Attach",
+              "span": {
+                "offset": 490,
+                "length": 6
+              },
+              "confidence": 0.992,
+              "source": "D(1,0.794,4.815,1.3178,4.8165,1.3184,5.0319,0.7949,5.0291)"
+            },
+            {
+              "content": "itemized",
+              "span": {
+                "offset": 497,
+                "length": 8
+              },
+              "confidence": 0.995,
+              "source": "D(1,1.3783,4.8165,2.0482,4.8165,2.0486,5.0314,1.379,5.0318)"
+            },
+            {
+              "content": "receipts",
+              "span": {
+                "offset": 506,
+                "length": 8
+              },
+              "confidence": 0.995,
+              "source": "D(1,2.1124,4.8163,2.7538,4.8146,2.7538,5.0269,2.1127,5.031)"
+            },
+            {
+              "content": "[",
+              "span": {
+                "offset": 516,
+                "length": 1
+              },
+              "confidence": 0.996,
+              "source": "D(1,0.5873,5.1225,0.6473,5.1225,0.6484,5.3374,0.5883,5.3373)"
+            },
+            {
+              "content": "]",
+              "span": {
+                "offset": 518,
+                "length": 1
+              },
+              "confidence": 0.992,
+              "source": "D(1,0.6756,5.1226,0.7357,5.1226,0.7366,5.3374,0.6766,5.3374)"
+            },
+            {
+              "content": "Include",
+              "span": {
+                "offset": 520,
+                "length": 7
+              },
+              "confidence": 0.878,
+              "source": "D(1,0.8063,5.1227,1.3823,5.1231,1.3829,5.3372,0.8073,5.3375)"
+            },
+            {
+              "content": "project",
+              "span": {
+                "offset": 528,
+                "length": 7
+              },
+              "confidence": 0.989,
+              "source": "D(1,1.4459,5.123,2.0006,5.1227,2.0009,5.3345,1.4464,5.337)"
+            },
+            {
+              "content": "code",
+              "span": {
+                "offset": 536,
+                "length": 4
+              },
+              "confidence": 0.995,
+              "source": "D(1,2.0465,5.1226,2.4529,5.1219,2.4529,5.3312,2.0468,5.3341)"
+            },
+            {
+              "content": "[",
+              "span": {
+                "offset": 542,
+                "length": 1
+              },
+              "confidence": 0.997,
+              "source": "D(1,0.5862,5.418,0.6467,5.4183,0.6477,5.6336,0.5873,5.6332)"
+            },
+            {
+              "content": "]",
+              "span": {
+                "offset": 544,
+                "length": 1
+              },
+              "confidence": 0.993,
+              "source": "D(1,0.6716,5.4185,0.7286,5.4188,0.7296,5.6341,0.6726,5.6338)"
+            },
+            {
+              "content": "Obtain",
+              "span": {
+                "offset": 546,
+                "length": 6
+              },
+              "confidence": 0.99,
+              "source": "D(1,0.7998,5.4192,1.3229,5.4222,1.3236,5.6377,0.8007,5.6345)"
+            },
+            {
+              "content": "manager",
+              "span": {
+                "offset": 553,
+                "length": 7
+              },
+              "confidence": 0.988,
+              "source": "D(1,1.3869,5.4224,2.1093,5.4239,2.1097,5.6391,1.3876,5.6379)"
+            },
+            {
+              "content": "approval",
+              "span": {
+                "offset": 561,
+                "length": 8
+              },
+              "confidence": 0.983,
+              "source": "D(1,2.1556,5.4239,2.8638,5.4228,2.8638,5.6373,2.1559,5.639)"
+            },
+            {
+              "content": "FICTIONAL",
+              "span": {
+                "offset": 588,
+                "length": 9
+              },
+              "confidence": 0.99,
+              "source": "D(1,0.5811,10.392,1.2319,10.3877,1.2324,10.538,0.5821,10.5337)"
+            },
+            {
+              "content": "DEMO",
+              "span": {
+                "offset": 598,
+                "length": 4
+              },
+              "confidence": 0.994,
+              "source": "D(1,1.2691,10.3877,1.6269,10.3873,1.6271,10.5385,1.2697,10.5381)"
+            },
+            {
+              "content": "DATA",
+              "span": {
+                "offset": 603,
+                "length": 4
+              },
+              "confidence": 0.991,
+              "source": "D(1,1.6641,10.3874,2.0119,10.3886,2.0119,10.5372,1.6644,10.5383)"
+            }
+          ],
+          "lines": [
+            {
+              "content": "Contoso Travel Expense Policy",
+              "source": "D(1,0.5915,0.2657,4.775,0.2861,4.7729,0.5928,0.5895,0.5655)",
+              "span": {
+                "offset": 2,
+                "length": 29
+              }
+            },
+            {
+              "content": "Fictional training document | Revision 2.1",
+              "source": "D(1,0.5834,0.6886,3.0298,0.6854,3.03,0.8634,0.5837,0.8665)",
+              "span": {
+                "offset": 32,
+                "length": 42
+              }
+            },
+            {
+              "content": "1. Scope",
+              "source": "D(1,0.5977,1.4087,1.5408,1.4165,1.5388,1.6648,0.5977,1.657)",
+              "span": {
+                "offset": 80,
+                "length": 8
+              }
+            },
+            {
+              "content": "This policy covers fictional employee travel and reimbursement requests.",
+              "source": "D(1,0.5842,1.7427,6.4746,1.7427,6.4746,1.9647,0.5842,1.9647)",
+              "span": {
+                "offset": 90,
+                "length": 72
+              }
+            },
+            {
+              "content": "2. Spending Limits",
+              "source": "D(1,0.5831,2.2006,2.6064,2.196,2.6064,2.46,0.5837,2.4635)",
+              "span": {
+                "offset": 168,
+                "length": 18
+              }
+            },
+            {
+              "content": "Category",
+              "source": "D(1,0.6532,2.6407,1.3447,2.6443,1.3437,2.8322,0.653,2.8263)",
+              "span": {
+                "offset": 206,
+                "length": 8
+              }
+            },
+            {
+              "content": "Daily limit",
+              "source": "D(1,3.3203,2.6326,4.0554,2.6344,4.0549,2.8222,3.3203,2.8203)",
+              "span": {
+                "offset": 224,
+                "length": 11
+              }
+            },
+            {
+              "content": "Receipt required",
+              "source": "D(1,5.715,2.6328,6.9561,2.632,6.9561,2.825,5.7151,2.8258)",
+              "span": {
+                "offset": 245,
+                "length": 16
+              }
+            },
+            {
+              "content": "Hotel",
+              "source": "D(1,0.653,3.0523,1.036,3.0414,1.0404,3.2138,0.6544,3.2219)",
+              "span": {
+                "offset": 282,
+                "length": 5
+              }
+            },
+            {
+              "content": "$220",
+              "source": "D(1,3.3203,3.0522,3.6855,3.0522,3.6855,3.2212,3.3203,3.2212)",
+              "span": {
+                "offset": 297,
+                "length": 4
+              }
+            },
+            {
+              "content": "Yes",
+              "source": "D(1,5.7068,3.0562,6.0015,3.0562,6.0015,3.2181,5.7068,3.2181)",
+              "span": {
+                "offset": 311,
+                "length": 3
+              }
+            },
+            {
+              "content": "Meals",
+              "source": "D(1,0.6526,3.4678,1.0801,3.4654,1.0811,3.6273,0.6536,3.6297)",
+              "span": {
+                "offset": 335,
+                "length": 5
+              }
+            },
+            {
+              "content": "$75",
+              "source": "D(1,3.3162,3.4628,3.5963,3.4629,3.5963,3.631,3.3161,3.631)",
+              "span": {
+                "offset": 350,
+                "length": 3
+              }
+            },
+            {
+              "content": "Above $25",
+              "source": "D(1,5.7109,3.4609,6.4746,3.4604,6.4746,3.6335,5.7109,3.634)",
+              "span": {
+                "offset": 363,
+                "length": 9
+              }
+            },
+            {
+              "content": "Ground transport",
+              "source": "D(1,0.6547,3.8709,1.8577,3.8734,1.8573,4.0621,0.6543,4.0596)",
+              "span": {
+                "offset": 393,
+                "length": 16
+              }
+            },
+            {
+              "content": "$90",
+              "source": "D(1,3.3152,3.8799,3.5963,3.8782,3.597,4.0505,3.3162,4.0521)",
+              "span": {
+                "offset": 419,
+                "length": 3
+              }
+            },
+            {
+              "content": "Yes",
+              "source": "D(1,5.7068,3.8833,6.0021,3.8845,6.0015,4.0459,5.7061,4.0447)",
+              "span": {
+                "offset": 432,
+                "length": 3
+              }
+            },
+            {
+              "content": "3. Submission Checklist",
+              "source": "D(1,0.5852,4.481,3.2145,4.4789,3.2147,4.7163,0.5854,4.7184)",
+              "span": {
+                "offset": 461,
+                "length": 23
+              }
+            },
+            {
+              "content": "[ ] Attach itemized receipts",
+              "source": "D(1,0.5873,4.8144,2.7538,4.8146,2.7538,5.0321,0.5873,5.0318)",
+              "span": {
+                "offset": 486,
+                "length": 28
+              }
+            },
+            {
+              "content": "[ ] Include project code",
+              "source": "D(1,0.5873,5.1225,2.4529,5.1219,2.4529,5.3374,0.5873,5.338)",
+              "span": {
+                "offset": 516,
+                "length": 24
+              }
+            },
+            {
+              "content": "[ ] Obtain manager approval",
+              "source": "D(1,0.5862,5.418,2.8642,5.4228,2.8638,5.641,0.5858,5.6362)",
+              "span": {
+                "offset": 542,
+                "length": 27
+              }
+            },
+            {
+              "content": "FICTIONAL DEMO DATA",
+              "source": "D(1,0.5811,10.387,2.0119,10.387,2.0119,10.5388,0.5811,10.5388)",
+              "span": {
+                "offset": 588,
+                "length": 19
+              }
+            }
+          ]
+        }
+      ],
+      "paragraphs": [
+        {
+          "role": "title",
+          "content": "Contoso Travel Expense Policy Fictional training document | Revision 2.1",
+          "source": "D(1,0.5855,0.2657,4.775,0.2861,4.772,0.887,0.5826,0.8665)",
+          "span": {
+            "offset": 0,
+            "length": 74
+          }
+        },
+        {
+          "role": "sectionHeading",
+          "content": "1. Scope",
+          "source": "D(1,0.5977,1.4087,1.5408,1.4165,1.5388,1.6648,0.5956,1.657)",
+          "span": {
+            "offset": 77,
+            "length": 11
+          }
+        },
+        {
+          "content": "This policy covers fictional employee travel and reimbursement requests.",
+          "source": "D(1,0.5842,1.7427,6.4746,1.7427,6.4746,1.9647,0.5842,1.9647)",
+          "span": {
+            "offset": 90,
+            "length": 72
+          }
+        },
+        {
+          "role": "sectionHeading",
+          "content": "2. Spending Limits",
+          "source": "D(1,0.5831,2.2006,2.6064,2.196,2.607,2.46,0.5837,2.4646)",
+          "span": {
+            "offset": 165,
+            "length": 21
+          }
+        },
+        {
+          "content": "Category",
+          "source": "D(1,0.6532,2.6402,1.345,2.6452,1.3437,2.8322,0.6518,2.8272)",
+          "span": {
+            "offset": 206,
+            "length": 8
+          }
+        },
+        {
+          "content": "Daily limit",
+          "source": "D(1,3.3203,2.6316,4.0558,2.6351,4.0549,2.8238,3.3194,2.8203)",
+          "span": {
+            "offset": 224,
+            "length": 11
+          }
+        },
+        {
+          "content": "Receipt required",
+          "source": "D(1,5.7149,2.633,6.9561,2.632,6.9562,2.825,5.7151,2.826)",
+          "span": {
+            "offset": 245,
+            "length": 16
+          }
+        },
+        {
+          "content": "Hotel",
+          "source": "D(1,0.6495,3.0523,1.036,3.0414,1.0407,3.2078,0.6542,3.2187)",
+          "span": {
+            "offset": 282,
+            "length": 5
+          }
+        },
+        {
+          "content": "$220",
+          "source": "D(1,3.3203,3.0522,3.6855,3.0522,3.6855,3.2212,3.3203,3.2212)",
+          "span": {
+            "offset": 297,
+            "length": 4
+          }
+        },
+        {
+          "content": "Yes",
+          "source": "D(1,5.7068,3.0547,6.0023,3.0562,6.0015,3.2181,5.706,3.2166)",
+          "span": {
+            "offset": 311,
+            "length": 3
+          }
+        },
+        {
+          "content": "Meals",
+          "source": "D(1,0.6527,3.4649,1.0803,3.4654,1.0801,3.6273,0.6525,3.6269)",
+          "span": {
+            "offset": 335,
+            "length": 5
+          }
+        },
+        {
+          "content": "$75",
+          "source": "D(1,3.3163,3.4577,3.5993,3.4629,3.5962,3.6344,3.3131,3.6292)",
+          "span": {
+            "offset": 350,
+            "length": 3
+          }
+        },
+        {
+          "content": "Above $25",
+          "source": "D(1,5.7108,3.461,6.4746,3.4602,6.4748,3.6335,5.7109,3.6343)",
+          "span": {
+            "offset": 363,
+            "length": 9
+          }
+        },
+        {
+          "content": "Ground transport",
+          "source": "D(1,0.6547,3.8712,1.8577,3.8735,1.8573,4.0621,0.6544,4.0598)",
+          "span": {
+            "offset": 393,
+            "length": 16
+          }
+        },
+        {
+          "content": "$90",
+          "source": "D(1,3.3155,3.8793,3.5963,3.8782,3.597,4.0511,3.3162,4.0521)",
+          "span": {
+            "offset": 419,
+            "length": 3
+          }
+        },
+        {
+          "content": "Yes",
+          "source": "D(1,5.7068,3.8836,6.0021,3.8848,6.0015,4.0459,5.7061,4.0447)",
+          "span": {
+            "offset": 432,
+            "length": 3
+          }
+        },
+        {
+          "role": "sectionHeading",
+          "content": "3. Submission Checklist",
+          "source": "D(1,0.5852,4.481,3.2145,4.4789,3.2147,4.7163,0.5854,4.7184)",
+          "span": {
+            "offset": 458,
+            "length": 26
+          }
+        },
+        {
+          "content": "[ ] Attach itemized receipts",
+          "source": "D(1,0.5873,4.8144,2.7538,4.8146,2.7538,5.0321,0.5873,5.0318)",
+          "span": {
+            "offset": 486,
+            "length": 28
+          }
+        },
+        {
+          "content": "[ ] Include project code",
+          "source": "D(1,0.5873,5.1225,2.4529,5.1219,2.4529,5.3374,0.5873,5.338)",
+          "span": {
+            "offset": 516,
+            "length": 24
+          }
+        },
+        {
+          "content": "[ ] Obtain manager approval",
+          "source": "D(1,0.5862,5.418,2.8642,5.4228,2.8638,5.641,0.5858,5.6362)",
+          "span": {
+            "offset": 542,
+            "length": 27
+          }
+        },
+        {
+          "role": "pageFooter",
+          "content": "FICTIONAL DEMO DATA",
+          "source": "D(1,0.5811,10.387,2.0119,10.387,2.0119,10.5388,0.5811,10.5388)",
+          "span": {
+            "offset": 571,
+            "length": 40
+          }
+        }
+      ],
+      "sections": [
+        {
+          "span": {
+            "offset": 0,
+            "length": 569
+          },
+          "elements": [
+            "/paragraphs/0",
+            "/sections/1",
+            "/sections/2",
+            "/sections/3"
+          ]
+        },
+        {
+          "span": {
+            "offset": 77,
+            "length": 85
+          },
+          "elements": [
+            "/paragraphs/1",
+            "/paragraphs/2"
+          ]
+        },
+        {
+          "span": {
+            "offset": 165,
+            "length": 290
+          },
+          "elements": [
+            "/paragraphs/3",
+            "/tables/0"
+          ]
+        },
+        {
+          "span": {
+            "offset": 458,
+            "length": 111
+          },
+          "elements": [
+            "/paragraphs/16",
+            "/paragraphs/17",
+            "/paragraphs/18",
+            "/paragraphs/19"
+          ]
+        }
+      ],
+      "tables": [
+        {
+          "rowCount": 4,
+          "columnCount": 3,
+          "cells": [
+            {
+              "kind": "columnHeader",
+              "rowIndex": 0,
+              "columnIndex": 0,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Category",
+              "source": "D(1,0.592,2.5346,2.8393,2.5348,2.839,2.9484,0.592,2.9482)",
+              "span": {
+                "offset": 206,
+                "length": 8
+              },
+              "elements": [
+                "/paragraphs/4"
+              ]
+            },
+            {
+              "kind": "columnHeader",
+              "rowIndex": 0,
+              "columnIndex": 1,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Daily limit",
+              "source": "D(1,2.8393,2.5348,5.1608,2.535,5.1571,2.9486,2.839,2.9484)",
+              "span": {
+                "offset": 224,
+                "length": 11
+              },
+              "elements": [
+                "/paragraphs/5"
+              ]
+            },
+            {
+              "kind": "columnHeader",
+              "rowIndex": 0,
+              "columnIndex": 2,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Receipt required",
+              "source": "D(1,5.1608,2.535,7.9016,2.5346,7.9013,2.9488,5.1571,2.9486)",
+              "span": {
+                "offset": 245,
+                "length": 16
+              },
+              "elements": [
+                "/paragraphs/6"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 1,
+              "columnIndex": 0,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Hotel",
+              "source": "D(1,0.592,2.9482,2.839,2.9484,2.8371,3.3628,0.5913,3.3631)",
+              "span": {
+                "offset": 282,
+                "length": 5
+              },
+              "elements": [
+                "/paragraphs/7"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 1,
+              "columnIndex": 1,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "$220",
+              "source": "D(1,2.839,2.9484,5.1571,2.9486,5.1571,3.3631,2.8371,3.3628)",
+              "span": {
+                "offset": 297,
+                "length": 4
+              },
+              "elements": [
+                "/paragraphs/8"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 1,
+              "columnIndex": 2,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Yes",
+              "source": "D(1,5.1571,2.9486,7.9013,2.9488,7.9013,3.3636,5.1571,3.3631)",
+              "span": {
+                "offset": 311,
+                "length": 3
+              },
+              "elements": [
+                "/paragraphs/9"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 2,
+              "columnIndex": 0,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Meals",
+              "source": "D(1,0.5913,3.3631,2.8371,3.3628,2.8424,3.7786,0.5907,3.779)",
+              "span": {
+                "offset": 335,
+                "length": 5
+              },
+              "elements": [
+                "/paragraphs/10"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 2,
+              "columnIndex": 1,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "$75",
+              "source": "D(1,2.8371,3.3628,5.1571,3.3631,5.1672,3.7788,2.8424,3.7786)",
+              "span": {
+                "offset": 350,
+                "length": 3
+              },
+              "elements": [
+                "/paragraphs/11"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 2,
+              "columnIndex": 2,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Above $25",
+              "source": "D(1,5.1571,3.3631,7.9013,3.3636,7.9016,3.7792,5.1672,3.7788)",
+              "span": {
+                "offset": 363,
+                "length": 9
+              },
+              "elements": [
+                "/paragraphs/12"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 3,
+              "columnIndex": 0,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Ground transport",
+              "source": "D(1,0.5907,3.779,2.8424,3.7786,2.8377,4.1942,0.5902,4.1943)",
+              "span": {
+                "offset": 393,
+                "length": 16
+              },
+              "elements": [
+                "/paragraphs/13"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 3,
+              "columnIndex": 1,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "$90",
+              "source": "D(1,2.8424,3.7786,5.1672,3.7788,5.1587,4.1943,2.8377,4.1942)",
+              "span": {
+                "offset": 419,
+                "length": 3
+              },
+              "elements": [
+                "/paragraphs/14"
+              ]
+            },
+            {
+              "kind": "content",
+              "rowIndex": 3,
+              "columnIndex": 2,
+              "rowSpan": 1,
+              "columnSpan": 1,
+              "content": "Yes",
+              "source": "D(1,5.1672,3.7788,7.9016,3.7792,7.9018,4.1951,5.1587,4.1943)",
+              "span": {
+                "offset": 432,
+                "length": 3
+              },
+              "elements": [
+                "/paragraphs/15"
+              ]
+            }
+          ],
+          "source": "D(1,0.5785,2.5217,7.8982,2.5217,7.9023,4.176,0.5795,4.1895)",
+          "span": {
+            "offset": 189,
+            "length": 266
+          }
+        }
+      ],
+      "analyzerId": "prebuilt-layout",
+      "mimeType": "application/pdf"
+    }
+  ]
+}

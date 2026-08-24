@@ -31,7 +31,7 @@ business fields such as an invoice total or tax withholding amount.
 | Azure service | Azure Content Understanding in a Microsoft Foundry resource |
 | Foundry project | Not required. The script calls the Foundry resource endpoint directly. |
 | Analyzer | `prebuilt-layout` |
-| Example input | `assets/sample-layout-policy.pdf`, submitted as document bytes |
+| Example input | `assets/sample-layout-policy.pdf` or `assets/sample-travel-policy.pdf`, submitted as document bytes |
 | Model deployment | Not required for this content-extraction analyzer |
 | Access | API key, or `Cognitive Services Content Understanding Reader` for analysis with Microsoft Entra ID |
 | Verify | Markdown preserves headings, paragraphs, sections, and the policy table; JSON contains page and layout details |
@@ -142,6 +142,14 @@ You can replace the path with a public `http` or `https` URL.
 
 A successful test prints the extracted markdown and creates
 `output/layout-test-result.json`. No generative model deployment is required.
+
+Test the additional travel policy, which contains headings, a spending-limit
+table, and a submission checklist:
+
+```powershell
+python analyze.py "assets/sample-travel-policy.pdf" `
+  --output "output/layout-travel-policy-result.json"
+```
 
 When `CONTENTUNDERSTANDING_KEY` exists, the code creates an `AzureKeyCredential`.
 

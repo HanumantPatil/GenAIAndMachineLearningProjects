@@ -29,7 +29,7 @@ values before using them in financial, filing, or compliance workflows.
 | Azure service | Azure Content Understanding in a Microsoft Foundry resource |
 | Foundry project | Not required. The script uses the resource endpoint and analyzer ID. |
 | Analyzer | `prebuilt-tax.us` |
-| Example input | `assets/sample-w2.pdf`, submitted as document bytes |
+| Example input | `assets/sample-w2.pdf` or `assets/sample-w2-second-employee.pdf`, submitted as document bytes |
 | Model deployment | Required. Enable automatic deployment in Content Understanding Studio and save the analyzer's supported model mappings as resource defaults. |
 | Access | `Cognitive Services User` to configure defaults; API key or `Cognitive Services Content Understanding Reader` to run analysis |
 | Verify | W-2 category, payer and recipient values, wages or income, withholding values, and confidence scores |
@@ -123,6 +123,14 @@ its path with another synthetic local file or a public HTTPS URL.
 
 A successful test prints the detected form category, extracted fields, and
 confidence scores and creates `output/us-tax-test-result.json`.
+
+Test the additional fictional W-2 with a second employee and different wage
+and withholding values:
+
+```powershell
+python analyze.py "assets/sample-w2-second-employee.pdf" `
+  --output "output/us-tax-second-employee-result.json"
+```
 
 ## 2B. Test with Microsoft Entra Authentication
 

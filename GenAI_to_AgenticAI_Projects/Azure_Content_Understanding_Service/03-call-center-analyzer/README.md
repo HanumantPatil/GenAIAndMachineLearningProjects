@@ -30,7 +30,7 @@ decisions.
 | Azure service | Azure Content Understanding in a Microsoft Foundry resource |
 | Foundry project | Not required. The analyzer and model defaults belong to the Foundry resource. |
 | Analyzer | `prebuilt-callCenter` |
-| Example input | `assets/sample-support-call.wav`, submitted as audio bytes |
+| Example input | `assets/sample-support-call.wav` or `assets/sample-billing-call.wav`, submitted as audio bytes |
 | Model deployment | Required. Enable automatic deployment in Content Understanding Studio and save the analyzer's supported model mappings as resource defaults. |
 | Access | `Cognitive Services User` to configure defaults; API key or `Cognitive Services Content Understanding Reader` to run analysis |
 | Verify | Transcript, speaker-aware conversation content, and available topics, summary, sentiment, and follow-up fields |
@@ -125,6 +125,14 @@ replace its path with an authorized local recording or a public HTTPS URL.
 
 A successful test prints the transcript and available call insights and creates
 `output/call-center-test-result.json`.
+
+Test the additional fictional billing call about a duplicate delivery fee and
+credit request:
+
+```powershell
+python analyze.py "assets/sample-billing-call.wav" `
+  --output "output/call-center-billing-test-result.json"
+```
 
 ## 2B. Test with Microsoft Entra Authentication
 

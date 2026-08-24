@@ -1,0 +1,934 @@
+{
+  "analyzerId": "prebuilt-read",
+  "apiVersion": "2025-11-01",
+  "createdAt": "2026-08-24T15:34:52Z",
+  "stringEncoding": "codePoint",
+  "warnings": [],
+  "contents": [
+    {
+      "path": "input1",
+      "markdown": "MAINTENANCE SHIFT LOG\nFictional plant inspection notes\n\nDate: August 23, 2026\n\nTechnician: Casey Example\n\nLocation: Demo Plant - Line B\n\n08:15 Conveyor guard inspected - secure.\n\n09:05 Lubricated bearing station B-12.\n\n10:40 Temperature reading: 71.6 F.\n\n11:20 Replaced fictional filter FL-309.\n\nAction: Recheck belt tension on Tuesday.\n\nStatus: Shift inspection complete.\n\nFICTIONAL DEMO DATA\n",
+      "kind": "document",
+      "startPageNumber": 1,
+      "endPageNumber": 1,
+      "unit": "pixel",
+      "pages": [
+        {
+          "pageNumber": 1,
+          "angle": 1.996174e-07,
+          "width": 1275,
+          "height": 1650,
+          "spans": [
+            {
+              "offset": 0,
+              "length": 394
+            }
+          ],
+          "words": [
+            {
+              "content": "MAINTENANCE",
+              "span": {
+                "offset": 0,
+                "length": 11
+              },
+              "confidence": 0.997,
+              "source": "D(1,89,42,396,41,396,81,89,81)"
+            },
+            {
+              "content": "SHIFT",
+              "span": {
+                "offset": 12,
+                "length": 5
+              },
+              "confidence": 0.998,
+              "source": "D(1,410,41,533,41,533,81,410,81)"
+            },
+            {
+              "content": "LOG",
+              "span": {
+                "offset": 18,
+                "length": 3
+              },
+              "confidence": 0.998,
+              "source": "D(1,545,41,637,41,637,81,545,81)"
+            },
+            {
+              "content": "Fictional",
+              "span": {
+                "offset": 22,
+                "length": 9
+              },
+              "confidence": 0.998,
+              "source": "D(1,88,104,162,104,162,130,88,131)"
+            },
+            {
+              "content": "plant",
+              "span": {
+                "offset": 32,
+                "length": 5
+              },
+              "confidence": 0.999,
+              "source": "D(1,168,104,211,104,211,130,168,130)"
+            },
+            {
+              "content": "inspection",
+              "span": {
+                "offset": 38,
+                "length": 10
+              },
+              "confidence": 0.998,
+              "source": "D(1,217,104,306,104,306,130,217,130)"
+            },
+            {
+              "content": "notes",
+              "span": {
+                "offset": 49,
+                "length": 5
+              },
+              "confidence": 0.999,
+              "source": "D(1,312,104,363,104,363,130,312,130)"
+            },
+            {
+              "content": "Date",
+              "span": {
+                "offset": 56,
+                "length": 4
+              },
+              "confidence": 0.998,
+              "source": "D(1,88,210,152,210,152,245,88,245)"
+            },
+            {
+              "content": ":",
+              "span": {
+                "offset": 60,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,153,210,160,210,160,245,153,245)"
+            },
+            {
+              "content": "August",
+              "span": {
+                "offset": 62,
+                "length": 6
+              },
+              "confidence": 0.946,
+              "source": "D(1,166,210,264,210,264,245,166,245)"
+            },
+            {
+              "content": "23",
+              "span": {
+                "offset": 69,
+                "length": 2
+              },
+              "confidence": 0.937,
+              "source": "D(1,271,210,303,210,303,245,271,245)"
+            },
+            {
+              "content": ",",
+              "span": {
+                "offset": 71,
+                "length": 1
+              },
+              "confidence": 0.959,
+              "source": "D(1,305,210,311,210,311,245,305,245)"
+            },
+            {
+              "content": "2026",
+              "span": {
+                "offset": 73,
+                "length": 4
+              },
+              "confidence": 0.959,
+              "source": "D(1,320,210,390,210,390,245,320,245)"
+            },
+            {
+              "content": "Technician",
+              "span": {
+                "offset": 79,
+                "length": 10
+              },
+              "confidence": 0.998,
+              "source": "D(1,88,265,235,265,235,299,88,298)"
+            },
+            {
+              "content": ":",
+              "span": {
+                "offset": 89,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,237,265,243,265,243,299,237,299)"
+            },
+            {
+              "content": "Casey",
+              "span": {
+                "offset": 91,
+                "length": 5
+              },
+              "confidence": 0.995,
+              "source": "D(1,252,265,339,265,339,300,252,299)"
+            },
+            {
+              "content": "Example",
+              "span": {
+                "offset": 97,
+                "length": 7
+              },
+              "confidence": 0.991,
+              "source": "D(1,347,265,465,265,465,300,347,300)"
+            },
+            {
+              "content": "Location",
+              "span": {
+                "offset": 106,
+                "length": 8
+              },
+              "confidence": 0.998,
+              "source": "D(1,88,319,202,319,202,351,88,351)"
+            },
+            {
+              "content": ":",
+              "span": {
+                "offset": 114,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,204,319,211,319,211,351,204,351)"
+            },
+            {
+              "content": "Demo",
+              "span": {
+                "offset": 116,
+                "length": 4
+              },
+              "confidence": 0.999,
+              "source": "D(1,220,319,301,319,301,351,220,351)"
+            },
+            {
+              "content": "Plant",
+              "span": {
+                "offset": 121,
+                "length": 5
+              },
+              "confidence": 0.997,
+              "source": "D(1,310,319,380,319,380,351,310,351)"
+            },
+            {
+              "content": "-",
+              "span": {
+                "offset": 127,
+                "length": 1
+              },
+              "confidence": 0.994,
+              "source": "D(1,386,319,397,319,397,351,386,351)"
+            },
+            {
+              "content": "Line",
+              "span": {
+                "offset": 129,
+                "length": 4
+              },
+              "confidence": 0.996,
+              "source": "D(1,405,319,461,319,461,351,405,351)"
+            },
+            {
+              "content": "B",
+              "span": {
+                "offset": 134,
+                "length": 1
+              },
+              "confidence": 0.99,
+              "source": "D(1,470,319,491,319,491,351,470,351)"
+            },
+            {
+              "content": "08",
+              "span": {
+                "offset": 137,
+                "length": 2
+              },
+              "confidence": 0.997,
+              "source": "D(1,88,403,122,403,122,438,88,438)"
+            },
+            {
+              "content": ":",
+              "span": {
+                "offset": 139,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,123,403,131,403,131,438,123,438)"
+            },
+            {
+              "content": "15",
+              "span": {
+                "offset": 140,
+                "length": 2
+              },
+              "confidence": 0.981,
+              "source": "D(1,134,403,165,403,165,438,134,438)"
+            },
+            {
+              "content": "Conveyor",
+              "span": {
+                "offset": 143,
+                "length": 8
+              },
+              "confidence": 0.993,
+              "source": "D(1,183,404,317,404,317,439,183,438)"
+            },
+            {
+              "content": "guard",
+              "span": {
+                "offset": 152,
+                "length": 5
+              },
+              "confidence": 0.992,
+              "source": "D(1,324,404,402,405,402,439,324,439)"
+            },
+            {
+              "content": "inspected",
+              "span": {
+                "offset": 158,
+                "length": 9
+              },
+              "confidence": 0.993,
+              "source": "D(1,412,405,545,405,545,439,412,439)"
+            },
+            {
+              "content": "-",
+              "span": {
+                "offset": 168,
+                "length": 1
+              },
+              "confidence": 0.993,
+              "source": "D(1,553,405,565,405,565,439,553,439)"
+            },
+            {
+              "content": "secure",
+              "span": {
+                "offset": 170,
+                "length": 6
+              },
+              "confidence": 0.997,
+              "source": "D(1,573,405,666,405,666,438,573,439)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 176,
+                "length": 1
+              },
+              "confidence": 0.998,
+              "source": "D(1,667,405,675,405,675,438,667,438)"
+            },
+            {
+              "content": "09",
+              "span": {
+                "offset": 179,
+                "length": 2
+              },
+              "confidence": 0.998,
+              "source": "D(1,87,463,121,464,121,499,88,498)"
+            },
+            {
+              "content": ":",
+              "span": {
+                "offset": 181,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,123,464,130,464,130,499,123,499)"
+            },
+            {
+              "content": "05",
+              "span": {
+                "offset": 182,
+                "length": 2
+              },
+              "confidence": 0.996,
+              "source": "D(1,132,464,166,464,166,499,132,499)"
+            },
+            {
+              "content": "Lubricated",
+              "span": {
+                "offset": 185,
+                "length": 10
+              },
+              "confidence": 0.997,
+              "source": "D(1,184,464,327,464,327,499,184,499)"
+            },
+            {
+              "content": "bearing",
+              "span": {
+                "offset": 196,
+                "length": 7
+              },
+              "confidence": 0.997,
+              "source": "D(1,338,464,437,464,437,499,338,499)"
+            },
+            {
+              "content": "station",
+              "span": {
+                "offset": 204,
+                "length": 7
+              },
+              "confidence": 0.992,
+              "source": "D(1,447,464,539,464,539,499,447,499)"
+            },
+            {
+              "content": "B",
+              "span": {
+                "offset": 212,
+                "length": 1
+              },
+              "confidence": 0.995,
+              "source": "D(1,550,464,569,464,569,499,550,499)"
+            },
+            {
+              "content": "-",
+              "span": {
+                "offset": 213,
+                "length": 1
+              },
+              "confidence": 0.998,
+              "source": "D(1,570,464,580,464,580,499,570,499)"
+            },
+            {
+              "content": "12",
+              "span": {
+                "offset": 214,
+                "length": 2
+              },
+              "confidence": 0.997,
+              "source": "D(1,582,464,614,464,614,499,582,499)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 216,
+                "length": 1
+              },
+              "confidence": 0.995,
+              "source": "D(1,615,464,623,464,623,498,615,499)"
+            },
+            {
+              "content": "10",
+              "span": {
+                "offset": 219,
+                "length": 2
+              },
+              "confidence": 0.998,
+              "source": "D(1,90,525,122,525,122,560,91,560)"
+            },
+            {
+              "content": ":",
+              "span": {
+                "offset": 221,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,124,525,131,525,131,561,124,560)"
+            },
+            {
+              "content": "40",
+              "span": {
+                "offset": 222,
+                "length": 2
+              },
+              "confidence": 0.995,
+              "source": "D(1,131,525,166,525,166,561,131,561)"
+            },
+            {
+              "content": "Temperature",
+              "span": {
+                "offset": 225,
+                "length": 11
+              },
+              "confidence": 0.995,
+              "source": "D(1,184,525,360,525,361,561,184,561)"
+            },
+            {
+              "content": "reading",
+              "span": {
+                "offset": 237,
+                "length": 7
+              },
+              "confidence": 0.992,
+              "source": "D(1,371,525,470,526,470,560,371,561)"
+            },
+            {
+              "content": ":",
+              "span": {
+                "offset": 244,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,472,526,479,526,479,560,472,560)"
+            },
+            {
+              "content": "71.6",
+              "span": {
+                "offset": 246,
+                "length": 4
+              },
+              "confidence": 0.523,
+              "source": "D(1,489,526,549,526,549,560,489,560)"
+            },
+            {
+              "content": "F",
+              "span": {
+                "offset": 251,
+                "length": 1
+              },
+              "confidence": 0.878,
+              "source": "D(1,559,526,577,526,577,560,559,560)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 252,
+                "length": 1
+              },
+              "confidence": 0.995,
+              "source": "D(1,578,526,586,526,586,560,578,560)"
+            },
+            {
+              "content": "11",
+              "span": {
+                "offset": 255,
+                "length": 2
+              },
+              "confidence": 0.996,
+              "source": "D(1,90,587,120,587,120,622,91,622)"
+            },
+            {
+              "content": ":",
+              "span": {
+                "offset": 257,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,123,587,131,587,132,622,124,622)"
+            },
+            {
+              "content": "20",
+              "span": {
+                "offset": 258,
+                "length": 2
+              },
+              "confidence": 0.983,
+              "source": "D(1,132,587,166,587,166,622,132,622)"
+            },
+            {
+              "content": "Replaced",
+              "span": {
+                "offset": 261,
+                "length": 8
+              },
+              "confidence": 0.996,
+              "source": "D(1,185,587,314,587,314,621,185,622)"
+            },
+            {
+              "content": "fictional",
+              "span": {
+                "offset": 270,
+                "length": 9
+              },
+              "confidence": 0.997,
+              "source": "D(1,323,586,427,586,427,621,323,621)"
+            },
+            {
+              "content": "filter",
+              "span": {
+                "offset": 280,
+                "length": 6
+              },
+              "confidence": 0.988,
+              "source": "D(1,437,586,499,586,499,620,437,621)"
+            },
+            {
+              "content": "FL",
+              "span": {
+                "offset": 287,
+                "length": 2
+              },
+              "confidence": 0.988,
+              "source": "D(1,507,586,541,586,541,620,507,620)"
+            },
+            {
+              "content": "-",
+              "span": {
+                "offset": 289,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,541,586,552,585,552,620,541,620)"
+            },
+            {
+              "content": "309",
+              "span": {
+                "offset": 290,
+                "length": 3
+              },
+              "confidence": 0.997,
+              "source": "D(1,553,585,602,585,602,619,553,620)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 293,
+                "length": 1
+              },
+              "confidence": 0.996,
+              "source": "D(1,604,585,611,585,611,619,604,619)"
+            },
+            {
+              "content": "Action",
+              "span": {
+                "offset": 296,
+                "length": 6
+              },
+              "confidence": 0.996,
+              "source": "D(1,87,648,175,648,175,682,88,681)"
+            },
+            {
+              "content": ":",
+              "span": {
+                "offset": 302,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,177,648,184,648,184,682,177,682)"
+            },
+            {
+              "content": "Recheck",
+              "span": {
+                "offset": 304,
+                "length": 7
+              },
+              "confidence": 0.993,
+              "source": "D(1,194,648,316,648,316,682,194,682)"
+            },
+            {
+              "content": "belt",
+              "span": {
+                "offset": 312,
+                "length": 4
+              },
+              "confidence": 0.954,
+              "source": "D(1,325,648,374,648,374,682,325,682)"
+            },
+            {
+              "content": "tension",
+              "span": {
+                "offset": 317,
+                "length": 7
+              },
+              "confidence": 0.851,
+              "source": "D(1,381,648,482,648,482,683,381,682)"
+            },
+            {
+              "content": "on",
+              "span": {
+                "offset": 325,
+                "length": 2
+              },
+              "confidence": 0.828,
+              "source": "D(1,492,648,525,648,525,683,492,683)"
+            },
+            {
+              "content": "Tuesday",
+              "span": {
+                "offset": 328,
+                "length": 7
+              },
+              "confidence": 0.965,
+              "source": "D(1,535,648,655,648,655,683,535,683)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 335,
+                "length": 1
+              },
+              "confidence": 0.996,
+              "source": "D(1,655,648,662,648,662,683,655,683)"
+            },
+            {
+              "content": "Status",
+              "span": {
+                "offset": 338,
+                "length": 6
+              },
+              "confidence": 0.998,
+              "source": "D(1,88,709,177,709,177,744,88,743)"
+            },
+            {
+              "content": ":",
+              "span": {
+                "offset": 344,
+                "length": 1
+              },
+              "confidence": 0.999,
+              "source": "D(1,179,709,185,709,186,744,179,744)"
+            },
+            {
+              "content": "Shift",
+              "span": {
+                "offset": 346,
+                "length": 5
+              },
+              "confidence": 0.998,
+              "source": "D(1,196,709,259,709,259,744,197,744)"
+            },
+            {
+              "content": "inspection",
+              "span": {
+                "offset": 352,
+                "length": 10
+              },
+              "confidence": 0.998,
+              "source": "D(1,268,709,407,709,407,744,268,744)"
+            },
+            {
+              "content": "complete",
+              "span": {
+                "offset": 363,
+                "length": 8
+              },
+              "confidence": 0.999,
+              "source": "D(1,416,709,543,709,543,744,416,744)"
+            },
+            {
+              "content": ".",
+              "span": {
+                "offset": 371,
+                "length": 1
+              },
+              "confidence": 0.998,
+              "source": "D(1,545,709,552,709,552,744,545,744)"
+            },
+            {
+              "content": "FICTIONAL",
+              "span": {
+                "offset": 374,
+                "length": 9
+              },
+              "confidence": 0.997,
+              "source": "D(1,88,1559,185,1559,185,1580,88,1580)"
+            },
+            {
+              "content": "DEMO",
+              "span": {
+                "offset": 384,
+                "length": 4
+              },
+              "confidence": 0.998,
+              "source": "D(1,191,1559,244,1559,244,1580,191,1580)"
+            },
+            {
+              "content": "DATA",
+              "span": {
+                "offset": 389,
+                "length": 4
+              },
+              "confidence": 0.996,
+              "source": "D(1,250,1559,302,1559,302,1580,250,1580)"
+            }
+          ],
+          "lines": [
+            {
+              "content": "MAINTENANCE SHIFT LOG",
+              "source": "D(1,89,41,637,41,637,81,89,81)",
+              "span": {
+                "offset": 0,
+                "length": 21
+              }
+            },
+            {
+              "content": "Fictional plant inspection notes",
+              "source": "D(1,88,104,363,104,363,131,88,131)",
+              "span": {
+                "offset": 22,
+                "length": 32
+              }
+            },
+            {
+              "content": "Date: August 23, 2026",
+              "source": "D(1,88,210,390,210,390,245,88,246)",
+              "span": {
+                "offset": 56,
+                "length": 21
+              }
+            },
+            {
+              "content": "Technician: Casey Example",
+              "source": "D(1,88,265,465,265,465,300,88,299)",
+              "span": {
+                "offset": 79,
+                "length": 25
+              }
+            },
+            {
+              "content": "Location: Demo Plant - Line B",
+              "source": "D(1,88,319,491,318,491,351,88,351)",
+              "span": {
+                "offset": 106,
+                "length": 29
+              }
+            },
+            {
+              "content": "08:15 Conveyor guard inspected - secure.",
+              "source": "D(1,88,403,675,405,675,440,88,438)",
+              "span": {
+                "offset": 137,
+                "length": 40
+              }
+            },
+            {
+              "content": "09:05 Lubricated bearing station B-12.",
+              "source": "D(1,87,463,623,464,623,500,87,499)",
+              "span": {
+                "offset": 179,
+                "length": 38
+              }
+            },
+            {
+              "content": "10:40 Temperature reading: 71.6 F.",
+              "source": "D(1,90,525,586,525,586,561,90,561)",
+              "span": {
+                "offset": 219,
+                "length": 34
+              }
+            },
+            {
+              "content": "11:20 Replaced fictional filter FL-309.",
+              "source": "D(1,90,587,611,585,611,620,90,622)",
+              "span": {
+                "offset": 255,
+                "length": 39
+              }
+            },
+            {
+              "content": "Action: Recheck belt tension on Tuesday.",
+              "source": "D(1,87,648,662,648,662,683,87,682)",
+              "span": {
+                "offset": 296,
+                "length": 40
+              }
+            },
+            {
+              "content": "Status: Shift inspection complete.",
+              "source": "D(1,88,709,552,709,552,745,88,744)",
+              "span": {
+                "offset": 338,
+                "length": 34
+              }
+            },
+            {
+              "content": "FICTIONAL DEMO DATA",
+              "source": "D(1,88,1559,302,1559,302,1580,88,1580)",
+              "span": {
+                "offset": 374,
+                "length": 19
+              }
+            }
+          ]
+        }
+      ],
+      "paragraphs": [
+        {
+          "content": "MAINTENANCE SHIFT LOG Fictional plant inspection notes",
+          "source": "D(1,88,41,637,41,637,131,88,131)",
+          "span": {
+            "offset": 0,
+            "length": 54
+          }
+        },
+        {
+          "content": "Date: August 23, 2026",
+          "source": "D(1,88,210,390,210,390,245,88,246)",
+          "span": {
+            "offset": 56,
+            "length": 21
+          }
+        },
+        {
+          "content": "Technician: Casey Example",
+          "source": "D(1,88,265,465,265,465,300,88,299)",
+          "span": {
+            "offset": 79,
+            "length": 25
+          }
+        },
+        {
+          "content": "Location: Demo Plant - Line B",
+          "source": "D(1,88,319,491,318,491,351,88,351)",
+          "span": {
+            "offset": 106,
+            "length": 29
+          }
+        },
+        {
+          "content": "08:15 Conveyor guard inspected - secure.",
+          "source": "D(1,88,403,675,405,675,440,88,438)",
+          "span": {
+            "offset": 137,
+            "length": 40
+          }
+        },
+        {
+          "content": "09:05 Lubricated bearing station B-12.",
+          "source": "D(1,87,463,623,464,623,500,87,499)",
+          "span": {
+            "offset": 179,
+            "length": 38
+          }
+        },
+        {
+          "content": "10:40 Temperature reading: 71.6 F.",
+          "source": "D(1,90,525,586,525,586,561,90,561)",
+          "span": {
+            "offset": 219,
+            "length": 34
+          }
+        },
+        {
+          "content": "11:20 Replaced fictional filter FL-309.",
+          "source": "D(1,90,587,611,585,611,620,90,622)",
+          "span": {
+            "offset": 255,
+            "length": 39
+          }
+        },
+        {
+          "content": "Action: Recheck belt tension on Tuesday.",
+          "source": "D(1,87,648,662,648,662,683,87,682)",
+          "span": {
+            "offset": 296,
+            "length": 40
+          }
+        },
+        {
+          "content": "Status: Shift inspection complete.",
+          "source": "D(1,88,709,552,709,552,745,88,744)",
+          "span": {
+            "offset": 338,
+            "length": 34
+          }
+        },
+        {
+          "content": "FICTIONAL DEMO DATA",
+          "source": "D(1,88,1559,302,1559,302,1580,88,1580)",
+          "span": {
+            "offset": 374,
+            "length": 19
+          }
+        }
+      ],
+      "analyzerId": "prebuilt-read",
+      "mimeType": "image/png"
+    }
+  ]
+}
