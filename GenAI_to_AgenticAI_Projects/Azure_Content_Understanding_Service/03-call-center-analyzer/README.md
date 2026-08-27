@@ -107,6 +107,17 @@ CONTENTUNDERSTANDING_ENDPOINT=https://your-resource.services.ai.azure.com/
 CONTENTUNDERSTANDING_KEY=your-api-key
 ```
 
+## Run the Streamlit UI
+
+Launch the browser-based test interface from this lab folder:
+
+```powershell
+python -m streamlit run streamlit_app.py
+```
+
+Upload an authorized audio or video recording, or provide a public recording
+URL. The UI displays the transcript, call insights, and downloadable JSON.
+
 ## 2A. Test with API-Key Authentication
 
 > [!IMPORTANT]

@@ -128,6 +128,17 @@ CONTENTUNDERSTANDING_ENDPOINT=https://your-resource.services.ai.azure.com/
 CONTENTUNDERSTANDING_KEY=your-api-key
 ```
 
+## Run the Streamlit UI
+
+Launch the browser-based test interface from this lab folder:
+
+```powershell
+python -m streamlit run streamlit_app.py
+```
+
+Upload a PDF or image, or provide a public document URL. The UI displays the
+extracted markdown and full JSON result, and provides a JSON download.
+
 ## 3A. Test with Key Authentication
 
 Use key authentication only for learning and short-lived test resources. Do not store the key in source control.

@@ -1,5 +1,5 @@
 """Analyze a document's layout with Azure Content Understanding."""
-
+# 
 import argparse
 import mimetypes
 import os

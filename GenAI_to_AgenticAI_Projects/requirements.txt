@@ -1,5 +1,7 @@
 
   # uv pip install --python .venv-x64\Scripts\python.exe -r requirements.txt
+ # uv pip install --python .venv-x64\Scripts\python.exe --index-url https://packagefeedproxy.microsoft.io/pypi/simple/ -r requirements.txt
+ 
  transformers
  torch
  torchvision
@@ -35,3 +37,14 @@ langchain-text-splitters
 python-dotenv
 langchain-chroma
 langchain-huggingface
+
+# install groq sdk
+groq
+
+
+# Local Azure Foundry LLMs
+#foundry-local-sdk-winml 
+#openai
+
+# Semantic router
+semantic-router

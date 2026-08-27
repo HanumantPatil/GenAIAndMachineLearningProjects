@@ -107,6 +107,17 @@ CONTENTUNDERSTANDING_ENDPOINT=https://your-resource.services.ai.azure.com/
 CONTENTUNDERSTANDING_KEY=your-api-key
 ```
 
+## Run the Streamlit UI
+
+Launch the browser-based test interface from this lab folder:
+
+```powershell
+python -m streamlit run streamlit_app.py
+```
+
+Upload an invoice or provide a public invoice URL. The UI displays the
+document category, extracted fields, confidence scores, and downloadable JSON.
+
 ## 3A. Test with an API Key
 
 > [!IMPORTANT]
