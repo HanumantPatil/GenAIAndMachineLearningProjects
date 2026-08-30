@@ -49,3 +49,5 @@ groq
 # Semantic router
 semantic-router
 selenium
+
+google-search-results
