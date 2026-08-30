@@ -6,24 +6,35 @@ faq = Route(
     utterances=[
         'How long does it take to process a refund?',
         'Do you offer international shipping?',
-        'What payment methods are accepted?'
+        'What payment methods are accepted?',
+        'Can I track my order?',
+        "Do I get discount with the HDFC credit card?",
+        "Can I use multiple discount codes?",
         ]
 )
 
 sql = Route(
     name='sql',
     utterances=[
-        'i want to buy shoes that have 50% discount',
+        'I want to buy shoes that have 50% discount',
         'show me all the products on sale',
         'find me discounted items',
         'list all discounted products',
-        'show me all discounted items'
+        'show me all discounted items',
+        'show me Nike shoes rated above 4.8',
+        'find products from a specific brand',
+        'list shoes with a rating higher than 4',
+        'which products have the best ratings?',
+        'find products within my price range',
+        'show products cheaper than 2000 rupees',
+        'list shoes by brand, price, or rating',
         ]
 )
 
 router = SemanticRouter(
     encoder=encoder,
     routes=[faq, sql],
+    aggregation="max",
     auto_sync="local"
 )
 
