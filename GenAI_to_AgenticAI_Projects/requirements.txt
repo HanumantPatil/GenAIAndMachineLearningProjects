@@ -48,3 +48,4 @@ groq
 
 # Semantic router
 semantic-router
+selenium

@@ -1,37 +1,54 @@
-import pandas as pd
+"""Import the scraped Flipkart product CSV into the chatbot SQLite database."""
+
 import sqlite3
+import sys
+from pathlib import Path
 
-# Database and CSV file paths
-db_path = 'db.sqlite'
-csv_path = 'flipkart_product_data.csv'
+import pandas as pd
 
-# Connect to SQLite database (creates one if not exists)
-conn = sqlite3.connect(db_path)
-cursor = conn.cursor()
+SCRIPT_DIRECTORY = Path(__file__).resolve().parent
+CSV_PATH = SCRIPT_DIRECTORY / "flipkart_product_data.csv"
+DATABASE_PATH = SCRIPT_DIRECTORY.parent / "App" / "db.sqlite"
+PRODUCT_COLUMNS = {
+    "product_link",
+    "title",
+    "brand",
+    "price",
+    "discount",
+    "avg_rating",
+    "total_ratings",
+}
 
-# Create the product table if it does not exist
-cursor.execute('''
-CREATE TABLE IF NOT EXISTS product (
-    product_link TEXT,
-    title TEXT,
-    brand TEXT,
-    price INTEGER,
-    discount FLOAT,
-    avg_rating FLOAT,
-    total_ratings INTEGER
-);
-''')
 
-# Commit the table creation
-conn.commit()
+def import_products(csv_path: Path = CSV_PATH, database_path: Path = DATABASE_PATH) -> int:
+    """Replace the SQLite product table with records from the product CSV."""
+    if not csv_path.is_file():
+        raise FileNotFoundError(f"Product CSV was not found: {csv_path}")
 
-# Read CSV file using pandas
-df = pd.read_csv(csv_path)
+    products = pd.read_csv(csv_path)
+    missing_columns = PRODUCT_COLUMNS.difference(products.columns)
+    if missing_columns:
+        missing = ", ".join(sorted(missing_columns))
+        raise ValueError(f"Product CSV is missing required columns: {missing}")
 
-# Insert data into the product table
-df.to_sql('product', conn, if_exists='append', index=False)
+    database_path.parent.mkdir(parents=True, exist_ok=True)
+    with sqlite3.connect(database_path) as connection:
+        products.to_sql("product", connection, if_exists="replace", index=False)
 
-# Close the connection
-conn.close()
+    return len(products)
 
-print("Data inserted successfully!")
+
+def main() -> int:
+    """Import products and report the destination database."""
+    try:
+        row_count = import_products()
+    except (FileNotFoundError, ValueError, OSError, sqlite3.Error) as error:
+        print(f"Error: {error}", file=sys.stderr)
+        return 1
+
+    print(f"Imported {row_count} products into {DATABASE_PATH}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
