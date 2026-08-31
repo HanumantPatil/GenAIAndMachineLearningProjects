@@ -51,3 +51,6 @@ semantic-router
 selenium
 
 google-search-results
+
+# Finance related packages
+yfinance
