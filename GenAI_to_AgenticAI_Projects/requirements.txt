@@ -54,3 +54,5 @@ google-search-results
 
 # Finance related packages
 yfinance
+
+langsmith
