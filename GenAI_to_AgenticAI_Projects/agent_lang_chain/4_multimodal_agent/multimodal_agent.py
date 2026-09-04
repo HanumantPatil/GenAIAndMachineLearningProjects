@@ -1,3 +1,5 @@
+"""Ask a configured Groq model to identify an animal from a remote image URL."""
+
 from dotenv import load_dotenv
 import os
 import yfinance as yf
@@ -14,6 +16,7 @@ if not groq_model:
 llm = ChatGroq(model=groq_model,temperature=0)
 
 
+# This example relies on the selected model understanding an image URL in text.
 agent = create_agent(
     tools=[],
     model=llm,

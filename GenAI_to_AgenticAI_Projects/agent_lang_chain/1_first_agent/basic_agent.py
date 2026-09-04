@@ -1,3 +1,5 @@
+"""Create a news agent with SerpAPI search and a Google News RSS fallback."""
+
 from dotenv import load_dotenv
 import os
 from urllib.parse import quote_plus
@@ -18,6 +20,7 @@ if not groq_model:
 
 llm = ChatGroq(model=groq_model)
 
+# Restrict the primary search provider to recent news results.
 serp = SerpAPIWrapper(
     serpapi_api_key = serpapi_key,
     params={
@@ -55,6 +58,7 @@ def search_news(query: str) -> str:
     except ValueError as error:
         if "Invalid API key" not in str(error):
             raise
+        # Keep the example usable when SerpAPI rejects the configured key.
         return search_google_news_rss(query)
 
 agent = create_agent(

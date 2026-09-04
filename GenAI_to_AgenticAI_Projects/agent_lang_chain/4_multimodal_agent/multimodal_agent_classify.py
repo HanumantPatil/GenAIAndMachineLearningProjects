@@ -1,3 +1,5 @@
+"""Classify local clothing images with structured multimodal message content."""
+
 import base64
 import os
 from pathlib import Path
@@ -11,15 +13,17 @@ groq_vision_model = os.getenv("GROQ_VISION_MODEL", "qwen/qwen3.8-27b")
 llm = ChatGroq(model=groq_vision_model, temperature=0, max_tokens=1000)
 
 def encode_image_to_base64(image_path: str) -> str:
-    """Encode an image to a base64 string suitable for embedding in HTML. The returned string includes the data URI scheme prefix."""
+    """Encode a JPEG as a data URL accepted by multimodal chat models."""
     with open(image_path, "rb") as image_file:
         return f"data:image/jpeg;base64,{base64.b64encode(image_file.read()).decode('utf-8')}"
 
+# Resolve assets from the script location so the launch directory does not matter.
 base_dir = Path(__file__).parent
 image_url_01 = encode_image_to_base64(str(base_dir / "images/image1.jpg"))
 image_url_02 = encode_image_to_base64(str(base_dir / "images/image2.jpg"))
 image_url_03 = encode_image_to_base64(str(base_dir / "images/image3.jpg"))
 
+# LangChain accepts text and image URL blocks in one human message.
 human_content = [
     {
         "type": "text","text": "Analyze each image and return a json array of records as instance."

@@ -1,3 +1,5 @@
+"""Define the pinned inventory agent used for comparative output metrics."""
+
 from dotenv import load_dotenv
 import os
 from langchain.messages import HumanMessage
@@ -8,8 +10,9 @@ from langchain.agents import create_agent
 from langchain.tools import tool
 from langchain_groq import ChatGroq
 
+# Pin one candidate model per experiment, then compare named runs in LangSmith.
 # groq_model = os.getenv("GROQ_MODEL")
-#groq_model = "qwen/qwen3.6-27b"
+# groq_model = "qwen/qwen3.6-27b"
 groq_model = "openai/gpt-oss-120b"
 
 if not groq_model:
@@ -20,6 +23,7 @@ llm = ChatGroq(model=groq_model,temperature=0)
 @tool
 def inventory_tool(product_name: str):
     """Check the inventory availability for a given product name."""
+    # Print calls to expose tool use while the experiment runs.
     print(f"TOOL CALLED FOR {product_name}")
     inventory = {
         "iPhone 15": "In Stock: Available Items = 2",
@@ -52,6 +56,7 @@ Keep your response short and informative.
 )
 
 def run_agent(question:str):
+    """Run one inventory question and return only the final agent answer."""
     result = agent.invoke(
 
 

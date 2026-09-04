@@ -1,3 +1,5 @@
+"""Record a named semantic-similarity experiment in LangSmith."""
+
 from langsmith import Client, evaluate, traceable
 from langsmith.schemas import Example, Run
 from inventory_agent import run_agent
@@ -7,12 +9,14 @@ load_dotenv()
 
 @traceable
 def target(inputs: dict) -> dict:
+    """Adapt a LangSmith dataset input to the inventory agent contract."""
     question = inputs.get("question", "")
     answer = run_agent(question)
     return {"answer": answer}
 
 client = Client()
 dataset_name = "inventorydata"
+# Reusing the shared dataset keeps model comparisons consistent.
 if not client.has_dataset(dataset_name= dataset_name):
     client.create_dataset(dataset_name)
     client.create_examples(
@@ -42,6 +46,7 @@ if not client.has_dataset(dataset_name= dataset_name):
         )
 
 def semantic_match(run: Run, example: Example) -> dict[str, str | float]:
+    """Score the generated answer against its reference answer."""
     if example.outputs is None or run.outputs is None:
         raise ValueError("Both reference and run outputs are required for evaluation.")
 
@@ -53,6 +58,7 @@ def semantic_match(run: Run, example: Example) -> dict[str, str | float]:
         "score": float(sim)
     }
 
+# The prefix groups this candidate model's run in the LangSmith UI.
 evaluate(
     target,
     client=client,

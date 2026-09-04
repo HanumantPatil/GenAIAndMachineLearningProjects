@@ -1,3 +1,5 @@
+"""Create a finance agent that selects between stock and valuation tools."""
+
 from dotenv import load_dotenv
 import os
 import yfinance as yf
@@ -22,7 +24,7 @@ def get_stock_price(ticker: str) -> str:
 @tool
 def get_market_valuation_of_private_company(company_name: str) -> str:
     """Get the market valuation of a private company."""
-    # Placeholder implementation, replace with actual logic to fetch market valuation
+    # Static values keep tool selection deterministic for this learning example.
     company_valuations = {
         "OpenAI": "29 billion USD",
         "Stripe": "95 billion USD",
@@ -30,6 +32,8 @@ def get_market_valuation_of_private_company(company_name: str) -> str:
     }
     valuation = company_valuations.get(company_name)
     return f"The market valuation of {company_name} is {valuation}" if valuation else f"The market valuation of {company_name} is not publicly available."
+
+# The model chooses a tool from its description and the user's request.
 agent = create_agent(
     tools=[get_stock_price, get_market_valuation_of_private_company],
     model=llm,

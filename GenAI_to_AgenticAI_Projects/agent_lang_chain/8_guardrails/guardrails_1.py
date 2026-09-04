@@ -1,3 +1,5 @@
+"""Demonstrate masking and redaction of PII returned by an agent tool."""
+
 from langchain.agents import create_agent
 from langchain.agents.middleware import PIIMiddleware
 from langchain.tools import tool
@@ -13,7 +15,7 @@ llm = ChatGroq(model=LLM_AS_JUDGE_MODEL_NAME, temperature=0)  # type: ignore
 @tool
 def get_customer_info_tool(customer_name: str):
     """Retrieve customer information based on the customer name."""
-    # Implement the logic to retrieve customer information based on the customer_name
+    # Use test records so the middleware behavior is deterministic.
     customer_info = {
         "Krishna": {
             "email": "ktishna_001@abc.com",
@@ -45,11 +47,13 @@ agent = create_agent(
     model=llm,
     tools=[get_customer_info_tool],
     middleware=[
+        # The built-in card detector masks only values that pass the Luhn check.
         PIIMiddleware(
             "credit_card",
             strategy="mask",
             apply_to_tool_results=True,
         ),
+        # Scan both the tool response and the model's final response for email.
         PIIMiddleware(
             "email", strategy="redact", apply_to_tool_results=True, apply_to_output=True
         ),

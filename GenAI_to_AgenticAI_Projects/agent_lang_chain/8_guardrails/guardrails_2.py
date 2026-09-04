@@ -1,3 +1,5 @@
+"""Block API-key-shaped input before an interactive agent calls its model."""
+
 from langchain.tools import tool
 from langchain.agents import create_agent
 from langchain.agents.middleware import PIIMiddleware
@@ -13,6 +15,7 @@ llm = ChatGroq(model="openai/gpt-oss-20b", temperature=0)
 @tool
 def search_docs(query: str) -> str:
     """Search coding documentation for a given query."""
+    # Fictional documentation keeps this tool deterministic and self-contained.
     docs = {
         # Fictional language: Fluxon
         "fluxon api": "In Fluxon, use `flux.connect(endpoint) >> auth(token)` to call an API. Store your token in a .fluxenv file, never hardcode it.",
@@ -33,7 +36,7 @@ def search_docs(query: str) -> str:
     return f"No documentation found for '{query}'. Try: 'fluxon api', 'zyphor database', or 'brevik file'."
 
 
-# ── Agent setup ───────────────────────────────────────────────────────────────
+# Agent and guardrail configuration
 
 agent = create_agent(
     model=llm,
@@ -46,6 +49,7 @@ agent = create_agent(
     middleware=[
         PIIMiddleware(
             "api_key",
+            # Match legacy sk- keys and modern sk-proj- keys.
             detector=r"\bsk-(?:proj-)?[A-Za-z0-9_-]{20,}\b",
             strategy="block",
             apply_to_input=True,
@@ -55,6 +59,7 @@ agent = create_agent(
 
 
 def chat(user_input: str):
+    """Submit safe input and report API-key detections without a model call."""
     try:
         result = agent.invoke({"messages": [{"role": "user", "content": user_input}]})
         print(f"\n🤖 Assistant: {result['messages'][-1].content}\n")
@@ -63,9 +68,7 @@ def chat(user_input: str):
         # PIIMiddleware raises PIIDetectionError when strategy="block" is triggered
         print(f"\n[BLOCKED] {e}")
         print("Warning: Your message contains a sensitive API key.")
-        print(
-            "Tip: Use environment variables instead: os.getenv('OPENAI_API_KEY')\n"
-        )
+        print("Tip: Use environment variables instead: os.getenv('OPENAI_API_KEY')\n")
 
 
 if __name__ == "__main__":

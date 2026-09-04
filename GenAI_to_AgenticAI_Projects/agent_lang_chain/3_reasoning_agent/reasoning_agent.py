@@ -1,3 +1,5 @@
+"""Demonstrate prompt-guided numerical reasoning without external tools."""
+
 from dotenv import load_dotenv
 import os
 import yfinance as yf
@@ -14,6 +16,7 @@ if not groq_model:
 llm = ChatGroq(model=groq_model)
 
 
+# An empty tool list isolates the model's own reasoning behavior.
 agent = create_agent(
     tools=[],
     model=llm,

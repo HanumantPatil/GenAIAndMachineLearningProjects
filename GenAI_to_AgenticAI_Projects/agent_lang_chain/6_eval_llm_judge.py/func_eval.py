@@ -1,3 +1,5 @@
+"""Evaluate inventory-agent answers with a larger model as the judge."""
+
 import json
 
 from langsmith import Client, evaluate, traceable
@@ -12,12 +14,14 @@ judge = ChatGroq(model=LLM_AS_JUDGE_MODEL_NAME, temperature=0) # type: ignore
 
 @traceable
 def target(inputs: dict) -> dict:
+    """Adapt a LangSmith dataset input to the inventory agent contract."""
     question = inputs.get("question", "")
     answer = run_agent(question)
     return {"answer": answer}
 
 client = Client()
 dataset_name = "inventorydata"
+# Reuse the same dataset as the semantic evaluation for a fair comparison.
 if not client.has_dataset(dataset_name= dataset_name):
     client.create_dataset(dataset_name)
     client.create_examples(
@@ -56,6 +60,7 @@ return only valid json like:
 """
 
 def llm_as_judge(run: Run, example: Example) -> dict[str, str | float]:
+    """Ask the judge model to score one candidate answer from 0 to 1."""
     if example.inputs is None or example.outputs is None or run.outputs is None:
         raise ValueError("Example inputs, reference outputs, and run outputs are required for evaluation.")
 
@@ -69,6 +74,7 @@ def llm_as_judge(run: Run, example: Example) -> dict[str, str | float]:
     if not isinstance(res.content, str):
         raise TypeError("The judge response must contain JSON text.")
 
+    # The prompt requires bare JSON, so invalid or decorated output fails fast.
     data = json.loads(res.content)
     score = float(data["score"])
     return {

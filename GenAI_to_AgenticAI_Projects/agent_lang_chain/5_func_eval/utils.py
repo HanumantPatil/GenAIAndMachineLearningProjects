@@ -1,15 +1,18 @@
+"""Provide sentence-embedding similarity for functional evaluations."""
+
 from dotenv import load_dotenv
 import os
 import numpy as np
 from torchgen import model
 load_dotenv()
 
-## genrate cosin similarity using sentence transformer 
 from sentence_transformers import SentenceTransformer, util
 
+# Load the embedding model once instead of once per evaluated example.
 _model = SentenceTransformer('all-MiniLM-L6-v2')
 
 def cosine_similarity(sentence1: str, sentence2: str) -> float:
+    """Return cosine similarity for two sentences in the range from 0 to 1."""
     embedding1 = _model.encode(sentence1, convert_to_tensor=True)
     embedding2 = _model.encode(sentence2, convert_to_tensor=True)
     similarity = np.dot(embedding1, embedding2) / (np.linalg.norm(embedding1) * np.linalg.norm(embedding2))

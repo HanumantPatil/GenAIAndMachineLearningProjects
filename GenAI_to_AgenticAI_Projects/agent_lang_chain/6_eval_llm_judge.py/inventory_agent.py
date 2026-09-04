@@ -1,3 +1,5 @@
+"""Define the inventory agent used by the LLM-as-judge evaluation."""
+
 from dotenv import load_dotenv
 import os
 from langchain.messages import HumanMessage
@@ -8,7 +10,8 @@ from langchain.agents import create_agent
 from langchain.tools import tool
 from langchain_groq import ChatGroq
 
-#groq_model = os.getenv("GROQ_MODEL")
+# This experiment pins the candidate model so repeated judge runs are comparable.
+# groq_model = os.getenv("GROQ_MODEL")
 groq_model = "openai/gpt-oss-20b"
 if not groq_model:
     raise RuntimeError("GROQ_MODEL is missing from the environment.")
@@ -18,6 +21,7 @@ llm = ChatGroq(model=groq_model,temperature=0)
 @tool
 def inventory_tool(product_name: str):
     """Check the inventory availability for a given product name."""
+    # Print calls to show whether the candidate agent followed its tool policy.
     print(f"TOOL CALLED FOR {product_name}")
     inventory = {
         "iPhone 15": "In Stock: Available Items = 2",
@@ -50,6 +54,7 @@ Keep your response short and informative.
 )
 
 def run_agent(question:str):
+    """Run one inventory question and return only the final agent answer."""
     result = agent.invoke(
 
 

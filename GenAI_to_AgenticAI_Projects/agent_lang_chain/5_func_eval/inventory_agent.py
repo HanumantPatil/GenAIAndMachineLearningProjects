@@ -1,3 +1,5 @@
+"""Define the inventory agent evaluated by the folder's LangSmith experiment."""
+
 from dotenv import load_dotenv
 import os
 from langchain.messages import HumanMessage
@@ -17,7 +19,9 @@ llm = ChatGroq(model=groq_model,temperature=0)
 @tool
 def inventory_tool(product_name: str):
     """Check the inventory availability for a given product name."""
+    # Print calls to make tool selection visible during local evaluation runs.
     print(f"TOOL CALLED FOR {product_name}")
+    # Fixed inventory data makes repeated evaluations comparable.
     inventory = {
         "iPhone 15": "In Stock: Available Items = 2",
         "AirPods Pro": "Out of Stock: Available Items = 0",
@@ -49,6 +53,7 @@ Keep your response short and informative.
 )
 
 def run_agent(question:str):
+    """Run one inventory question and return only the final agent answer."""
     result = agent.invoke(
 
 
