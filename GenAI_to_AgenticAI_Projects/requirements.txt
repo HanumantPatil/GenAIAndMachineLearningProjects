@@ -56,3 +56,9 @@ google-search-results
 yfinance
 
 langsmith
+
+# Install mcp server
+mcp[cli]>=2.1,<3
+
+# install uv is python package manager 
+uv
