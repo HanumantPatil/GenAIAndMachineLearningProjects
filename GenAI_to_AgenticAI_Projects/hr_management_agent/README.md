@@ -1,7 +1,7 @@
 ---
 title: HR Management Agent
 description: In-memory HR management example exposed through a Model Context Protocol server
-ms.date: 2026-09-06
+ms.date: 2026-09-09
 ms.topic: overview
 keywords:
   - model context protocol
@@ -15,12 +15,17 @@ estimated_reading_time: 7
 
 The HR Management Agent is an educational Python project that models common HR operations and exposes selected operations as Model Context Protocol (MCP) tools. It seeds in-memory employee, leave, meeting, and equipment-ticket data each time the server starts.
 
-The current MCP server exposes employee creation and lookup. The underlying `HRMS` package also contains leave, meeting, and ticket managers that can support additional tools.
+The current MCP server exposes employee creation, employee lookup, simulated email delivery, equipment-ticket creation, meeting scheduling, and leave applications. It also provides an onboarding prompt that coordinates employee creation, notifications, equipment requests, and an introductory meeting.
 
 ## Features
 
 * Add an employee with an automatically generated employee ID
 * Find employee details by an approximate name match
+* Simulate sending an email to an employee
+* Create equipment-request tickets for an employee
+* Schedule employee meetings with conflict detection
+* Apply for one or more leave dates
+* Guide employee onboarding with a reusable MCP prompt
 * Model manager and direct-report relationships
 * Seed sample leave, meeting, and equipment-ticket records
 * Validate employee input with Pydantic models
@@ -49,8 +54,22 @@ hr_management_agent/
 | --- | --- | --- |
 | `add_employee` | `name`, `manager_id`, `email` | Confirmation that the employee was added |
 | `get_employee_details` | `name` | The first matching employee record, or `null` |
+| `send_email` | `to`, `subject`, `body` | Confirmation that the simulated email was sent |
+| `create_ticket` | `emp_id`, `item`, `reason` | Confirmation that the equipment ticket was created |
+| `schedule_meeting` | `emp_id`, `meeting_dt`, `topic` | Confirmation with the employee, date and time, and topic |
+| `apply_for_leave` | `emp_id`, `start_date` | Confirmation with the employee and requested leave dates |
 
 `manager_id` can be `null`. When supplied, it must identify an employee already present in the in-memory store.
+
+The `send_email` tool is a demonstration stub. It returns a confirmation message but does not connect to an email provider or deliver a message. The `create_ticket`, `schedule_meeting`, and `apply_for_leave` tools store their changes in memory. Supply `meeting_dt` as an ISO 8601 date and time and `start_date` as a list of ISO 8601 dates.
+
+## MCP Prompts
+
+| Prompt | Arguments | Workflow |
+| --- | --- | --- |
+| `onboard_new_employee` | `employee_name`, `manager_name` | Add the employee, send notifications, raise equipment tickets, and schedule an introductory meeting |
+
+The onboarding prompt gives the client instructions for coordinating the tools. The client must resolve the manager name to an employee ID, supply the new employee's email address, invoke `add_employee`, send employee and manager notifications with `send_email`, raise each required equipment request with `create_ticket`, and arrange the manager introduction with `schedule_meeting`. The prompt does not execute these operations by itself.
 
 ## Prerequisites
 
@@ -89,7 +108,7 @@ Set-Location hr_management_agent
 mcp dev server.py
 ```
 
-The `mcp dev` command opens the MCP Inspector development workflow. Use the Inspector to verify that `add_employee` and `get_employee_details` appear and can be invoked.
+The `mcp dev` command opens the MCP Inspector development workflow. Use the Inspector to verify that all six tools appear and can be invoked. Open the prompts view to confirm that `onboard_new_employee` accepts an employee name and an optional manager name.
 
 ### Start with stdio
 
@@ -134,8 +153,8 @@ GitHub Copilot can launch this local stdio server itself. You do not need to sta
 3. Open the Command Palette with `Ctrl+Shift+P` and run `MCP: List Servers`.
 4. Select `hr-management-x64`, select **Start**, and approve the trust prompt after reviewing the command.
 5. Open GitHub Copilot Chat with `Ctrl+Alt+I`.
-6. Select **Configure Tools** and confirm that the two HR tools are enabled.
-7. Ask Copilot to find employee details for Tony Sharma.
+6. Select **Configure Tools** and confirm that the six HR tools are enabled.
+7. Ask Copilot to find employee details for Tony Sharma or run the onboarding prompt from the chat prompt picker.
 
 Run `MCP: List Servers` and select **Show Output** to inspect startup errors. If the virtual environment is stored elsewhere, update the `command` value to its Python executable.
 
@@ -196,6 +215,12 @@ After connecting an MCP client, try requests such as:
 * Add an employee named Priya Shah with email `priya.shah@atliq.com` and manager ID `E001`
 * Find the employee details for Tony Sharma
 * Add a department leader without a manager
+* Send a welcome email to `priya.shah@atliq.com`
+* Raise a laptop ticket for employee `E009`
+* Schedule a project introduction for employee `E009` at `2026-09-10T10:00:00`
+* Apply for leave for employee `E009` on `2026-09-21` and `2026-09-22`
+* Onboard Hanumant Patil reporting to David Wilson
+* Onboard H1 P1 under Hanumant Patil, notify the manager, request equipment, and schedule an introductory meeting
 
 The server assigns the next available ID in the `E001` format. Name lookup uses approximate matching and returns the first result.
 
@@ -204,7 +229,10 @@ The server assigns the next available ID in the `E001` format. Name lookup uses 
 * All records are stored in memory and disappear when the process stops
 * Seeded leave balances and activity records are randomized at startup
 * No authentication or authorization is implemented
-* Only employee creation and lookup are currently registered as MCP tools
+* Email delivery is simulated and no login credentials are generated or stored
+* Employee, ticket, meeting, and leave changes disappear when the server restarts
+* Six tools cover employee creation and lookup, simulated email, tickets, meetings, and leave
+* The onboarding prompt provides instructions but depends on the client to invoke tools
 * The project is intended for local learning and demonstration, not production HR data
 
 ## Extending the Agent

@@ -1,6 +1,7 @@
 """MCP server for the HR assistant."""
 
 import argparse
+from datetime import date, datetime
 
 from HRMS.employee_manager import EmployeeManager
 from HRMS.leave_manager import LeaveManager
@@ -8,9 +9,10 @@ from HRMS.meeting_manager import MeetingManager
 from HRMS.ticket_manager import TicketManager
 
 from mcp.server import MCPServer
-from HRMS.schemas import EmployeeCreate
+from HRMS.schemas import EmployeeCreate, LeaveApplyRequest, MeetingCreate, TicketCreate
 from utils import seed_services
 
+# Initialize the MCP server and seed the HRMS services.
 mcp = MCPServer("MS-HR-Assist")
 
 employee_manager = EmployeeManager()
@@ -58,7 +60,110 @@ def get_employee_details(name: str) -> dict | None:
     emp = employee_manager.get_employee_details(emp_id)
     return emp
 
+@mcp.tool()
+def send_email(to: str, subject: str, body: str) -> str:
+    """Send an email to the specified recipient.
+    Args:
+        to (str): The recipient's email address.
+        subject (str): The subject of the email.
+        body (str): The body of the email.
 
+    Returns:
+        str: A message indicating the result of the operation.
+    """
+    # Implement the email sending logic here.
+    return f"Email sent to {to} with subject '{subject}'."
+@mcp.tool()
+def create_ticket(emp_id: str, item: str, reason: str) -> str:
+    """
+    Create a new ticket for an employee.
+    
+    Args:
+        emp_id (str): The ID of the employee.
+        item (str): The item for which the ticket is being created.
+        reason (str): The reason for the ticket.
+
+    Returns:
+        str: A message indicating the result of the operation.
+    """
+    ticket_req = TicketCreate(       
+        emp_id=emp_id,
+        item=item,
+        reason=reason
+    )
+    ticket_manager.create_ticket(ticket_req)
+    return f"Ticket for item '{item}' created successfully."
+
+@mcp.tool()
+def schedule_meeting(
+    emp_id: str,
+    meeting_dt: datetime,
+    topic: str,
+) -> str:
+    """
+    Schedule a meeting for an employee.
+    
+    Args:
+        emp_id (str): The ID of the employee.
+        meeting_dt (datetime): The date and time of the meeting.
+        topic (str): The topic of the meeting.
+
+    Returns:
+        str: A message indicating the result of the operation.
+    """
+    meeting_req = MeetingCreate(
+        emp_id=emp_id,
+        meeting_dt=meeting_dt,
+        topic=topic,
+    )
+    meeting_manager.schedule_meeting(meeting_req)
+    return (
+        f"Meeting scheduled for employee '{emp_id}' "
+        f"on {meeting_dt}: {topic}."
+    )
+
+@mcp.tool()
+def apply_for_leave(emp_id: str, start_date: list[date]) -> str:
+    """
+    Apply for leave for an employee.
+    
+    Args:
+        emp_id (str): The ID of the employee.
+        start_date (list[datetime]): The start dates of the leave.
+
+    Returns:
+        str: A message indicating the result of the operation.
+    """
+    leave_req = LeaveApplyRequest(
+        emp_id=emp_id,
+        leave_dates=start_date,
+    )
+    leave_manager.apply_leave(leave_req)
+    return (
+        f"Leave applied for employee '{emp_id}' "
+        f"from {start_date}."
+    )
+@mcp.prompt("onboard_new_employee")
+def onboard_new_employee(employee_name: str, manager_name: str | None) -> str:
+    """Onboard a new employee by adding them to the HRMS system and sending a welcome email.
+    Args:
+        employee_name (str): The name of the employee.
+        manager_name (str | None): The name of the manager, if any.
+
+    Returns:
+        str: A message indicating the result of the operation.
+    """
+    return f"""
+    Onboarding a new employee with the following details:
+    Employee Name: {employee_name}
+    Manager Name: {manager_name}
+    steps to follow:
+    1. Add the employee to the HRMS system.
+    2. Send a welcome email to the employee with their login credentials.(Format: "Hello {employee_name}, your login credentials are ...")
+    3. Notify the manager about the new employee onboarding.
+    4. Raise tickets for new laptops or other necessary equipment for the employee.
+    5. Schedule an introductory meeting for the new employee with their manager.
+"""
 def create_parser() -> argparse.ArgumentParser:
     """Create the command-line parser for MCP transport settings."""
     parser = argparse.ArgumentParser(description="Run the HR management MCP server.")
