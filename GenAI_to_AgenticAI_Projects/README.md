@@ -2,7 +2,7 @@
 title: GenAI to Agentic AI Projects
 description: Hands-on projects exploring Generative AI concepts and progressing towards Agentic AI workflows, using Hugging Face Transformers and GPT-2.
 author: HanumantPatil
-ms.date: 2026-07-22
+ms.date: 2026-10-12
 ms.topic: overview
 keywords:
   - generative ai
@@ -52,19 +52,25 @@ GenAI_to_AgenticAI_Projects/
 # Activate the virtual environment
 .venv-x64\Scripts\Activate.ps1
 
-# Install dependencies
+# Install the aggregate dependency set for all examples
 pip install -r requirements.txt
 ```
 
-### Dependencies
+### Run an individual folder
 
+Runnable project folders contain their own `requirements.txt` and README file.
+This allows you to create a smaller environment for one example:
+
+```powershell
+Set-Location .\FastAPI_01
+uv venv .venv
+uv pip install --python .venv\Scripts\python.exe -r requirements.txt
+.\.venv\Scripts\fastapi.exe dev main.py
 ```
-transformers
-torch
-datasets
-accelerate
-sentencepiece
-```
+
+Use the run command documented in that folder's README. Internal source,
+resource, generated-output, and vector-store folders do not need separate
+dependency manifests.
 
 ## References
 

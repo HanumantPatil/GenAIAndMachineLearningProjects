@@ -77,24 +77,15 @@ The onboarding prompt gives the client instructions for coordinating the tools. 
 * `uv` or `pip`
 * An MCP-compatible client or the MCP Inspector
 
-Dependencies are managed by the repository-level [requirements file](../requirements.txt). The relevant packages are `mcp[cli]` and `pydantic` (installed as an MCP dependency).
+Dependencies are listed in the local [requirements file](requirements.txt).
 
 ## Setup
 
-Run these commands from the repository root in PowerShell:
+Run these commands from the `hr_management_agent` folder in PowerShell:
 
 ```powershell
-python -m venv .venv-x64
-.venv-x64\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
-```
-
-With `uv`, you can use the existing dependency file:
-
-```powershell
-uv venv .venv-x64
-.venv-x64\Scripts\Activate.ps1
-uv pip install -r requirements.txt
+uv venv .venv
+uv pip install --python .venv\Scripts\python.exe -r requirements.txt
 ```
 
 ## Run the Server

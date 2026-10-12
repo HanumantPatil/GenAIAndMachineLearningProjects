@@ -69,3 +69,6 @@ matplotlib
 
 # install FastAPI
 fastapi[standard]
+
+# install Jupyter Notebook
+jupyter

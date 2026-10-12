@@ -1,11 +1,17 @@
 """List models available in the local Foundry catalog."""
 
-# The package is installed in the Foundry Local runtime environment.
-from foundry_local import FoundryLocalManager  # pylint: disable=import-error  # pyright: ignore[reportMissingImports]
+from foundry_local_sdk import Configuration, FoundryLocalManager
 
-manager = FoundryLocalManager()
 
-catalog = manager.catalog
+def main() -> None:
+    """Print the aliases available in the Foundry Local model catalog."""
+    config = Configuration(app_name="foundry_local_samples")
+    FoundryLocalManager.initialize(config)
+    manager = FoundryLocalManager.instance
 
-for model in catalog.list_models():
-    print(model.alias)
+    for model in manager.catalog.list_models():
+        print(model.alias)
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,5 @@
+jupyter
+langchain-core
+langchain-groq
+langchain-ollama
+python-dotenv

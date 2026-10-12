@@ -30,6 +30,14 @@ environment:
 uv pip install --python .venv-x64\Scripts\python.exe --index-url https://packagefeedproxy.microsoft.io/pypi/simple/ --editable .\mcp_server
 ```
 
+To run only this folder without installing the package entry point, create a
+local environment from the `mcp_server` folder:
+
+```powershell
+uv venv .venv
+uv pip install --python .venv\Scripts\python.exe -r requirements.txt
+```
+
 ## Run
 
 ### Streamable HTTP

@@ -1,0 +1,5 @@
+google-search-results
+langchain
+langchain-community
+langchain-groq
+python-dotenv

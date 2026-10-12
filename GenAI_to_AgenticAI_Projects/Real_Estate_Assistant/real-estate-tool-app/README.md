@@ -87,13 +87,14 @@ based on the concatenated text of those chunks.
 * Python 3.11 or later
 * A Groq API key
 
-Install the repository dependencies from the project root:
+Run these commands from this folder:
 
 ```powershell
-.\.venv-x64\Scripts\python.exe -m pip install -r requirements.txt
+uv venv .venv
+uv pip install --python .venv\Scripts\python.exe -r requirements.txt
 ```
 
-Create a `.env` file in the repository root with your Groq API key:
+Create a `.env` file in this folder with your Groq API key:
 
 ```text
 GROQ_API_KEY=your_groq_api_key
@@ -105,10 +106,10 @@ account.
 
 ## Run The App
 
-From the repository root, start Streamlit:
+Start Streamlit from this folder:
 
 ```powershell
-.\.venv-x64\Scripts\streamlit.exe run .\Real_Estate_Assistant\real-estate-tool-app\main.py
+.\.venv\Scripts\streamlit.exe run main.py
 ```
 
 Streamlit prints the local URL in the terminal, normally

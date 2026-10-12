@@ -20,6 +20,16 @@ estimated_reading_time: 4
 
 This folder contains Jupyter notebooks that explore the core **generation parameters** that control how Large Language Models (LLMs) produce text. All examples use the Hugging Face `transformers` library with the **GPT-2** model.
 
+## Setup
+
+Run these commands from this folder:
+
+```powershell
+uv venv .venv
+uv pip install --python .venv\Scripts\python.exe -r requirements.txt
+.\.venv\Scripts\jupyter.exe lab
+```
+
 ## Notebooks
 
 | Notebook | Description |

@@ -1,0 +1,4 @@
+jupyter
+langchain-community
+requests
+unstructured

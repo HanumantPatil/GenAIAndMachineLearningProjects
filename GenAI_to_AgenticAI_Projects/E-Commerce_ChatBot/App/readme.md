@@ -72,19 +72,11 @@ App/
 
 ## Setup
 
-Run the following commands from the `GenAI_to_AgenticAI_Projects` directory.
-
-### Create a virtual environment
+Run the following commands from the `E-Commerce_ChatBot\App` directory:
 
 ```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-```
-
-### Install dependencies
-
-```powershell
-python -m pip install -r requirements.txt
+uv venv .venv
+uv pip install --python .venv\Scripts\python.exe -r requirements.txt
 ```
 
 ### Configure Groq
@@ -102,10 +94,10 @@ GROQ_MODEL=openai/gpt-oss-120b
 
 ## Run the application
 
-Start Streamlit from the project root:
+Start Streamlit from this folder:
 
 ```powershell
-python -m streamlit run .\E-Commerce_ChatBot\App\main.py
+.\.venv\Scripts\streamlit.exe run main.py
 ```
 
 Open the local URL printed by Streamlit, normally

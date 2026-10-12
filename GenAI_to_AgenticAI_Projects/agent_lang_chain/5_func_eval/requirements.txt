@@ -1,0 +1,8 @@
+langchain
+langchain-groq
+langsmith
+numpy
+python-dotenv
+sentence-transformers
+torch
+yfinance
