@@ -72,3 +72,6 @@ fastapi[standard]
 
 # install Jupyter Notebook
 jupyter
+
+# Fine-tuning related packages unsloth
+unsloth
