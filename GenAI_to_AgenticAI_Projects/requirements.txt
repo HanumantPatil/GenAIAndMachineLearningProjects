@@ -26,6 +26,7 @@ streamlit
 
 # vector database for Langchain
 chromadb
+faiss-cpu>=1.13.0
 huggingface-hub
 sentence-transformers
 
@@ -78,3 +79,10 @@ unsloth
 
 # Install Microsoft agent framework
 -r microsoft_agent_framework/requirements.txt
+
+# PII Microsoft presidio
+presidio-analyzer
+presidio-anonymizer
+# Presidio's default English model is distributed through spaCy's GitHub releases.
+en-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.8.0/en_core_web_lg-3.8.0-py3-none-any.whl
+faker
